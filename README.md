@@ -65,9 +65,3 @@ CPU：4核或以上
 ------------
 
 以地面功图为基础结合生产动静态数据求解泵功图，利用泵功图提取特征点，针对不同的功图类型结合泵功图计算单张功图产量，结合生产时率对全天功图产量进行加权，计算单井日产量等参数。**80%井的误差在15%以内**。
-
-![](https://github.com/cosog-chentr/apmd/blob/master/Image/002.gif?raw=true)  
-
-![](https://github.com/cosog-chentr/apmd/blob/master/Image/003.gif?raw=true)  
-  
-![](https://github.com/cosog-chentr/apmd/blob/master/Image/004.gif?raw=true)
