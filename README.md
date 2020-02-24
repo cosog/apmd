@@ -68,11 +68,11 @@
 
 ![列表伸缩](https://github.com/cosog-chentr/apmd/blob/master/Image/GIF/001.gif?raw=true)
 
-## 3.3 实时评价
+## 2.3 实时评价
 
 &emsp;&emsp;根据油水井的动静态数据对单井进行实时评价。
 
-### 3.3.1 统计
+### 2.3.1 统计
 
 >1. 统计主标签：包括工况、产量、平衡、时率、效率、电量、通信；  
 >2. 统计子标签：各主标签包含的子项，如平衡包括电流平衡和功率平衡；  
@@ -80,7 +80,7 @@
 
 ![统计](https://github.com/cosog-chentr/apmd/blob/master/Image/PNG/004.png?raw=true)
 
-### 3.3.2 目标井
+### 2.3.2 目标井
 
 如需查看某一类目标价的具体信息时，如游动凡尔失灵，  
 >1. 点击统计图中“游动凡尔失灵”对应的饼或标签；  
@@ -90,15 +90,15 @@
 
 ![目标井](https://github.com/cosog-chentr/apmd/blob/master/Image/PNG/005.png?raw=true)
 
-### 3.3.3 单井数据
+### 2.3.3 单井数据
 
 包括图形及分析、采集、控制。
 
 ![单井数据](https://github.com/cosog-chentr/apmd/blob/master/Image/PNG/006.png?raw=true)
 
-#### 3.3.3.1 图形
+#### 2.3.3.1 图形
 
-**1.地面功图**  
+**1. 地面功图**  
 > （1）功图采集时间  
 &emsp;&emsp;例如：2019-01-22 08:39:56  
 > （2）上理论载荷线  
@@ -112,7 +112,7 @@
 
 ![地面功图](https://github.com/cosog-chentr/apmd/blob/master/Image/PNG/027.png?raw=true) 
 
-**2、泵功图**  
+**2. 泵功图**  
 &emsp;&emsp;从上至下依次为：  
 > （1）地面功图  
 > （2）二级杆顶端功图  
@@ -120,7 +120,7 @@
 
 ![](https://github.com/cosog-chentr/apmd/blob/master/Image/PNG/028.png?raw=true)
 
-**3、杆柱应力**  
+**3. 杆柱应力**  
 &emsp;&emsp;根据杆柱组合，分析各级杆柱的受力情况，判断杆柱组合是否合理。  
 > （1）一级杆顶端应力百分比  
 > （2）二级杆顶端应力百分比  
@@ -128,42 +128,42 @@
 
 ![](https://github.com/cosog-chentr/apmd/blob/master/Image/PNG/029.png?raw=true)
 
-**4、泵效组成**  
+**4. 泵效组成**  
 &emsp;&emsp;泵的实际排量与泵的理论排量之比的百分数称为泵效。
 
 ![](https://github.com/cosog-chentr/apmd/blob/master/Image/PNG/030.png?raw=true)
 
-**5、电流平衡度**
+**5. 电流平衡度**
 
 &emsp;&emsp;电流平衡度计算：  
 &emsp;&emsp;电流平衡度=下冲程电流最大值/上冲程电流最大值  
 ![](https://github.com/cosog-chentr/apmd/blob/master/Image/PNG/031.png?raw=true)
 
-**6、功率平衡度**
+**6. 功率平衡度**
 
 &emsp;&emsp;电功图是电的有功功率图，功率平衡度计算：  
 &emsp;&emsp;功率平衡度=下冲程有功功率最大值/上冲程有功功率最大值  
 ![](https://github.com/cosog-chentr/apmd/blob/master/Image/PNG/032.png?raw=true)
 
-#### 3.3.3.2 分析
+#### 2.3.3.2 分析
 
 &emsp;&emsp;显示计算分析结果参数及曲线，包括产量构成、泵效、系统效率、泵出入口参数等。
 
 ![](https://github.com/cosog-chentr/apmd/blob/master/Image/PNG/007.png?raw=true)
 
-#### 3.3.3.3 采集
+#### 2.3.3.3 采集
 
 &emsp;&emsp;显示传感器采集数据及曲线，包括通信状态、运行状态、油（套）压、电参数等。
 
 ![](https://github.com/cosog-chentr/apmd/blob/master/Image/PNG/008.png?raw=true)
 
-#### 3.3.3.4 控制
+#### 2.3.3.4 控制
 
 &emsp;&emsp;井场设备控制及视频显示。
 
 ![](https://github.com/cosog-chentr/apmd/blob/master/Image/PNG/009.png?raw=true)
 
-## 3.4 全天评价
+## 2.4 全天评价
 
 &emsp;&emsp;根据全天的采集数据与分析结果对单井进行全天评价。
 
@@ -173,21 +173,21 @@
 
 ![](https://github.com/cosog-chentr/apmd/blob/master/Image/PNG/012.png?raw=true)
 
-## 3.5 生产报表
+## 2.5 生产报表
 
 ![](https://github.com/cosog-chentr/apmd/blob/master/Image/PNG/013.png?raw=true)
 
-## 3.6 图形查询
+## 2.6 图形查询
 
 &emsp;&emsp;默认显示所有井最新地面功图，选择某一口井显示该井历史地面功图。
 
 ![](https://github.com/cosog-chentr/apmd/blob/master/Image/PNG/014.png?raw=true)
 
-## 3.7 权限管理
+## 2.7 权限管理
 
 &emsp;&emsp;系统部署完成后需要新建单位、用户并划分权限。
 
-### 3.7.1 单位管理
+### 2.7.1 单位管理
 
 1. 使用系统管理员账号登录系统。  
 2. 进入**单位管理**模块创建单位组织。如模拟油田公司—模拟采油厂—四矿。  
@@ -207,7 +207,7 @@
 
 ![](https://github.com/cosog-chentr/apmd/blob/master/Image/GIF/003.gif?raw=true)
 
-### 3.7.2 用户管理
+### 2.7.2 用户管理
 
 &emsp;&emsp;接下来进入**用户管理**模块，为不同的单位组织创建用户。点击![](https://github.com/cosog-chentr/apmd/blob/master/Image/PNG/015.png?raw=true)，创建新用户；填写完成后，点击![](https://github.com/cosog-chentr/apmd/blob/master/Image/PNG/016.png?raw=true)，完成创建。  
 >- 单位名称：选择已创建的单位组织，确定组织的用户登录后，只能看到该组织及该组织的下属单位对应的信息；  
@@ -218,7 +218,7 @@
 
 ![](https://github.com/cosog-chentr/apmd/blob/master/Image/GIF/004.gif?raw=true)
 
-### 3.7.3 角色管理
+### 2.7.3 角色管理
 
 &emsp;&emsp;进入**角色管理**模块，创建不同的角色，通过权限授予为不同的角色设置模块访问权限。系统内置多个角色，如数据管理、数据分析、系统管理（系统管理员用户，不可修改）等。  
 1. 点击![](https://github.com/cosog-chentr/apmd/blob/master/Image/PNG/015.png?raw=true)，创建新角色。  
@@ -228,13 +228,13 @@
 
 2. 在右侧权限角色授予界面为新角色配置可访问的模块，点击![](https://github.com/cosog-chentr/apmd/blob/master/Image/PNG/016.png?raw=true)，完成权限授予。 
 
-## 3.8 数据配置
+## 2.8 数据配置
 
 &emsp;&emsp;配置采集和计算所需的数据，包括井名信息、生产数据，可从编辑好的Excel中粘贴过来。
 
-### 3.8.1 井名信息
+### 2.8.1 井名信息
 
-#### 3.8.1.1 数据收集
+#### 2.8.1.1 数据收集
 
 >1. 单位名称：井所属单位，单位管理中创建的单位名称；  
 >1. 区块名称：井所属区块，区块数据中创建的区块名称；  
@@ -252,7 +252,7 @@
 >1. 视频路径：监控视频的URL路径；  
 >1. 排序编号：井名在系统显示时的排序。
 
-#### 3.8.1.2 数据录入
+#### 2.8.1.2 数据录入
 
 &emsp;&emsp;在Excel中编辑好后粘贴至井名信息模块中，可先点击导出按钮导出Excel模板。  
 **注意：**  
@@ -261,7 +261,7 @@
 
 ![井名信息录入](https://github.com/cosog-chentr/apmd/blob/master/Image/GIF/005.gif?raw=true)
 
-#### 3.8.1.3 修改井名
+#### 2.8.1.3 修改井名
 
 &emsp;&emsp;在列表中修改井名，完成后点击“修改井名”按钮。  
 **注意：**  
@@ -270,15 +270,15 @@
 
 ![修改井名](https://github.com/cosog-chentr/apmd/blob/master/Image/GIF/006.gif?raw=true)
 
-#### 3.8.1.4 删除数据
+#### 2.8.1.4 删除数据
 
 &emsp;&emsp;选中一行或多行，右键，选择删除行，然后点击“保存”按钮。
 
 ![删除数据](https://github.com/cosog-chentr/apmd/blob/master/Image/GIF/007.gif?raw=true)
 
-### 3.8.2 生产数据
+### 2.8.2 生产数据
 
-#### 3.8.2.1 数据收集
+#### 2.8.2.1 数据收集
 
 >1. 生产时间：井名信息模块中**时率来源**为人工录入时填写，全天工作填写24，间抽按间抽时间填写，停井填写0；  
 >2. 原油密度、水密度、天然气相对密度、饱和压力、油层中部深度、油层中部温度如果没有单井数据，可以参考所在区块数据；  
@@ -296,13 +296,13 @@
 >8. 锚定状态：包括锚定和未锚定；抽油机井默认是未锚定；  
 >9. 净毛比：用于产量标定，净毛比=实际产量/软件计算产量，默认为1，一般情况不修改。对于计产疑难井（油管漏、游动凡尔漏失、固定凡尔漏失），产量差距较大时，可以调整。例如：实际产量：20t/d，软件计算产量：40t/d，净毛比可设置在0.5左右。
 
-#### 3.8.2.2 数据录入
+#### 2.8.2.2 数据录入
 
 &emsp;&emsp;收集完成后，复制粘贴到模块中。粘贴时无需按照模块列表中井顺序调整Excel表，直接粘贴保存即可。
 
 ![生产数据录入](https://github.com/cosog-chentr/apmd/blob/master/Image/GIF/008.gif?raw=true)
 
-### 3.9.3 采控配置
+### 2.9.3 采控配置
 
 &emsp;&emsp;针对不同的设备安装情况设置不同的采集项和控制项，  
 **采集项包括：**  
@@ -323,7 +323,7 @@
 
 ![采控配置](https://github.com/cosog-chentr/apmd/blob/master/Image/PNG/017.png?raw=true)
 
-### 3.8.4 计算维护
+### 2.8.4 计算维护
 
 &emsp;&emsp;计算维护模块主要应用场景包括：  
 >1. 针对系统部署初期或现场设备安装初期，各井的生产数据并未收集或收集的不完整，在进行功图诊断及产量计算时采用了模拟数据，待后续生产数据收集完整后，需要对历史数据进行重新计算。  
@@ -357,27 +357,27 @@
 
 ![](https://github.com/cosog-chentr/apmd/blob/master/Image/PNG/020.png?raw=true)
 
-## 3.9 系统配置
+## 2.9 系统配置
 
-### 3.9.1 模块配置
+### 2.9.1 模块配置
 
 &emsp;&emsp;对模块进行编辑，生成功能导航，控制功能模块显示、隐藏等。
 
 ![系统配置](https://github.com/cosog-chentr/apmd/blob/master/Image/PNG/021.png?raw=true)
 
-### 3.9.2 字典配置
+### 2.9.2 字典配置
 
 &emsp;&emsp;对各模块显示的字段进行管理，主要修改字段名称、显示顺序、是否显示等。
 
 ![字典配置](https://github.com/cosog-chentr/apmd/blob/master/Image/PNG/022.png?raw=true)
 
-### 3.9.3 统计配置
+### 2.9.3 统计配置
 
 &emsp;&emsp;配置各项参数的统计级别。
 
 ![统计配置](https://github.com/cosog-chentr/apmd/blob/master/Image/PNG/023.png?raw=true)
 
-### 3.9.4 报警配置
+### 2.9.4 报警配置
 
 &emsp;&emsp;设置工况类型的报警类型、报警项、级别、开关、颜色等。
 
