@@ -114,30 +114,23 @@
 
 **2、泵功图**  
 &emsp;&emsp;从上至下依次为：  
-（1）地面功图  
-（2）二级杆顶端功图  
-（3）泵功图  
+> （1）地面功图  
+> （2）二级杆顶端功图  
+> （3）泵功图  
+
 ![](https://github.com/cosog-chentr/apmd/blob/master/Image/PNG/028.png?raw=true)
 
 **3、杆柱应力**  
 &emsp;&emsp;根据杆柱组合，分析各级杆柱的受力情况，判断杆柱组合是否合理。  
-（1）一级杆顶端应力百分比  
-（2）二级杆顶端应力百分比  
+> （1）一级杆顶端应力百分比  
+> （2）二级杆顶端应力百分比  
+> （3）应力百分比=最大应力/许用应力  
 
-应力百分比=最大应力/许用应力  
 ![](https://github.com/cosog-chentr/apmd/blob/master/Image/PNG/029.png?raw=true)
 
 **4、泵效组成**  
 &emsp;&emsp;泵的实际排量与泵的理论排量之比的百分数称为泵效。
-```math
-η=η_s×η_d=P_r/P_i ×P_e/P_r =P_e/P_i
-```
-式中：`$ η $` — 系统效率  
-&emsp;&emsp;&emsp;`$ η_s $` — 地面效率，指光杆提升液体和克服井下各种阻力所消耗的功率，可根据功图确定  
-&emsp;&emsp;&emsp;`$ η_d $` — 井下效率，指抽油机的水功率与光杆功率的比值，井下部分的能量损失在盘根盒、抽油杆、抽油泵和管柱中  
-&emsp;&emsp;&emsp;`$ P_r $` — 光杆功率，指光杆提升液体和克服井下各种阻力所消耗的功率，可根据功图确定  
-&emsp;&emsp;&emsp;`$ P_i $` — 输入功率，指拖动抽油系统的电动机输入的有功功率  
-&emsp;&emsp;&emsp;`$ P_e $` — 水功率，指将液体举升到地面的有效做功能量  
+
 ![](https://github.com/cosog-chentr/apmd/blob/master/Image/PNG/030.png?raw=true)
 
 **5、电流平衡度**
