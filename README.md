@@ -146,7 +146,7 @@
 > （2）二级杆顶端功图  
 > （3）泵功图  
 
-![](https://github.com/cosog-chentr/apmd/blob/master/Image/PNG/028.png?raw=true)
+![泵功图](https://github.com/cosog-chentr/apmd/blob/master/Image/PNG/028.png?raw=true)
 
 **3. 杆柱应力**  
 &emsp;&emsp;根据杆柱组合，分析各级杆柱的受力情况，判断杆柱组合是否合理。  
@@ -154,60 +154,60 @@
 > （2）二级杆顶端应力百分比  
 > （3）应力百分比=最大应力/许用应力  
 
-![](https://github.com/cosog-chentr/apmd/blob/master/Image/PNG/029.png?raw=true)
+![杆柱应力图](https://github.com/cosog-chentr/apmd/blob/master/Image/PNG/029.png?raw=true)
 
 **4. 泵效组成**  
 &emsp;&emsp;泵的实际排量与泵的理论排量之比的百分数称为泵效。
 
-![](https://github.com/cosog-chentr/apmd/blob/master/Image/PNG/030.png?raw=true)
+![泵效组成图](https://github.com/cosog-chentr/apmd/blob/master/Image/PNG/030.png?raw=true)
 
 **5. 电流平衡度**
 
 &emsp;&emsp;电流平衡度计算：  
 &emsp;&emsp;电流平衡度=下冲程电流最大值/上冲程电流最大值  
-![](https://github.com/cosog-chentr/apmd/blob/master/Image/PNG/031.png?raw=true)
+![电流图](https://github.com/cosog-chentr/apmd/blob/master/Image/PNG/031.png?raw=true)
 
 **6. 功率平衡度**
 
 &emsp;&emsp;电功图是电的有功功率图，功率平衡度计算：  
 &emsp;&emsp;功率平衡度=下冲程有功功率最大值/上冲程有功功率最大值  
-![](https://github.com/cosog-chentr/apmd/blob/master/Image/PNG/032.png?raw=true)
+![电功图](https://github.com/cosog-chentr/apmd/blob/master/Image/PNG/032.png?raw=true)
 
 #### 2.3.3.2 分析
 
 &emsp;&emsp;显示计算分析结果参数及曲线，包括产量构成、泵效、系统效率、泵出入口参数等。
 
-![](https://github.com/cosog-chentr/apmd/blob/master/Image/PNG/007.png?raw=true)
+![分析](https://github.com/cosog-chentr/apmd/blob/master/Image/PNG/007.png?raw=true)
 
 #### 2.3.3.3 采集
 
 &emsp;&emsp;显示传感器采集数据及曲线，包括通信状态、运行状态、油（套）压、电参数等。
 
-![](https://github.com/cosog-chentr/apmd/blob/master/Image/PNG/008.png?raw=true)
+![采集](https://github.com/cosog-chentr/apmd/blob/master/Image/PNG/008.png?raw=true)
 
 #### 2.3.3.4 控制
 
 &emsp;&emsp;井场设备控制及视频显示。
 
-![](https://github.com/cosog-chentr/apmd/blob/master/Image/PNG/009.png?raw=true)
+![控制](https://github.com/cosog-chentr/apmd/blob/master/Image/PNG/009.png?raw=true)
 
 ## 2.4 全天评价
 
 &emsp;&emsp;根据全天的采集数据与分析结果对单井进行全天评价。
 
-![](https://github.com/cosog-chentr/apmd/blob/master/Image/PNG/010.png?raw=true)  
+![统计](https://github.com/cosog-chentr/apmd/blob/master/Image/PNG/010.png?raw=true)  
 
-![](https://github.com/cosog-chentr/apmd/blob/master/Image/PNG/011.png?raw=true)
+![目标井](https://github.com/cosog-chentr/apmd/blob/master/Image/PNG/011.png?raw=true)
 
 ## 2.5 生产报表
 
-![](https://github.com/cosog-chentr/apmd/blob/master/Image/PNG/013.png?raw=true)
+![生产报表](https://github.com/cosog-chentr/apmd/blob/master/Image/PNG/013.png?raw=true)
 
 ## 2.6 图形查询
 
 &emsp;&emsp;默认显示所有井最新地面功图，选择某一口井显示该井历史地面功图。
 
-![](https://github.com/cosog-chentr/apmd/blob/master/Image/PNG/014.png?raw=true)
+![图形查询](https://github.com/cosog-chentr/apmd/blob/master/Image/PNG/014.png?raw=true)
 
 ## 2.7 权限管理
 
@@ -217,7 +217,7 @@
 
 1. 使用系统管理员账号登录系统。  
 2. 进入**单位管理**模块创建单位组织。如模拟油田公司—模拟采油厂—四矿。  
-3. 点击![](https://github.com/cosog-chentr/apmd/blob/master/Image/PNG/015.png?raw=true)，创建模拟油田公司；填写完成后，点击![](https://github.com/cosog-chentr/apmd/blob/master/Image/PNG/016.png?raw=true)，完成创建。  
+3. 点击![创建](https://github.com/cosog-chentr/apmd/blob/master/Image/PNG/015.png?raw=true)，创建模拟油田公司；填写完成后，点击![保存](https://github.com/cosog-chentr/apmd/blob/master/Image/PNG/016.png?raw=true)，完成创建。  
 >- 上级单位：由于模拟油田公司为根节点，上级单位不选择；  
 >- 单位类别：按实际选择，局级；  
 >- 单位名称：模拟油田公司；  
@@ -229,30 +229,30 @@
 >- 单位名称：模拟采油厂。  
 5. 依次完成各级单位组织创建。
 
-![](https://github.com/cosog-chentr/apmd/blob/master/Image/GIF/002.gif?raw=true)  
+![创建模拟油田公司](https://github.com/cosog-chentr/apmd/blob/master/Image/GIF/002.gif?raw=true)  
 
-![](https://github.com/cosog-chentr/apmd/blob/master/Image/GIF/003.gif?raw=true)
+![创建模拟采油厂](https://github.com/cosog-chentr/apmd/blob/master/Image/GIF/003.gif?raw=true)
 
 ### 2.7.2 用户管理
 
-&emsp;&emsp;接下来进入**用户管理**模块，为不同的单位组织创建用户。点击![](https://github.com/cosog-chentr/apmd/blob/master/Image/PNG/015.png?raw=true)，创建新用户；填写完成后，点击![](https://github.com/cosog-chentr/apmd/blob/master/Image/PNG/016.png?raw=true)，完成创建。  
+&emsp;&emsp;接下来进入**用户管理**模块，为不同的单位组织创建用户。点击![创建](https://github.com/cosog-chentr/apmd/blob/master/Image/PNG/015.png?raw=true)，创建新用户；填写完成后，点击![保存](https://github.com/cosog-chentr/apmd/blob/master/Image/PNG/016.png?raw=true)，完成创建。  
 >- 单位名称：选择已创建的单位组织，确定组织的用户登录后，只能看到该组织及该组织的下属单位对应的信息；  
 >- 角色：包括数据管理、数据分析、系统管理等，不同的角色拥有不同的权限;  
 >- 用户名称、用户账号、用户密码：按实际填写;
 >- 用户电话、内部邮箱：可不填写;  
 >- 快捷登录：在登录界面是否可以免密登录，一般用于数据查询人员。
 
-![](https://github.com/cosog-chentr/apmd/blob/master/Image/GIF/004.gif?raw=true)
+![创建用户](https://github.com/cosog-chentr/apmd/blob/master/Image/GIF/004.gif?raw=true)
 
 ### 2.7.3 角色管理
 
 &emsp;&emsp;进入**角色管理**模块，创建不同的角色，通过权限授予为不同的角色设置模块访问权限。系统内置多个角色，如数据管理、数据分析、系统管理（系统管理员用户，不可修改）等。  
-1. 点击![](https://github.com/cosog-chentr/apmd/blob/master/Image/PNG/015.png?raw=true)，创建新角色。  
+1. 点击![创建](https://github.com/cosog-chentr/apmd/blob/master/Image/PNG/015.png?raw=true)，创建新角色。  
 >- 角色名称：自定义，便于识别角色；  
 >- 角色编码：自定义，用于开发人员识别，用户不会用到；  
 >- 角色描述：角色具体功能描述。
 
-2. 在右侧权限角色授予界面为新角色配置可访问的模块，点击![](https://github.com/cosog-chentr/apmd/blob/master/Image/PNG/016.png?raw=true)，完成权限授予。 
+2. 在右侧权限角色授予界面为新角色配置可访问的模块，点击![保存](https://github.com/cosog-chentr/apmd/blob/master/Image/PNG/033.png?raw=true)，完成权限授予。 
 
 ## 2.8 数据配置
 
@@ -289,7 +289,7 @@
 
 #### 2.8.1.3 修改井名
 
-&emsp;&emsp;在列表中修改井名，完成后点击“修改井名”按钮。  
+&emsp;&emsp;在列表中修改井名，完成后点击![修改井名](https://github.com/cosog-chentr/apmd/blob/master/Image/PNG/012.png?raw=true)。  
 **注意：**  
 **（1）不要删除修改井，再重新录入新井，会导致历史数据丢失；**  
 **（2）修改完成后，点击“修改井名”按钮，不要点击“保存”按钮。**
@@ -298,7 +298,7 @@
 
 #### 2.8.1.4 删除数据
 
-&emsp;&emsp;选中一行或多行，右键，选择删除行，然后点击“保存”按钮。
+&emsp;&emsp;选中一行或多行，右键，选择删除行，然后点击![保存](https://github.com/cosog-chentr/apmd/blob/master/Image/PNG/033.png?raw=true)。
 
 ![删除数据](https://github.com/cosog-chentr/apmd/blob/master/Image/GIF/007.gif?raw=true)
 
@@ -345,7 +345,7 @@
 >- 变频设备频率；  
 >- 数字抽油机参数：远程调节触发控制、平衡计算方式、重心远离支点调节时间、重心接近支点调节时间、参与平衡计算冲程次数、平衡调节上限、平衡调节下限、重心远离支点每拍调节时间、重心接近支点每拍调节时间。
 
-&emsp;&emsp;点击![创建](https://github.com/cosog-chentr/apmd/blob/master/Image/PNG/015.png?raw=true)创建采控类型，如类型名称“类型一”，类型编码“type1”，类型描述“抽油机全部数据”，创建完成后，在右侧列表中勾选实际采集项和控制项，点击![保存](https://github.com/cosog-chentr/apmd/blob/master/Image/PNG/016.png?raw=true)完成配置。后续在**井名信息**模块数据录入时按照单井实际采控项选择不同的采控类型。
+&emsp;&emsp;点击![创建](https://github.com/cosog-chentr/apmd/blob/master/Image/PNG/015.png?raw=true)创建采控类型，如类型名称“类型一”，类型编码“type1”，类型描述“抽油机全部数据”，创建完成后，在右侧列表中勾选实际采集项和控制项，点击![保存](https://github.com/cosog-chentr/apmd/blob/master/Image/PNG/033.png?raw=true)完成配置。后续在**井名信息**模块数据录入时按照单井实际采控项选择不同的采控类型。
 
 ![采控配置](https://github.com/cosog-chentr/apmd/blob/master/Image/PNG/017.png?raw=true)
 
