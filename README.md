@@ -40,27 +40,27 @@
 ## 1.2 环境要求
 
 **1.Web服务器**  
->- CPU：4核或以上  
->- 内存：8G或以上  
->- 硬盘：500G或以上  
->- 操作系统：建议Windows server 2012 64位  
->- 数据库：Oracle 11g或以上  
->- JDK：8.0或以上  
->- Tomcat:9.0或以上
+>- CPU：2核及以上  
+>- 内存：8G及以上  
+>- 硬盘：500G及以上  
+>- 操作系统：建议Windows server 2012 64位及以上  
+>- 数据库：Oracle 11g及以上  
+>- JDK：8.0及以上  
+>- Tomcat:9.0及以上
 
 **2.云计算服务器**
 
->- CPU：4核或以上  
->- 内存：8G或以上  
->- 硬盘：80G或以上  
->- 操作系统：建议Ubuntu server 16.04或以上
+>- CPU：2核及以上  
+>- 内存：8G及以上  
+>- 硬盘：80G及以上  
+>- 操作系统：建议Ubuntu server 16.04及以上
 
 ## 1.3 驱动说明
 
 **1.中石油标准**  
-&emsp;&emsp;支持中石油标准驱动及拓展驱动  
+&emsp;&emsp;支持中石油A11标准及拓展驱动  
 **2.中石化标准**  
-&emsp;&emsp;支持中石化标准驱动及拓展驱动
+&emsp;&emsp;支持中石化“四化”标准及拓展驱动
 
 ## 1.4 授权说明
 
@@ -79,7 +79,7 @@
 
 &emsp;&emsp;**浏览器要求：建议谷歌浏览器、360浏览器极速模式、IE9以上版本**
 
-![登录首页](https://github.com/cosog-chentr/apmd/blob/master/Image/PNG/002.png?raw=true)
+![登录首页](./Image/PNG/002.png?raw=true)
 
 
 ## 2.2 页面布局
@@ -187,7 +187,7 @@
 
 #### 2.3.3.4 控制
 
-&emsp;&emsp;井场设备控制及视频显示。
+&emsp;&emsp;井场视频显示及设备控制，**支持数字化抽油机平衡控制和频率控制**。
 
 ![控制](https://github.com/cosog-chentr/apmd/blob/master/Image/PNG/009.png?raw=true)
 
