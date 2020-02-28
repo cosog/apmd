@@ -1,4 +1,4 @@
-----:link::link:[**转至数据库文档**](./database/README.md)----  
+----:link:[**转至数据库文档**](./database/README.md):link:----  
 
 # 《油气生产敏捷计算分析系统V7.1》用户手册
 
