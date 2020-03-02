@@ -1,4 +1,4 @@
-----:link:[**转至数据库文档**](./database/README.md):link:----  
+----:link:[**转至数据库文档**](./database/):link:----  
 
 # 《油气生产敏捷计算分析系统V7.1》用户手册
 
@@ -92,11 +92,11 @@
 >4. 统计区：井信息统计图表；  
 >5. 单井数据区：单井分析、采集及控制详细信息。
 
-&emsp;&emsp;通过点击界面中缝位置的图标![伸缩按钮](https://github.com/cosog-chentr/apmd/blob/master/Image/PNG/025.png?raw=true)或![伸缩按钮](https://github.com/cosog-chentr/apmd/blob/master/Image/PNG/026.png?raw=true)可实现界面伸缩。
+&emsp;&emsp;通过点击界面中缝位置的图标![伸缩按钮](./Image/PNG/025.png?raw=true)或![伸缩按钮](./Image/PNG/026.png?raw=true)可实现界面伸缩。
 
-![页面布局](https://github.com/cosog-chentr/apmd/blob/master/Image/PNG/003.png?raw=true)
+![页面布局](./Image/PNG/003.png?raw=true)
 
-![列表伸缩](https://github.com/cosog-chentr/apmd/blob/master/Image/GIF/001.gif?raw=true)
+![列表伸缩](./Image/GIF/001.gif?raw=true)
 
 ## 2.3 实时评价
 
@@ -108,7 +108,7 @@
 >2. 统计子标签：各主标签包含的子项，如平衡包括电流平衡和功率平衡；  
 >3. 统计表/图：根据选择的主标签、子标签显示相关统计信息。
 
-![统计](https://github.com/cosog-chentr/apmd/blob/master/Image/PNG/004.png?raw=true)
+![统计](./Image/PNG/004.png?raw=true)
 
 ### 2.3.2 目标井
 
@@ -118,13 +118,13 @@
 >3. 右侧单井详情中显示该井的详细信息；  
 >4. 选择一行后点击**查看历史**或**双击**该行可查看该井的历史信息。
 
-![目标井](https://github.com/cosog-chentr/apmd/blob/master/Image/PNG/005.png?raw=true)
+![目标井](./Image/PNG/005.png?raw=true)
 
 ### 2.3.3 单井数据
 
 &emsp;&emsp;包括图形及分析、采集、控制。
 
-![单井数据](https://github.com/cosog-chentr/apmd/blob/master/Image/PNG/006.png?raw=true)
+![单井数据](./Image/PNG/006.png?raw=true)
 
 #### 2.3.3.1 图形
 
@@ -140,7 +140,7 @@
 > （5）最小载荷  
 &emsp;&emsp;功图最小载荷  
 
-![地面功图](https://github.com/cosog-chentr/apmd/blob/master/Image/PNG/027.png?raw=true) 
+![地面功图](./Image/PNG/027.png?raw=true) 
 
 **2. 泵功图**  
 &emsp;&emsp;从上至下依次为：  
@@ -148,7 +148,7 @@
 > （2）二级杆顶端功图  
 > （3）泵功图  
 
-![泵功图](https://github.com/cosog-chentr/apmd/blob/master/Image/PNG/028.png?raw=true)
+![泵功图](./Image/PNG/028.png?raw=true)
 
 **3. 杆柱应力**  
 &emsp;&emsp;根据杆柱组合，分析各级杆柱的受力情况，判断杆柱组合是否合理。  
@@ -156,60 +156,60 @@
 > （2）二级杆顶端应力百分比  
 > （3）应力百分比=最大应力/许用应力  
 
-![杆柱应力图](https://github.com/cosog-chentr/apmd/blob/master/Image/PNG/029.png?raw=true)
+![杆柱应力图](./Image/PNG/029.png?raw=true)
 
 **4. 泵效组成**  
 &emsp;&emsp;泵的实际排量与泵的理论排量之比的百分数称为泵效。
 
-![泵效组成图](https://github.com/cosog-chentr/apmd/blob/master/Image/PNG/030.png?raw=true)
+![泵效组成图](./Image/PNG/030.png?raw=true)
 
 **5. 电流平衡度**
 
 &emsp;&emsp;电流平衡度计算：  
 &emsp;&emsp;电流平衡度=下冲程电流最大值/上冲程电流最大值  
-![电流图](https://github.com/cosog-chentr/apmd/blob/master/Image/PNG/031.png?raw=true)
+![电流图](./Image/PNG/031.png?raw=true)
 
 **6. 功率平衡度**
 
 &emsp;&emsp;电功图是电的有功功率图，功率平衡度计算：  
 &emsp;&emsp;功率平衡度=下冲程有功功率最大值/上冲程有功功率最大值  
-![电功图](https://github.com/cosog-chentr/apmd/blob/master/Image/PNG/032.png?raw=true)
+![电功图](./Image/PNG/032.png?raw=true)
 
 #### 2.3.3.2 分析
 
 &emsp;&emsp;显示计算分析结果参数及曲线，包括产量构成、泵效、系统效率、泵出入口参数等。
 
-![分析](https://github.com/cosog-chentr/apmd/blob/master/Image/PNG/007.png?raw=true)
+![分析](./Image/PNG/007.png?raw=true)
 
 #### 2.3.3.3 采集
 
 &emsp;&emsp;显示传感器采集数据及曲线，包括通信状态、运行状态、油（套）压、电参数等。
 
-![采集](https://github.com/cosog-chentr/apmd/blob/master/Image/PNG/008.png?raw=true)
+![采集](./Image/PNG/008.png?raw=true)
 
 #### 2.3.3.4 控制
 
 &emsp;&emsp;井场视频显示及设备控制，**支持数字化抽油机平衡控制和频率控制**。
 
-![控制](https://github.com/cosog-chentr/apmd/blob/master/Image/PNG/009.png?raw=true)
+![控制](./Image/PNG/009.png?raw=true)
 
 ## 2.4 全天评价
 
 &emsp;&emsp;根据全天的采集数据与分析结果对单井进行全天评价。
 
-![统计](https://github.com/cosog-chentr/apmd/blob/master/Image/PNG/010.png?raw=true)  
+![统计](./Image/PNG/010.png?raw=true)  
 
-![目标井](https://github.com/cosog-chentr/apmd/blob/master/Image/PNG/011.png?raw=true)
+![目标井](./Image/PNG/011.png?raw=true)
 
 ## 2.5 生产报表
 
-![生产报表](https://github.com/cosog-chentr/apmd/blob/master/Image/PNG/013.png?raw=true)
+![生产报表](./Image/PNG/013.png?raw=true)
 
 ## 2.6 图形查询
 
 &emsp;&emsp;默认显示所有井最新地面功图，选择某一口井显示该井历史地面功图。
 
-![图形查询](https://github.com/cosog-chentr/apmd/blob/master/Image/PNG/014.png?raw=true)
+![图形查询](./Image/PNG/014.png?raw=true)
 
 ## 2.7 权限管理
 
@@ -219,7 +219,7 @@
 
 1. 使用系统管理员账号登录系统。  
 2. 进入**单位管理**模块创建单位组织。如模拟油田公司—模拟采油厂—四矿。  
-3. 点击![创建按钮](https://github.com/cosog-chentr/apmd/blob/master/Image/PNG/015.png?raw=true)，创建模拟油田公司；填写完成后，点击![保存按钮](https://github.com/cosog-chentr/apmd/blob/master/Image/PNG/016.png?raw=true)，完成创建。  
+3. 点击![创建按钮](./Image/PNG/015.png?raw=true)，创建模拟油田公司；填写完成后，点击![保存按钮](./Image/PNG/016.png?raw=true)，完成创建。  
 >- 上级单位：由于模拟油田公司为根节点，上级单位不选择；  
 >- 单位类别：按实际选择，局级；  
 >- 单位名称：模拟油田公司；  
@@ -231,32 +231,32 @@
 >- 单位名称：模拟采油厂。  
 5. 依次完成各级单位组织创建。
 
-![创建模拟油田公司](https://github.com/cosog-chentr/apmd/blob/master/Image/GIF/002.gif?raw=true)  
+![创建模拟油田公司](./Image/GIF/002.gif?raw=true)  
 
-![创建模拟采油厂](https://github.com/cosog-chentr/apmd/blob/master/Image/GIF/003.gif?raw=true)
+![创建模拟采油厂](./Image/GIF/003.gif?raw=true)
 
 ### 2.7.2 用户管理
 
-&emsp;&emsp;接下来进入**用户管理**模块，为不同的单位组织创建用户。点击![创建按钮](https://github.com/cosog-chentr/apmd/blob/master/Image/PNG/015.png?raw=true)，创建新用户；填写完成后，点击![保存按钮](https://github.com/cosog-chentr/apmd/blob/master/Image/PNG/016.png?raw=true)，完成创建。  
+&emsp;&emsp;接下来进入**用户管理**模块，为不同的单位组织创建用户。点击![创建按钮](./Image/PNG/015.png?raw=true)，创建新用户；填写完成后，点击![保存按钮](./Image/PNG/016.png?raw=true)，完成创建。  
 >- 单位名称：选择已创建的单位组织，确定组织的用户登录后，只能看到该组织及该组织的下属单位对应的信息；  
 >- 角色：包括数据管理、数据分析、系统管理等，不同的角色拥有不同的权限;  
 >- 用户名称、用户账号、用户密码：按实际填写;
 >- 用户电话、内部邮箱：可不填写;  
 >- 快捷登录：在登录界面是否可以免密登录，一般用于数据查询人员。
 
-![创建用户](https://github.com/cosog-chentr/apmd/blob/master/Image/GIF/004.gif?raw=true)
+![创建用户](./Image/GIF/004.gif?raw=true)
 
 ### 2.7.3 角色管理
 
 &emsp;&emsp;进入**角色管理**模块，创建不同的角色，通过权限授予为不同的角色设置模块访问权限。系统内置多个角色，如数据管理、数据分析、系统管理（系统管理员用户，不可修改）等。  
-1. 点击![创建按钮](https://github.com/cosog-chentr/apmd/blob/master/Image/PNG/015.png?raw=true)，创建新角色。  
+1. 点击![创建按钮](./Image/PNG/015.png?raw=true)，创建新角色。  
 >- 角色名称：自定义，便于识别角色；  
 >- 角色编码：自定义，用于开发人员识别，用户不会用到；  
 >- 角色描述：角色具体功能描述。
 
-2. 在右侧权限角色授予界面为新角色配置可访问的模块，点击![保存按钮](https://github.com/cosog-chentr/apmd/blob/master/Image/PNG/033.png?raw=true)，完成权限授予。  
+2. 在右侧权限角色授予界面为新角色配置可访问的模块，点击![保存按钮](./Image/PNG/033.png?raw=true)，完成权限授予。  
 
-![创建用户](https://github.com/cosog-chentr/apmd/blob/master/Image/PNG/034.png?raw=true)
+![创建用户](./Image/PNG/034.png?raw=true)
 
 ## 2.8 数据配置
 
@@ -289,22 +289,22 @@
 **（1）录入时需要先在组织导航中选择录入井所在的组织，如四矿；否则会提示“请先选择组织节点”。**  
 **（2）复制时序号列不要复制。**
 
-![井名信息录入](https://github.com/cosog-chentr/apmd/blob/master/Image/GIF/005.gif?raw=true)
+![井名信息录入](./Image/GIF/005.gif?raw=true)
 
 #### 2.8.1.3 修改井名
 
-&emsp;&emsp;在列表中修改井名，完成后点击![修改井名按钮](https://github.com/cosog-chentr/apmd/blob/master/Image/PNG/012.png?raw=true)。  
+&emsp;&emsp;在列表中修改井名，完成后点击![修改井名按钮](./Image/PNG/012.png?raw=true)。  
 **注意：**  
 **（1）不要删除修改井，再重新录入新井，会导致历史数据丢失；**  
 **（2）修改完成后，点击“修改井名”按钮，不要点击“保存”按钮。**
 
-![修改井名](https://github.com/cosog-chentr/apmd/blob/master/Image/GIF/006.gif?raw=true)
+![修改井名](./Image/GIF/006.gif?raw=true)
 
 #### 2.8.1.4 删除数据
 
-&emsp;&emsp;选中一行或多行，右键，选择删除行，然后点击![保存按钮](https://github.com/cosog-chentr/apmd/blob/master/Image/PNG/033.png?raw=true)。
+&emsp;&emsp;选中一行或多行，右键，选择删除行，然后点击![保存按钮](./Image/PNG/033.png?raw=true)。
 
-![删除数据](https://github.com/cosog-chentr/apmd/blob/master/Image/GIF/007.gif?raw=true)
+![删除数据](./Image/GIF/007.gif?raw=true)
 
 ### 2.8.2 生产数据
 
@@ -330,7 +330,7 @@
 
 &emsp;&emsp;收集完成后，复制粘贴到模块中。粘贴时无需按照模块列表中井顺序调整Excel表，直接粘贴保存即可。
 
-![生产数据录入](https://github.com/cosog-chentr/apmd/blob/master/Image/GIF/008.gif?raw=true)
+![生产数据录入](./Image/GIF/008.gif?raw=true)
 
 ### 2.8.3 采控配置
 
@@ -349,9 +349,9 @@
 >- 变频设备频率；  
 >- **数字抽油机参数**：远程调节触发控制、平衡计算方式、重心远离支点调节时间、重心接近支点调节时间、参与平衡计算冲程次数、平衡调节上限、平衡调节下限、重心远离支点每拍调节时间、重心接近支点每拍调节时间。
 
-&emsp;&emsp;点击![创建按钮](https://github.com/cosog-chentr/apmd/blob/master/Image/PNG/015.png?raw=true)创建采控类型，如类型名称“类型一”，类型编码“type1”，类型描述“抽油机全部数据”，创建完成后，在右侧列表中勾选实际采集项和控制项，点击![保存按钮](https://github.com/cosog-chentr/apmd/blob/master/Image/PNG/033.png?raw=true)完成配置。后续在**井名信息**模块数据录入时按照单井实际采控项选择不同的采控类型。
+&emsp;&emsp;点击![创建按钮](./Image/PNG/015.png?raw=true)创建采控类型，如类型名称“类型一”，类型编码“type1”，类型描述“抽油机全部数据”，创建完成后，在右侧列表中勾选实际采集项和控制项，点击![保存按钮](./Image/PNG/033.png?raw=true)完成配置。后续在**井名信息**模块数据录入时按照单井实际采控项选择不同的采控类型。
 
-![采控配置](https://github.com/cosog-chentr/apmd/blob/master/Image/PNG/017.png?raw=true)
+![采控配置](./Image/PNG/017.png?raw=true)
 
 ### 2.8.4 计算维护
 
@@ -371,7 +371,7 @@
 &emsp;&emsp;例如：修改S68112井，2019年2月24号全部功图采集时间的泵径数据并重新计算。  
 &emsp;&emsp;操作：井名中选择S68112，时间范围选择2019-02-24至2019-02-24，列表中将泵径38mm修改为44mm，点击“修改数据计算”按钮。
 
-![修改数据计算](https://github.com/cosog-chentr/apmd/blob/master/Image/PNG/018.png?raw=true)
+![修改数据计算](./Image/PNG/018.png?raw=true)
 
 **2. 关联数据计算**  
 &emsp;&emsp;利用生产数据表中的最新生产数据对某口井或所有井某个时间段内的所有历史结果进行重新计算。  
@@ -379,13 +379,13 @@
 &emsp;&emsp;例如：修改S68112井，2019年1月24日至2019年2月24日内的所有历史结果。  
 &emsp;&emsp;操作：“生产数据”模块中已录入最新生产数据，“计算维护”模块中井名选择S68112，时间范围2019-01-24至2019-02-24，点击“关联数据计算”。弹出操作确认对话框，确认无误后点击“是”。这时，S68112井2019年1月24日至2019年2月24日的所有历史数据将按最新的生产数据进行重新计算。
 
-![单井关联数据计算](https://github.com/cosog-chentr/apmd/blob/master/Image/PNG/019.png?raw=true)
+![单井关联数据计算](./Image/PNG/019.png?raw=true)
 
 （2） 所有井关联数据计算  
 &emsp;&emsp;例如：单位组织下所有井，2019年1月24日至2019年2月24日内的所有历史结果。  
 &emsp;&emsp;操作：“生产数据”模块中已录入最新生产数据，“计算维护”模块中井名不选择或选择全部，时间范围2019-01-24至2019-02-24，点击“关联数据计算”。弹出操作确认对话框，确认无误后点击“是”。这时，所有井2019年1月24日至2019年2月24日的所有历史数据将按最新的生产数据进行重新计算。
 
-![所有井关联数据计算](https://github.com/cosog-chentr/apmd/blob/master/Image/PNG/020.png?raw=true)
+![所有井关联数据计算](./Image/PNG/020.png?raw=true)
 
 ## 2.9 系统配置
 
@@ -393,22 +393,22 @@
 
 &emsp;&emsp;对模块进行编辑，生成功能导航，控制功能模块显示、隐藏等。
 
-![系统配置](https://github.com/cosog-chentr/apmd/blob/master/Image/PNG/021.png?raw=true)
+![系统配置](./Image/PNG/021.png?raw=true)
 
 ### 2.9.2 字典配置
 
 &emsp;&emsp;对各模块显示的字段进行管理，主要修改字段名称、显示顺序、是否显示等。
 
-![字典配置](https://github.com/cosog-chentr/apmd/blob/master/Image/PNG/022.png?raw=true)
+![字典配置](./Image/PNG/022.png?raw=true)
 
 ### 2.9.3 统计配置
 
 &emsp;&emsp;配置各项参数的统计级别。
 
-![统计配置](https://github.com/cosog-chentr/apmd/blob/master/Image/PNG/023.png?raw=true)
+![统计配置](./Image/PNG/023.png?raw=true)
 
 ### 2.9.4 报警配置
 
 &emsp;&emsp;设置工况类型的报警类型、报警项、级别、开关、颜色等。
 
-![报警配置](https://github.com/cosog-chentr/apmd/blob/master/Image/PNG/024.png?raw=true)
+![报警配置](./Image/PNG/024.png?raw=true)
