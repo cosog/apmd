@@ -500,7 +500,7 @@
 
 | **序号** | **代码**                      | **名称**                 | **单位**    | **类型**       | **为空**     | **键** |
 |----------|-------------------------------|--------------------------|-------------|----------------|--------------|--------|
-| 1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    | id    | 记录编号         |             | NUMBER(10)     | N&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | 主键   |
+| 1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    | id    | 记录编号         |             | NUMBER(10)     | N&nbsp;&nbsp;&nbsp;&nbsp; | 主键   |
 | 2        | wellid                        | 井编号                   |             | NUMBER(10)     | Y            | 外键   | 
 | 3        | calculatedate                 | 计算时间                 |             | DATE           | Y            |        | 
 | 4        | commstatus                    | 通信状态                 |             | NUMBER(2)      | Y            |        | 
