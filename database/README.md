@@ -1,6 +1,60 @@
 ----:link:[**转至用户手册**](.././README.md):link:----  
 
-# 《油气生产敏捷计算分析系统V7.1》 数据库手册
+# 《油气生产敏捷计算分析系统V7.1》 数据库手册  
+
+- [一、表](README.md#一表)
+   - [1.1 表概览](README11.md#11-表概览)
+   - [1.2 逻辑结构](README.md#12-逻辑结构)
+   - [1.3 详述](README.md#13-详述)
+     - [1.3.1 tbl_org 组织数据表](README.md#131-tbl_org-组织数据表)
+     - [1.3.2 tbl_user 用户数据表](README.md#132-tbl_user-用户数据表)
+     - [1.3.3 tbl_role 角色数据表](README.md#133-tbl_role-角色数据表)
+     - [1.3.4 tbl_module 模块数据表](README.md#134-tbl_module-模块数据表)
+     - [1.3.5 tbl_module2role 模块角色关系表](README.md#135-tbl_module2role-模块角色关系表)
+     - [1.3.6 tbl_dist_name 字典名称表](README.md#136-tbl_dist_name-字典名称表)
+     - [1.3.7 tbl_dist_item 字典数据项表](README.md#137-tbl_dist_item-字典数据项表)
+     - [1.3.8 tbl_code 代码表](README.md#138-tbl_code-代码表)
+     - [1.3.9 tbl_acq_group_conf 采控组名称表](README.md#139-tbl_acq_group_conf-采控组名称表)
+     - [1.3.10 tbl_acq_item_conf 采控项名称表](README.md#1310-tbl_acq_item_conf-采控项名称表)
+     - [1.3.11 tbl_acq_item2group_conf 采控组项关系表](README.md#1311-tbl_acq_item2group_conf-采控组项关系表)
+     - [1.3.12 tbl_wellinformation 井名基本信息表](README.md#1312-tbl_wellinformation-井名基本信息表)
+     - [1.3.13 tbl_trajectory 井身轨迹表](README.md#1313-tbl_trajectory-井身轨迹表)
+     - [1.3.14 tbl_rpc_productiondata_latest 抽油机生产数据实时表](README.md#1314-tbl_rpc_productiondata_latest-抽油机生产数据实时表)
+     - [1.3.15 tbl_rpc_productiondata_hist 抽油机生产数据历史表](README.md#1315-tbl_rpc_productiondata_hist-抽油机生产数据历史表)
+     - [1.3.16 tbl_rpc_discrete_latest 抽油机离散数据实时表](README.md#1316-tbl_rpc_discrete_latest-抽油机离散数据实时表)
+     - [1.3.17 tbl_rpc_discrete_hist 抽油机离散数据历史表](README.md#1317-tbl_rpc_discrete_hist-抽油机离散数据历史表)
+     - [1.3.18 tbl_rpc_diagram_latest 抽油机曲线数据实时表](README.md#1318-tbl_rpc_diagram_latest-抽油机曲线数据实时表)
+     - [1.3.19 tbl_rpc_diagram_hist 抽油机曲线数据历史表](README.md#1319-tbl_rpc_diagram_hist-抽油机曲线数据历史表)
+     - [1.3.20 tbl_rpc_worktype 抽油机工况类型表](README.md#1320-tbl_rpc_worktype-抽油机工况类型表)
+     - [1.3.21 tbl_rpc_alarmtype_conf 抽油机报警类型表](README.md#1321-tbl_rpc_alarmtype_conf-抽油机报警类型表)
+     - [1.3.22 tbl_rpc_total_day 抽油机日累计数据表](README.md#1322-tbl_rpc_total_day-抽油机日累计数据表)
+     - [1.3.23 tbl_rpc_statistics_conf 抽油机统计配置表](README.md#1323-tbl_rpc_statistics_conf-抽油机统计配置表)
+     - [1.3.24 tbl_rpcinformation 抽油机设备表](README.md#1324-tbl_rpcinformation-抽油机设备表)
+     - [1.3.25 tbl_rpc_motor 抽油机电机数据表](README.md#1325-tbl_rpc_motor-抽油机电机数据表)
+     - [1.3.26 tbl_rpc_inver_opt 抽油机电参反演参数优化表](README.md#1326-tbl_rpc_inver_opt-抽油机电参反演参数优化表)
+- [二、视图](README.md#二视图) 
+   - [2.1 视图概览](README.md#21-视图概览)
+   - [2.2 详述](README.md#22-详述)
+     - [2.2.1 viw_wellinformation 井名信息视图](README.md#221-viw_wellinformation-井名信息视图)
+     - [2.2.2 viw_rpc_productiondata_latest 抽油机生产数据实时视图](README.md#222-viw_rpc_productiondata_latest-抽油机生产数据实时视图)  
+     - [2.2.3 viw_rpc_productiondata_hist 抽油机生产数据历史视图](README.md#223-viw_rpc_productiondata_hist-抽油机生产数据历史视图)
+     - [2.2.4 viw_commstatus 通信状态视图](README.md#224-viw_commstatus-通信状态视图)
+     - [2.2.5 viw_rpc_diagram_latest 抽油机曲线数据实时视图](README.md#225-viw_rpc_diagram_latest-抽油机曲线数据实时视图)
+     - [2.2.6 viw_rpc_diagram_hist 抽油机曲线数据历史视图](README.md#226-viw_rpc_diagram_hist-抽油机曲线数据历史视图)
+     - [2.2.7 viw_rpc_discrete_latest 抽油机电参数据实时视图](README.md#227-viw_rpc_discrete_latest-抽油机电参数据实时视图)
+     - [2.2.8 viw_rpc_discrete_hist 抽油机电参数据历史视图](README.md#228-viw_rpc_discrete_hist-抽油机电参数据历史视图)
+     - [2.2.9 viw_rpc_comprehensive_latest 抽油机综合数据实时视图](README.md#229-viw_rpc_comprehensive_latest-抽油机综合数据实时视图)
+     - [2.2.10 viw_rpc_comprehensive_hist 抽油机综合数据历史视图](README.md#2210-viw_rpc_comprehensive_hist-抽油机综合数据历史视图)
+     - [2.2.11 viw_rpc_diagramquery_latest 抽油机图形查询实时视图](README.md#2211-viw_rpc_diagramquery_latest-抽油机图形查询实时视图)
+     - [2.2.12 viw_rpc_diagramquery_hist 抽油机图形查询历史视图](README.md#2212-viw_rpc_diagramquery_hist-抽油机图形查询历史视图)
+     - [2.2.13 viw_rpc_total_day 抽油机日累计数据视图](README.md#2213-viw_rpc_total_day-抽油机日累计数据视图)
+     - [2.1.14 viw_rpc_calculatemain 抽油机计算结果管理视图](README.md#2114-viw_rpc_calculatemain-抽油机计算结果管理视图)
+- [三、存储过程](README.md#三存储过程)
+- [四、触发器](README.md#四触发器)  
+- [五、序列](README.md#五序列)  
+- [六、数据库创建](README.md#六数据库创建)
+   - [6.1 自建用户](README.md#61-自建用户)
+   - [6.2 已有用户](README.md#62-已有用户)
 
 # 一、表
 
@@ -686,8 +740,8 @@
 
 ### 1.3.25 tbl_rpc_motor 抽油机电机数据表
 
-| **序号** | **代码**           | **名称**   | **单位** | **类型**      | **为空**     | **键** | **备注** |
-|----------|--------------------|------------|----------|---------------|--------------|--------|----------|
+| **序号** | **代码**           | **名称**   | **单位** | **类型**      | **为空**     | **键** |
+|----------|--------------------|------------|----------|---------------|--------------|--------|
 | 1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      | id       | 记录编号   |          | NUMBER(10)    | N&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   | 主键   |
 | 2        | wellid             | 井编号     |          | NUMBER(10)    | N            | 外键   |
 | 3        | manufacturer       | 电机厂家   |          | VARCHAR2(200) | N            |        |
@@ -720,7 +774,7 @@
 
 | **序号** | **名称**                      | **描述**               |
 |----------|-------------------------------|------------------------|
-| 1        | viw_wellinformation           | 油井信息视图           |
+| 1        | viw_wellinformation           | 井名信息视图           |
 | 2        | viw_rpc_productiondata_latest | 抽油机生产数据实时视图 |
 | 3        | viw_rpc_productiondata_hist   | 抽油机生产数据历史视图 |
 | 4        | viw_commstatus                | 通信状态视图           |
@@ -737,7 +791,7 @@
 
 ## 2.2 详述
 
-### 2.2.1 viw_wellinformation 油井信息视图
+### 2.2.1 viw_wellinformation 井名信息视图
 
 | **序号** | **名称**                 | **代码**                   | **类型**      | **单位** | **备注** |
 |----------|--------------------------|----------------------------|---------------|----------|----------|
