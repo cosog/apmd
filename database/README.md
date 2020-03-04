@@ -273,11 +273,14 @@
 
 ### 1.3.13 tbl_trajectory 井身轨迹表
 
-| **序号** | **代码**     | **名称**   | **单位** | **类型**     | **为空**     | **键** |
-|----------|--------------|------------|----------|--------------|--------------|--------|
-| 1        |              |            |          |              |              |        |
-| 2        |              |            |          |              |              |        |
-| 3        |              |            |          |              |              |        |
+| **序号** | **代码**         | **名称**   | **单位** | **类型**     | **为空**     | **键** |
+|----------|-----------------|------------|----------|--------------|--------------|--------|
+| 1        | id              | 记录编号    |          | NUMBER(10)   | N            | 主键    |
+| 2        | wellid          | 井编号     |          | NUMBER(10)    | N            | 外键   |
+| 3        | measuringdepth  | 测量深度    | m        | CLOB         | Y            |        |
+| 4        | verticaldepth   | 垂直深度    | m        | CLOB         | Y            |        |
+| 5        | deviationangle  | 井斜角     | 度        | CLOB         | Y            |        |
+| 6        | azimuthangle    | 方位角     | 度        | CLOB         | Y            |        |
 
 ### 1.3.14 tbl_rpc_productiondata_latest 抽油机生产数据实时表
 
@@ -333,12 +336,12 @@
 | 2        | wellid                    | 井编号                       |          | NUMBER(10)     | N            | 外键   | 
 | 3        | acquisitiontime           | 采集时间                     |          | DATE           | Y            |        | 
 | 4        | commstatus                | 通信状态                     |          | NUMBER(2)      | Y            |        | 
-| 5        | commtime                  | 在线时间                     |          | NUMBER(8,2)    | Y            |        | 
+| 5        | commtime                  | 在线时间                     | h         | NUMBER(8,2)    | Y            |        | 
 | 6        | commtimeefficiency        | 在线时率                     |          | NUMBER(10,4)   | Y            |        | 
 | 7        | commrange                 | 在线区间                     |          | VARCHAR2(2000) | Y            |        | 
 | 8        | runstatus                 | 运行状态                     |          | NUMBER(2)      | Y            |        | 
 | 9        | runtimeefficiency         | 运行时率                     |          | NUMBER(10,4)   | Y            |        | 
-| 10       | runtime                   | 运行时间                     |          | NUMBER(8,2)    | Y            |        | 
+| 10       | runtime                   | 运行时间                     | h         | NUMBER(8,2)    | Y            |        | 
 | 11       | runrange                  | 运行区间                     |          | VARCHAR2(2000) | Y            |        | 
 | 12       | ia                        | A相电流                      | A        | NUMBER(8,2)    | Y            |        | 
 | 13       | ib                        | B相电流                      | A        | NUMBER(8,2)    | Y            |        | 
@@ -439,7 +442,7 @@
 |----------|------------------------------|----------------------|-------------|---------------|--------------|--------|
 | 1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   | id    | 记录编号     |             | NUMBER(10)    | N&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  | 主键   | 
 | 2        | wellid                       | 井编号               |             | NUMBER(10)    | N            | 外键   | 
-| 3        | acquisitiontime              | 测试时间             |             | DATE          | Y            |        | 
+| 3        | acquisitiontime              | 采集时间             |             | DATE          | Y            |        | 
 | 4        | stroke                       | 冲程                 | m           | NUMBER(8,2)   | Y            |        | 
 | 5        | spm                          | 冲次                 | 次/min      | NUMBER(8,2)   | Y            |        | 
 | 6        | fmax                         | 最大载荷             | kN          | NUMBER(8,2)   | Y            |        | 
@@ -501,12 +504,12 @@
 | 62       | pumpeff                      | 总泵效               | 小数        | NUMBER(12,3)  | Y            |        | 
 | 63       | pumpintakep                  | 泵入口压力           | MPa         | NUMBER(8,2)   | Y            |        | 
 | 64       | pumpintaket                  | 泵入口温度           | ℃           | NUMBER(8,2)   | Y            |        | 
-| 65       | pumpintakegol                | 泵入口就地气液比     |             | NUMBER(8,2)   | Y            |        | 
+| 65       | pumpintakegol                | 泵入口就地气液比     | m^3/m^3     | NUMBER(8,2)   | Y            |        | 
 | 66       | pumpinletvisl                | 泵入口液体粘度       | mPa·s       | NUMBER(8,2)   | Y            |        | 
 | 67       | pumpinletbo                  | 泵入口原油体积系数   | 小数        | NUMBER(8,2)   | Y            |        | 
 | 68       | pumpoutletp                  | 泵出口压力           | MPa         | NUMBER(8,2)   | Y            |        | 
 | 69       | pumpoutlett                  | 泵出口温度           | ℃           | NUMBER(8,2)   | Y            |        | 
-| 70       | pumpoutletgol                | 泵出口就地气液比     |             | NUMBER(8,2)   | Y            |        | 
+| 70       | pumpoutletgol                | 泵出口就地气液比     | m^3/m^3     | NUMBER(8,2)   | Y            |        | 
 | 71       | pumpoutletvisl               | 泵出口液体粘度       | mPa·s       | NUMBER(8,2)   | Y            |        | 
 | 72       | pumpoutletbo                 | 泵出口原油体积系数   | 小数        | NUMBER(8,2)   | Y            |        | 
 | 73       | rodstring                    | 抽油杆柱分析数据     |             | VARCHAR2(200) | Y            |        |
@@ -559,10 +562,10 @@
 | 3        | calculatedate                 | 计算时间                 |             | DATE           | Y            |        | 
 | 4        | commstatus                    | 通信状态                 |             | NUMBER(2)      | Y            |        | 
 | 5        | runstatus                     | 运行状态                 |             | NUMBER(2)      | Y            |        | 
-| 6        | commtime                      | 通信时间                 |             | NUMBER(8,2)    | Y            |        | 
+| 6        | commtime                      | 通信时间                 | h            | NUMBER(8,2)    | Y            |        | 
 | 7        | commtimeefficiency            | 通信时率                 |             | NUMBER(12,3)   | Y            |        | 
 | 8        | commrange                     | 通信区间                 |             | VARCHAR2(4000) | Y            |        | 
-| 9        | runtime                       | 运行时间                 |             | NUMBER(8,2)    | Y            |        | 
+| 9        | runtime                       | 运行时间                 | h            | NUMBER(8,2)    | Y            |        | 
 | 10       | runrange                      | 运行区间                 |             | VARCHAR2(4000) | Y            |        | 
 | 11       | runtimeefficiency             | 生产时率                 | 小数        | NUMBER(12,3)   | Y            |        | 
 | 12       | workingconditioncode          | 工况类型                 |             | NUMBER(4)      | Y            |        | 
@@ -584,12 +587,12 @@
 | 28       | liquidweightproduction        | 计算单井日产液量吨       | t/d         | NUMBER(8,2)    | Y            |        | 
 | 29       | oilweightproduction           | 计算单井日产油量吨       | t/d         | NUMBER(8,2)    | Y            |        | 
 | 30       | waterweightproduction         | 计算单井日产水量吨       | t/d         | NUMBER(8,2)    | Y            |        | 
-| 31       | liquidvolumetricproductionmax | 计算单井日产液量最大值方 | m\^3/d      | NUMBER(8,2)    | Y            |        | 
-| 32       | liquidvolumetricproductionmin | 计算单井日产液量最小值方 | m\^3/d      | NUMBER(8,2)    | Y            |        | 
-| 33       | oilvolumetricproductionmax    | 计算单井日产油量最大值方 | m\^3/d      | NUMBER(8,2)    | Y            |        | 
-| 34       | oilvolumetricproductionmin    | 计算单井日产油量最小值方 | m\^3/d      | NUMBER(8,2)    | Y            |        | 
-| 35       | watervolumetricproductionmax  | 计算单井日产水量最大值方 | m\^3/d      | NUMBER(8,2)    | Y            |        | 
-| 36       | watervolumetricproductionmin  | 计算单井日产水量最小值方 | m\^3/d      | NUMBER(8,2)    | Y            |        | 
+| 31       | liquidvolumetricproductionmax | 计算单井日产液量最大值方 | m^3/d      | NUMBER(8,2)    | Y            |        | 
+| 32       | liquidvolumetricproductionmin | 计算单井日产液量最小值方 | m^3/d      | NUMBER(8,2)    | Y            |        | 
+| 33       | oilvolumetricproductionmax    | 计算单井日产油量最大值方 | m^3/d      | NUMBER(8,2)    | Y            |        | 
+| 34       | oilvolumetricproductionmin    | 计算单井日产油量最小值方 | m^3/d      | NUMBER(8,2)    | Y            |        | 
+| 35       | watervolumetricproductionmax  | 计算单井日产水量最大值方 | m^3/d      | NUMBER(8,2)    | Y            |        | 
+| 36       | watervolumetricproductionmin  | 计算单井日产水量最小值方 | m^3/d      | NUMBER(8,2)    | Y            |        | 
 | 37       | liquidweightproductionmax     | 计算单井日产液量最大值吨 | t/d         | NUMBER(8,2)    | Y            |        | 
 | 38       | liquidweightproductionmin     | 计算单井日产液量最小值吨 | t/d         | NUMBER(8,2)    | Y            |        | 
 | 39       | oilweightproductionmax        | 计算单井日产油量最大值吨 | t/d         | NUMBER(8,2)    | Y            |        | 
@@ -620,9 +623,9 @@
 | 64       | wellheadfluidtemperature      | 井口油温                 | ℃           | NUMBER(8,2)    | Y            |        | 
 | 65       | wellheadfluidtemperaturemax   | 井口油温最大值           | ℃           | NUMBER(8,2)    | Y            |        | 
 | 66       | wellheadfluidtemperaturemin   | 井口油温最小值           | ℃           | NUMBER(8,2)    | Y            |        | 
-| 67       | productiongasoilratio         | 生产气油比               |             | NUMBER(8,2)    | Y            |        | 
-| 68       | productiongasoilratiomax      | 生产气油比最大值         |             | NUMBER(8,2)    | Y            |        | 
-| 69       | productiongasoilratiomin      | 生产气油比最小值         |             | NUMBER(8,2)    | Y            |        | 
+| 67       | productiongasoilratio         | 生产气油比               | m^3/t            | NUMBER(8,2)    | Y            |        | 
+| 68       | productiongasoilratiomax      | 生产气油比最大值         | m^3/t            | NUMBER(8,2)    | Y            |        | 
+| 69       | productiongasoilratiomin      | 生产气油比最小值         | m^3/t            | NUMBER(8,2)    | Y            |        | 
 | 70       | producingfluidlevel           | 动液面                   | m           | NUMBER(8,2)    | Y            |        | 
 | 71       | producingfluidlevelmax        | 动液面最大值             | m           | NUMBER(8,2)    | Y            |        | 
 | 72       | producingfluidlevelmin        | 动液面最小值             | m           | NUMBER(8,2)    | Y            |        | 
@@ -728,11 +731,11 @@
 | 4        | model                         | 抽油机型号       |          | VARCHAR2(200) | Y            |
 | 5        | stroke                        | 冲程             | m        | NUMBER(8,2)   | N            |
 | 6        | crankrotationdirection        | 旋转方向         |          | VARCHAR2(200) | N            |
-| 7        | offsetangleofcrank            | 曲柄偏置角       | °        | NUMBER(8,2)   | N            |
+| 7        | offsetangleofcrank            | 曲柄偏置角       | 度        | NUMBER(8,2)   | N            |
 | 8        | crankgravityradius            | 曲柄重心半径     | m        | NUMBER(10,4)  | N            |
 | 9        | singlecrankweight             | 单块曲柄重量     | kN       | NUMBER(8,2)   | N            |
 | 10       | structuralunbalance           | 结构不平衡重     | kN       | NUMBER(8,2)   | N            |
-| 11       | gearreducerratio              | 减速箱传动比     |          | NUMBER(10,4)  | N            |
+| 11       | gearreducerratio              | 减速箱传动比     | %         | NUMBER(10,4)  | N            |
 | 12       | gearreducerbeltpulleydiameter | 减速箱皮带轮直径 | m        | NUMBER(10,4)  | N            |
 | 13       | balanceposition               | 平衡块位置       | m        | VARCHAR2(200) | N            |
 | 14       | balanceweight                 | 平衡块重量       | kN       | VARCHAR2(200) | N            |
@@ -756,7 +759,7 @@
 |----------|-------------------------|----------------------|----------|--------------|--------------|--------|
 | 1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  | id        | 记录编号        |          | NUMBER(10)   | N&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| 主键   |
 | 2        | wellid                  | 井编号               |          | NUMBER(10)   | Y            | 外键   |
-| 3        | offsetangleofcrankps    | 曲柄位置开关偏置角   | °        | NUMBER(8,2)  | Y            |        |
+| 3        | offsetangleofcrankps    | 曲柄位置开关偏置角   | 度        | NUMBER(8,2)  | Y            |        |
 | 4        | surfacesystemefficiency | 地面效率             | 小数     | NUMBER(8,2)  | Y            |        |
 | 5        | fs_leftpercent          | 功图左侧截取百分比   | %        | NUMBER(8,2)  | Y            |        |
 | 6        | fs_rightpercent         | 功图又侧截取百分比   | %        | NUMBER(8,2)  | Y            |        |
@@ -766,7 +769,7 @@
 | 10       | filtertime_rpm          | 转速曲线滤波次数     |          | NUMBER(3)    | Y            |        |
 | 11       | filtertime_fsdiagram_l  | 地面功图左侧滤波次数 |          | NUMBER(3)    | Y            |        |
 | 12       | filtertime_fsdiagram_r  | 地面功图右侧滤波次数 |          | NUMBER(3)    | Y            |        |
-| 13       | wattangle               | 功率滤波角度         | °        | NUMBER(8,2)  | Y            |        |
+| 13       | wattangle               | 功率滤波角度         | 度        | NUMBER(8,2)  | Y            |        |
 
 # 二、视图
 
@@ -798,7 +801,7 @@
 | 1        | id                         | 记录编号             | NUMBER(10)    |          |
 | 2        | orgname                    | 组织名称             | VARCHAR2(100) |          |
 | 3        | orgid                      | 组织编号             | NUMBER(10)    |          |
-| 4        | resname                    | 油藏名称             | VARCHAR2(200) |          |
+| 4        | resname                    | 油气藏名称             | VARCHAR2(200) |          |
 | 5        | wellname                   | 井名                 | VARCHAR2(200) |          |
 | 6        | liftingtype                | 举升方式             | NUMBER(10)    |          |
 | 7        | driveraddr                 | 设备地址             | VARCHAR2(200) |          |
@@ -824,7 +827,7 @@
 | 3        | wellid                     | 井编号         | NUMBER(10)    |          |
 | 4        | liftingtype                | 举升类型       | NUMBER(10)    |          |
 | 5        | acquisitiontime            | 采集时间       | DATE          |          |
-| 6        | runtime                    | 运行时间       | NUMBER(8,2)   |          |
+| 6        | runtime                    | 运行时间       | NUMBER(8,2)   | h         |
 | 7        | crudeoildensity            | 原油密度       | NUMBER(16,2)  | g/cm^3  |
 | 8        | waterdensity               | 水密度         | NUMBER(16,2)  | g/cm^3  |
 | 9        | naturalgasrelativedensity  | 天然气相对密度 | NUMBER(16,2)  |          |
@@ -889,7 +892,7 @@
 | 10       | workingconditionname          | 工况名称             | VARCHAR2(200) |             |
 | 11       | optimizationsuggestion        | 优化建议             | VARCHAR2(200) |             |
 | 12       | workingconditionrunalarmlevel | 工况报警级别         | NUMBER(3)     |             |
-| 13       | theoreticalproduction         | 理论排量             | NUMBER(8,2)   | t/d         |
+| 13       | theoreticalproduction         | 理论排量             | NUMBER(8,2)   | m^3/d         |
 | 14       | liquidweightproduction        | 产液量               | NUMBER(8,2)   | t/d         |
 | 15       | oilweightproduction           | 产油量               | NUMBER(8,2)   | t/d         |
 | 16       | waterweightproduction         | 产水量               | NUMBER(8,2)   | t/d         |
@@ -1076,7 +1079,7 @@
 
 | **序号** | **代码**                      | **名称**                     | **类型**       | **单位**    |
 |----------|-------------------------------|------------------------------|----------------|-------------|
-| 1        | id                            | 编号                         | NUMBER(10)     |             |
+| 1        | id                            | 记录编号                         | NUMBER(10)     |             |
 | 2        | wellname                      | 井名                         | VARCHAR2(200)  |             |
 | 3        | wellid                        | 井编号                       | NUMBER(10)     |             |
 | 4        | liftingtype                   | 举升类型                     | NUMBER(10)     |             |
@@ -1265,7 +1268,7 @@
 
 | **序号** | **代码**                    | **名称**           | **类型**      | **单位** |
 |----------|-----------------------------|--------------------|---------------|----------|
-| 1        | id                          | 编号               | NUMBER(10)    |          |
+| 1        | id                          | 记录编号               | NUMBER(10)    |          |
 | 2        | wellname                    | 井名               | VARCHAR2(200) |          |
 | 3        | acquisitiontime             | 采集时间           | DATE          |          |
 | 4        | stroke                      | 冲程               | NUMBER(8,2)   | m        |
@@ -1309,7 +1312,7 @@
 
 | **序号** | **代码**                      | **名称**           | **类型**       | **单位**    |
 |----------|-------------------------------|--------------------|----------------|-------------|
-| 1        | id                            | 编号               | NUMBER(10)     |             |
+| 1        | id                            | 记录编号               | NUMBER(10)     |             |
 | 2        | wellname                      | 井名               | VARCHAR2(200)  |             |
 | 3        | liftingtype                   | 举升类型           | NUMBER(10)     |             |
 | 4        | liftingtypename               | 举升类型名称       | VARCHAR2(200)  |             |
@@ -1434,7 +1437,7 @@
 
 | **序号** | **代码**                   | **名称**       | **类型**      | **单位** |
 |----------|----------------------------|----------------|---------------|----------|
-| 1        | id                         | 编号           | NUMBER(10)    |          |
+| 1        | id                         | 记录编号           | NUMBER(10)    |          |
 | 2        | wellname                   | 井名           | VARCHAR2(200) |          |
 | 3        | liftingtype                | 举升方式       | NUMBER(10)    |          |
 | 4        | acquisitiontime            | 采集时间       | DATE          |          |
@@ -1445,8 +1448,8 @@
 | 9        | waterdensity               | 水密度         | NUMBER(16,2)  | g/cm^3  |
 | 10       | naturalgasrelativedensity  | 天然气相对密度 | NUMBER(16,2)  |          |
 | 11       | saturationpressure         | 饱和压力       | NUMBER(16,2)  | MPa      |
-| 12       | reservoirdepth             | 油藏深度       | NUMBER(16,2)  | m        |
-| 13       | reservoirtemperature       | 油藏温度       | NUMBER(16,2)  | ℃        |
+| 12       | reservoirdepth             | 油层中部深度       | NUMBER(16,2)  | m        |
+| 13       | reservoirtemperature       | 油层中部温度       | NUMBER(16,2)  | ℃        |
 | 14       | tubingpressure             | 油压           | NUMBER(8,2)   | MPa      |
 | 15       | casingpressure             | 套压           | NUMBER(8,2)   | MPa      |
 | 16       | wellheadfluidtemperature   | 井口温油       | NUMBER(8,2)   | ℃        |
