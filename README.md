@@ -225,10 +225,12 @@
 >- 单位名称：模拟油田公司；  
 >- 单位编码、单位级别：确定上级单位、单位类别后自动生成；  
 >- 单位说明：可不填写。  
-4. 点击![](https://github.com/cosog-chentr/apmd/blob/master/Image/PNG/015.png?raw=true)，创建模拟采油厂；填写完成后，点击![](https://github.com/cosog-chentr/apmd/blob/master/Image/PNG/016.png?raw=true)，完成创建。  
+
+4. 点击![创建按钮](./Image/PNG/015.png?raw=true)，创建模拟采油厂；填写完成后，点击![保存按钮](./Image/PNG/016.png?raw=true)，完成创建。  
 >- 上级单位：已创建根节点，选择模拟油田公司；  
 >- 单位类别：按实际选择，厂级；
 >- 单位名称：模拟采油厂。  
+
 5. 依次完成各级单位组织创建。
 
 ![创建模拟油田公司](./Image/GIF/002.gif?raw=true)  
