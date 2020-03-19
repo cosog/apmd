@@ -32,6 +32,13 @@
      - [1.3.24 tbl_rpcinformation 抽油机设备表](README.md#1324-tbl_rpcinformation-抽油机设备表)
      - [1.3.25 tbl_rpc_motor 抽油机电机数据表](README.md#1325-tbl_rpc_motor-抽油机电机数据表)
      - [1.3.26 tbl_rpc_inver_opt 抽油机电参反演参数优化表](README.md#1326-tbl_rpc_inver_opt-抽油机电参反演参数优化表)
+	 - [1.3.27 tbl_pcp_productiondata_latest 螺杆泵生产数据实时表](README.md#1327-tbl_pcp_productiondata_latest-螺杆泵生产数据实时表)
+	 - [1.3.28 tbl_pcp_productiondata_hist 螺杆泵生产数据历史表](README.md#1328-tbl_pcp_productiondata_hist-螺杆泵生产数据历史表)
+	 - [1.3.29 tbl_pcp_discrete_latest 螺杆泵离散数据实时表](README.md#1329-tbl_pcp_discrete_latest-螺杆泵离散数据实时表)
+	 - [1.3.30 tbl_pcp_discrete_hist 螺杆泵离散数据历史表](README.md#1330-tbl_pcp_discrete_hist-螺杆泵离散数据历史表)
+	 - [1.3.31 tbl_pcp_rpm_latest 螺杆泵曲线数据实时表](README.md#1331-tbl_pcp_rpm_latest-螺杆泵曲线数据实时表)
+	 - [1.3.32 tbl_pcp_rpm_hist 螺杆泵曲线数据历史表](README.md#1332-tbl_pcp_rpm_hist-螺杆泵曲线数据历史表)
+	 - [1.3.33 tbl_pcp_total_day 螺杆泵日累计数据表](README.md#1333-tbl_pcp_total_day-螺杆泵日累计数据表)
 - [二、视图](README.md#二视图) 
    - [2.1 视图概览](README.md#21-视图概览)
    - [2.2 详述](README.md#22-详述)
@@ -49,12 +56,20 @@
      - [2.2.12 viw_rpc_diagramquery_hist 抽油机图形查询历史视图](README.md#2212-viw_rpc_diagramquery_hist-抽油机图形查询历史视图)
      - [2.2.13 viw_rpc_total_day 抽油机日累计数据视图](README.md#2213-viw_rpc_total_day-抽油机日累计数据视图)
      - [2.1.14 viw_rpc_calculatemain 抽油机计算结果管理视图](README.md#2114-viw_rpc_calculatemain-抽油机计算结果管理视图)
+	 - [2.1.15 viw_pcp_productiondata_latest 螺杆泵生产数据实时视图](README.md#2115-viw_pcp_productiondata_latest-螺杆泵生产数据实时视图)
+	 - [2.1.16 viw_pcp_productiondata_hist 螺杆泵生产数据历史视图](README.md#2116-viw_pcp_productiondata_hist-螺杆泵生产数据历史视图)
+	 - [2.1.17 viw_pcp_rpm_latest 螺杆泵曲线数据实时视图](README.md#2117-viw_pcp_rpm_latest-螺杆泵曲线数据实时视图)
+	 - [2.1.18 viw_pcp_rpm_hist 螺杆泵曲线数据历史视图](README.md#2118-viw_pcp_rpm_hist-螺杆泵曲线数据历史视图)
+	 - [2.1.19 viw_pcp_discrete_latest 螺杆泵离散数据实时视图](README.md#2119-viw_pcp_discrete_latest-螺杆泵离散数据实时视图)
+	 - [2.1.20 viw_pcp_discrete_hist 螺杆泵离散数据历史视图](README.md#2120-viw_pcp_discrete_hist-螺杆泵离散数据历史视图)
+	 - [2.1.21 viw_pcp_comprehensive_latest 螺杆泵综合数据实时视图](README.md#2121-viw_pcp_comprehensive_latest-螺杆泵综合数据实时视图)
+	 - [2.1.22 viw_pcp_comprehensive_hist 螺杆泵综合数据历史视图](README.md#2122-viw_pcp_comprehensive_hist-螺杆泵综合数据历史视图)
+	 - [2.1.23 viw_pcp_total_day 螺杆泵日累计数据视图](README.md#2123-viw_pcp_total_day-螺杆泵日累计数据视图)
 - [三、存储过程](README.md#三存储过程)
 - [四、触发器](README.md#四触发器)  
-- [五、序列](README.md#五序列)  
-- [六、数据库创建](README.md#六数据库创建)
-   - [6.1 自建用户](README.md#61-自建用户)
-   - [6.2 已有用户](README.md#62-已有用户)
+- [五、数据库创建](README.md#五数据库创建)
+   - [5.1 自建用户](README.md#51-自建用户)
+   - [5.2 已有用户](README.md#52-已有用户)
 
 # 一、表
 
@@ -88,6 +103,13 @@
 | 24       | tbl_rpcinformation            | 抽油机设备表             |
 | 25       | tbl_rpc_motor                 | 抽油机电机数据表         |
 | 26       | tbl_rpc_inver_opt             | 抽油机电参反演参数优化表 |
+| 27       | tbl_pcp_productiondata_latest | 螺杆泵生产数据实时表     |
+| 28       | tbl_pcp_productiondata_hist   | 螺杆泵生产数据历史表     |
+| 29       | tbl_pcp_discrete_latest       | 螺杆泵离散数据实时表     |
+| 30       | tbl_pcp_discrete_hist         | 螺杆泵离散数据历史表     |
+| 31       | tbl_pcp_rpm_latest            | 螺杆泵曲线数据实时表     |
+| 32       | tbl_pcp_rpm_hist              | 螺杆泵曲线数据历史表     |
+| 33       | tbl_pcp_total_day             | 螺杆泵日累计数据表       |
 
 ## 1.2 逻辑结构
 
@@ -284,7 +306,7 @@
 
 ### 1.3.14 tbl_rpc_productiondata_latest 抽油机生产数据实时表
 
-| **序号** | **代码**                   | **名称**       | **单位** | **类型**      | **为空**     | **键** | **备注** |
+| **序号** | **代码**                   | **名称**       | **单位** | **类型**      | **为空**     | **键** |
 |----------|----------------------------|----------------|----------|---------------|--------------|--------|----------|
 | 1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | id             | 记录编号 |          | NUMBER(10)    | N&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;            | 主键   |
 | 2        | wellid                     | 井编号         |          | NUMBER(10)    | N            | 外键   |  
@@ -332,7 +354,7 @@
 
 | **序号** | **代码**                  | **名称**                     | **单位** | **类型**       | **为空**     | **键** |
 |----------|---------------------------|------------------------------|----------|----------------|--------------|--------|
-| 1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| id    | 记录编号     |          | NUMBER(10)     | N&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  | 主键   |
+| 1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| id    | 记录编号     |          | NUMBER(10)     | N&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  | 主键&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    |
 | 2        | wellid                    | 井编号                       |          | NUMBER(10)     | N            | 外键   | 
 | 3        | acquisitiontime           | 采集时间                     |          | DATE           | Y            |        | 
 | 4        | commstatus                | 通信状态                     |          | NUMBER(2)      | Y            |        | 
@@ -524,7 +546,9 @@
 | 82       | signal                       | 信号强度             |             | NUMBER(8,2)   | Y            |        | 
 | 83       | interval                     | 传输间隔             | min         | NUMBER(10)    | Y            |        | 
 | 84       | devicever                    | 设备版本信息         |             | VARCHAR2(50)  | Y            |        | 
-| 85       | discretedataid               | 离散数据编号         |             | NUMBER(10)    | Y            |        | 
+| 85       | discretedataid               | 离散数据编号         |             | NUMBER(10)    | Y            |        |
+| 86       | plungerstroke                | 柱塞冲程             | m           | NUMBER(8,2)   | Y        |        |
+| 87       | availableplungerstroke       | 柱塞有效冲程         | m           | NUMBER(8,2)   | Y        |        |
 
 ### 1.3.19 tbl_rpc_diagram_hist 抽油机曲线数据历史表
 
@@ -771,6 +795,329 @@
 | 12       | filtertime_fsdiagram_r  | 地面功图右侧滤波次数 |          | NUMBER(3)    | Y            |        |
 | 13       | wattangle               | 功率滤波角度         | 度        | NUMBER(8,2)  | Y            |        |
 
+### 1.3.27 tbl_pcp_productiondata_latest 螺杆泵生产数据实时表
+
+| **序号** | **代码**                   | **名称**       | **单位** | **类型**      | **为空** | **键** |
+|----------|----------------------------|----------------|----------|---------------|----------|--------|
+| 1        | id                         | 记录编号       |          | NUMBER(10)    | N        | 主键   | 
+| 2        | wellid                     | 井编号         |          | NUMBER(10)    | N        | 外键   | 
+| 3        | acquisitiontime            | 采集时间       |          | DATE          | Y        |        | 
+| 4        | liftingtype                | 举升类型       |          | NUMBER(10)    | Y        |        | 
+| 5        | displacementtype           | 驱替类型       |          | NUMBER(1)     | Y        |        | 
+| 6        | runtime                    | 生产时间       | h        | NUMBER(8,2)   | Y        |        | 
+| 7        | crudeoildensity            | 原油密度       | g/cm^3  | NUMBER(16,2)  | Y        |        | 
+| 8        | waterdensity               | 水密度         | g/cm^3  | NUMBER(16,2)  | Y        |        | 
+| 9        | naturalgasrelativedensity  | 天然气相对密度 |          | NUMBER(16,2)  | Y        |        | 
+| 10       | saturationpressure         | 饱和压力       | MPa      | NUMBER(16,2)  | Y        |        | 
+| 11       | reservoirdepth             | 油层深度       | m        | NUMBER(16,2)  | Y        |        | 
+| 12       | reservoirtemperature       | 油层温度       | ℃        | NUMBER(16,2)  | Y        |        |
+| 13       | watercut                   | 体积含水率     | %        | NUMBER(8,2)   | Y        |        | 
+| 14       | watercut_w                 | 重量含水率     | %        | NUMBER(8,2)   | Y        |        | 
+| 15       | tubingpressure             | 油压           | MPa      | NUMBER(8,2)   | Y        |        | 
+| 16       | casingpressure             | 套压           | MPa      | NUMBER(8,2)   | Y        |        | 
+| 17       | backpressure               | 回压           | MPa      | NUMBER(8,2)   | Y        |        | 
+| 18       | wellheadfluidtemperature   | 井口流温       | ℃        | NUMBER(8,2)   | Y        |        |
+| 19       | producingfluidlevel        | 动液面         | m        | NUMBER(8,2)   | Y        |        | 
+| 20       | pumpsettingdepth           | 泵挂           | m        | NUMBER(8,2)   | Y        |        | 
+| 21       | productiongasoilratio      | 生产气油比     | m^3/t   | NUMBER(8,2)   | Y        |        | 
+| 22       | tubingstringinsidediameter | 油管内径       | mm       | NUMBER(8,2)   | Y        |        | 
+| 23       | casingstringinsidediameter | 油层套管内径   | mm       | NUMBER(8,2)   | Y        |        | 
+| 24       | rodstring                  | 抽油杆参数     |          | VARCHAR2(200) | Y        |        | 
+| 25       | pumptype                   | 泵类型         |          | VARCHAR2(20)  | Y        |        | 
+| 26       | barreltype                 | 泵筒类型       |          | VARCHAR2(20)  | Y        |        | 
+| 27       | barrellength               | 泵筒长         | m        | NUMBER(8,2)   | Y        |        | 
+| 28       | barrelseries               | 泵级数         |          | NUMBER(8,2)   | Y        |        | 
+| 29       | rotordiameter              | 转子截面直径   | mm       | NUMBER(8,2)   | Y        |        | 
+| 30       | qpr                        | 公称排量       | m^3/r   | NUMBER(8,2)   | Y        |        | 
+| 31       | manualintervention         | 人工干预       |          | NUMBER(4)     | Y        |        | 
+| 32       | netgrossratio              | 净毛比         |          | NUMBER(8,2)   | Y        |        | 
+| 33       | anchoringstate             | 锚定状态       |          | NUMBER(1)     | Y        |        | 
+| 34       | remark                     | 备注           |          | VARCHAR2(200) | Y        |        | 
+| 35       | pumpgrade                  | 泵级别         |          | NUMBER(1)     | Y        |        | 
+| 36       | pumpborediameter           | 泵径           |          | NUMBER(8,2)   | Y        |        | 
+| 37       | plungerlength              | 柱塞长         |          | NUMBER(8,2)   | Y        |        | 
+
+### 1.3.28 tbl_pcp_productiondata_hist 螺杆泵生产数据历史表
+
+同tbl_pcp_productiondata_latest
+
+### 1.3.29 tbl_pcp_discrete_latest 螺杆泵离散数据实时表
+
+| **序号** | **代码**                 | **名称**       | **单位** | **类型**       | **为空** | **键** |
+|----------|--------------------------|----------------|----------|----------------|----------|--------|
+| 1        | id                       | 记录编号       |          | NUMBER(10)     | N        | 主键   | 
+| 2        | wellid                   | 井编号         |          | NUMBER(10)     | N        | 外键   | 
+| 3        | acquisitiontime          | 采集时间       |          | DATE           | Y        |        | 
+| 4        | commstatus               | 通信状态       |          | NUMBER(2)      | Y        |        | 
+| 5        | commtime                 | 在线时间       | h        | NUMBER(8,2)    | Y        |        | 
+| 6        | commtimeefficiency       | 在线时率       |          | NUMBER(10,4)   | Y        |        | 
+| 7        | commrange                | 在线区间       |          | VARCHAR2(2000) | Y        |        | 
+| 8        | runstatus                | 运行状态       |          | NUMBER(2)      | Y        |        | 
+| 9        | runtimeefficiency        | 运行时率       |          | NUMBER(10,4)   | Y        |        | 
+| 10       | runtime                  | 运行时间       | h        | NUMBER(8,2)    | Y        |        | 
+| 11       | runrange                 | 运行时间段     |          | VARCHAR2(2000) | Y        |        | 
+| 12       | ia                       | A相电流        | A        | NUMBER(8,2)    | Y        |        | 
+| 13       | ib                       | B相电流        | A        | NUMBER(8,2)    | Y        |        | 
+| 14       | ic                       | C相电流        | A        | NUMBER(8,2)    | Y        |        | 
+| 15       | va                       | A相电压        | V        | NUMBER(8,2)    | Y        |        | 
+| 16       | vb                       | B相电压        | V        | NUMBER(8,2)    | Y        |        | 
+| 17       | vc                       | C相电压        | V        | NUMBER(8,2)    | Y        |        | 
+| 18       | totalwattenergy          | 有功电能       | kW·h     | NUMBER(8,2)    | Y        |        | 
+| 19       | totalvarenergy           | 无功电能       | kVar·h   | NUMBER(8,2)    | Y        |        | 
+| 20       | wattsum                  | 有功功率       | kW       | NUMBER(8,2)    | Y        |        | 
+| 21       | varsum                   | 无功功率       | kVar     | NUMBER(8,2)    | Y        |        | 
+| 22       | reversepower             | 反向功率       |          | NUMBER(8,2)    | Y        |        | 
+| 23       | pfsum                    | 功率因数       |          | NUMBER(8,2)    | Y        |        | 
+| 24       | frequencysetvalue        | 变频设置频率   | HZ       | NUMBER(8,2)    | Y        |        | 
+| 25       | frequencyrunvalue        | 变频运行频率   | HZ       | NUMBER(8,2)    | Y        |        | 
+| 26       | tubingpressure           | 采集的油压     | MPa      | NUMBER(8,2)    | Y        |        | 
+| 27       | casingpressure           | 采集的套压     | MPa      | NUMBER(8,2)    | Y        |        | 
+| 28       | backpressure             | 采集的回压     | MPa      | NUMBER(8,2)    | Y        |        | 
+| 29       | wellheadfluidtemperature | 采集的井口油温 | ℃        | NUMBER(8,2)    | Y        |        |
+| 30       | todaywattenergy          | 日有功电能     | kW·h     | NUMBER(8,2)    | Y        |        | 
+| 31       | workingconditioncode     | 电参工况类型   |          | NUMBER(4)      | Y        |        | 
+| 32       | iaalarm                  | A相电流报警项  |          | VARCHAR2(20)   | Y        |        | 
+| 33       | ibalarm                  | B相电流报警项  |          | VARCHAR2(20)   | Y        |        | 
+| 34       | icalarm                  | C相电流报警项  |          | VARCHAR2(20)   | Y        |        | 
+| 35       | vaalarm                  | A相电压报警项  |          | VARCHAR2(20)   | Y        |        | 
+| 36       | vbalarm                  | B相电压报警项  |          | VARCHAR2(20)   | Y        |        | 
+| 37       | vcalarm                  | C相电压报警项  |          | VARCHAR2(20)   | Y        |        | 
+| 38       | workingconditionstring   | 电参工况字符串 |          | VARCHAR2(4000) | Y        |        | 
+| 39       | iauplimit                | A相电流上限    | A        | NUMBER(8,2)    | Y        |        | 
+| 40       | iadownlimit              | A相电流下限    | A        | NUMBER(8,2)    | Y        |        | 
+| 41       | ibuplimit                | B相电流上限    | A        | NUMBER(8,2)    | Y        |        | 
+| 42       | ibdownlimit              | B相电流下限    | A        | NUMBER(8,2)    | Y        |        | 
+| 43       | icuplimit                | C相电流上限    | A        | NUMBER(8,2)    | Y        |        | 
+| 44       | icdownlimit              | C相电流下限    | A        | NUMBER(8,2)    | Y        |        | 
+| 45       | vauplimit                | A相电压上限    | V        | NUMBER(8,2)    | Y        |        | 
+| 46       | vadownlimit              | A相电压下限    | V        | NUMBER(8,2)    | Y        |        | 
+| 47       | vbuplimit                | B相电压上限    | V        | NUMBER(8,2)    | Y        |        | 
+| 48       | vbdownlimit              | B相电压下限    | V        | NUMBER(8,2)    | Y        |        | 
+| 49       | vcuplimit                | C相电压上限    | V        | NUMBER(8,2)    | Y        |        | 
+| 50       | vcdownlimit              | C相电压下限    | V        | NUMBER(8,2)    | Y        |        | 
+| 51       | iazero                   | A相电流零值    | A        | NUMBER(8,2)    | Y        |        | 
+| 52       | ibzero                   | B相电流零值    | A        | NUMBER(8,2)    | Y        |        | 
+| 53       | iczero                   | C相电流零值    | A        | NUMBER(8,2)    | Y        |        | 
+| 54       | vazero                   | A相电压零值    | V        | NUMBER(8,2)    | Y        |        | 
+| 55       | vbzero                   | B相电压零值    | V        | NUMBER(8,2)    | Y        |        | 
+| 56       | vczero                   | C相电压零值    | V        | NUMBER(8,2)    | Y        |        | 
+| 57       | totalpwattenergy         | 正向有功电能   | kW·h     | NUMBER(8,2)    | Y        |        | 
+| 58       | totalnwattenergy         | 反向有功电能   | kW·h     | NUMBER(8,2)    | Y        |        | 
+| 59       | totalpvarenergy          | 正向无功电能   | kVar·h   | NUMBER(8,2)    | Y        |        | 
+| 60       | totalnvarenergy          | 反向无功电能   | kVar·h   | NUMBER(8,2)    | Y        |        | 
+| 61       | totalvaenergy            | 视在电能       | kVA·h    | NUMBER(8,2)    | Y        |        | 
+| 62       | todaypwattenergy         | 日正向有功电能 | kW·h     | NUMBER(8,2)    | Y        |        | 
+| 63       | todaynwattenergy         | 日反向有功电能 | kW·h     | NUMBER(8,2)    | Y        |        | 
+| 64       | todayvarenergy           | 日无功电能     | kVar·h   | NUMBER(8,2)    | Y        |        | 
+| 65       | todaypvarenergy          | 日正向无功电能 | kVar·h   | NUMBER(8,2)    | Y        |        | 
+| 66       | todaynvarenergy          | 日反向无功电能 | kVar·h   | NUMBER(8,2)    | Y        |        | 
+| 67       | todayvaenergy            | 日视在电能     | kVA·h    | NUMBER(8,2)    | Y        |        | 
+| 68       | vasum                    | 视在功率       | kVA      | NUMBER(8,2)    | Y        |        | 
+| 69       | signal                   | 信号强度       |          | NUMBER(8,2)    | Y        |        | 
+| 70       | interval                 | 传输间隔       | min      | NUMBER(10)     | Y        |        | 
+| 71       | devicever                | 设备版本信息   |          | VARCHAR2(50)   | Y        |        | 
+| 72       | vavg                     | 三相电压平均值 | V        | NUMBER(8,2)    | Y        |        | 
+| 73       | iavg                     | 三相电流平均值 | A        | NUMBER(8,2)    | Y        |        | 
+| 74       | watta                    | A相有功功率    | kW       | NUMBER(8,2)    | Y        |        | 
+| 75       | wattb                    | B相有功功率    | kW       | NUMBER(8,2)    | Y        |        | 
+| 76       | wattc                    | C相有功功率    | kW       | NUMBER(8,2)    | Y        |        | 
+| 77       | vara                     | A相无功功率    | kVar     | NUMBER(8,2)    | Y        |        | 
+| 78       | varb                     | B相无功功率    | kVar     | NUMBER(8,2)    | Y        |        | 
+| 79       | varc                     | C相无功功率    | kVar     | NUMBER(8,2)    | Y        |        | 
+| 80       | vaa                      | A相视在功率    | kVA      | NUMBER(8,2)    | Y        |        | 
+| 81       | vab                      | B相视在功率    | kVA      | NUMBER(8,2)    | Y        |        | 
+| 82       | vac                      | C相视在功率    | kVA      | NUMBER(8,2)    | Y        |        | 
+| 83       | pfa                      | A相功率因数    |          | NUMBER(8,2)    | Y        |        | 
+| 84       | pfb                      | B相功率因数    |          | NUMBER(8,2)    | Y        |        | 
+| 85       | pfc                      | C相功率因数    |          | NUMBER(8,2)    | Y        |        | 
+
+### 1.3.30 tbl_pcp_discrete_hist 螺杆泵离散数据历史表
+
+同tbl_pcp_discrete_latest
+
+### 1.3.31 tbl_pcp_rpm_latest 螺杆泵曲线数据实时表
+
+| **序号** | **代码**                   | **名称**           | **单位**    | **类型**      | **为空** | **键** |
+|----------|----------------------------|--------------------|-------------|---------------|----------|--------|
+| 1        | id                         | 记录编号           |             | NUMBER(10)    | N        | 主键   | 
+| 2        | wellid                     | 井编号             |             | NUMBER(10)    | N        | 外键   | 
+| 3        | acquisitiontime            | 采集时间           |             | DATE          | Y        |        | 
+| 4        | rpm                        | 转速               | r/min       | NUMBER(8,2)   | Y        |        | 
+| 5        | torque                     | 扭矩               | kN·m        | NUMBER(8,2)   | Y        |        | 
+| 6        | theoreticalproduction      | 理论排量           | m^3/d      | NUMBER(8,2)   | Y        |        | 
+| 7        | liquidvolumetricproduction | 计算单井日产液量   | m^3/d      | NUMBER(8,2)   | Y        |        | 
+| 8        | oilvolumetricproduction    | 计算单井日产油量   | m^3/d      | NUMBER(8,2)   | Y        |        | 
+| 9        | watervolumetricproduction  | 计算单井日产水量   | m^3/d      | NUMBER(8,2)   | Y        |        | 
+| 10       | liquidweightproduction     | 计算单井日产液量   | t/d         | NUMBER(8,2)   | Y        |        | 
+| 11       | oilweightproduction        | 计算单井日产油量   | t/d         | NUMBER(8,2)   | Y        |        | 
+| 12       | waterweightproduction      | 计算单井日产水量   | t/d         | NUMBER(8,2)   | Y        |        | 
+| 13       | motorinputactivepower      | 电机输入有功功率   | kW          | NUMBER(8,2)   | Y        |        | 
+| 14       | waterpower                 | 水功率             | kW          | NUMBER(8,2)   | Y        |        | 
+| 15       | systemefficiency           | 系统效率           | 小数        | NUMBER(12,3)  | Y        |        | 
+| 16       | powerconsumptionperthm     | 吨液百米耗电量     | kW·h/100m·t | NUMBER(8,2)   | Y        |        | 
+| 17       | pumpeff1                   | 容积效率           | 小数        | NUMBER(12,3)  | Y        |        | 
+| 18       | pumpeff2                   | 液体收缩系数       | 小数        | NUMBER(12,3)  | Y        |        | 
+| 19       | pumpeff                    | 泵效               | 小数        | NUMBER(12,3)  | Y        |        | 
+| 20       | pumpintakep                | 泵入口压力         | MPa         | NUMBER(8,2)   | Y        |        | 
+| 21       | pumpintaket                | 泵入口温度         | ℃           | NUMBER(8,2)   | Y        |        | 
+| 22       | pumpintakegol              | 泵入口就地气液比   | m^3/m^3   | NUMBER(8,2)   | Y        |        | 
+| 23       | pumpinletvisl              | 泵入口粘度         | mPa·s       | NUMBER(8,2)   | Y        |        | 
+| 24       | pumpinletbo                | 泵入口原油体积系数 | 小数        | NUMBER(8,2)   | Y        |        | 
+| 25       | pumpoutletp                | 泵出口压力         | MPa         | NUMBER(8,2)   | Y        |        | 
+| 26       | pumpoutlett                | 泵出口温度         | ℃           | NUMBER(8,2)   | Y        |        | 
+| 27       | pumpoutletgol              | 泵出口就地气液比   | m^3/m^3   | NUMBER(8,2)   | Y        |        | 
+| 28       | pumpoutletvisl             | 泵出口粘度         | mPa·s       | NUMBER(8,2)   | Y        |        | 
+| 29       | pumpoutletbo               | 泵出口原油体积系数 | 小数        | NUMBER(8,2)   | Y        |        | 
+| 30       | rodstring                  | 抽油杆柱分析数据   |             | VARCHAR2(200) | Y        |        | 
+| 31       | savetime                   | 入库时间           |             | DATE          | Y        |        | 
+| 32       | productiondataid           | 生产数据编号       |             | NUMBER(10)    | Y        |        | 
+| 33       | resultstatus               | 计算标志           |             | NUMBER(2)     | Y        |        | 
+| 34       | discretedataid             | 离散数据编号       |             | NUMBER(10)    | Y        |        | 
+| 35       | remark                     | 备注               |             | VARCHAR2(200) | Y        |        | 
+| 36       | workingconditioncode       | 工况类型           |             | NUMBER(4)     | Y        |        | 
+
+### 1.3.32 tbl_pcp_rpm_hist 螺杆泵曲线数据历史表
+
+同tbl_pcp_rpm_latest
+
+### 1.3.33 tbl_pcp_total_day 螺杆泵日累计数据表 
+
+| **序号** | **代码**                      | **名称**                 | **单位**    | **类型**       | **为空** | **键** | 
+|----------|-------------------------------|--------------------------|-------------|----------------|----------|--------|
+| 1        | id                            | 记录编号                 |             | NUMBER(10)     | N        | 主键   | 
+| 2        | wellid                        | 井编号                   |             | NUMBER(10)     | Y        | 外键   | 
+| 3        | calculatedate                 | 计算时间                 |             | DATE           | Y        |        | 
+| 4        | commstatus                    | 通信状态                 |             | NUMBER(2)      | Y        |        | 
+| 5        | runstatus                     | 运行状态                 |             | NUMBER(2)      | Y        |        | 
+| 6        | commtime                      | 通信时间                 | h           | NUMBER(8,2)    | Y        |        | 
+| 7        | commtimeefficiency            | 通信时率                 |             | NUMBER(12,3)   | Y        |        | 
+| 8        | commrange                     | 通信区间                 |             | VARCHAR2(4000) | Y        |        | 
+| 9        | runtime                       | 运行时间                 | h           | NUMBER(8,2)    | Y        |        | 
+| 10       | runrange                      | 运行区间                 |             | VARCHAR2(4000) | Y        |        | 
+| 11       | runtimeefficiency             | 生产时率                 | 小数        | NUMBER(12,3)   | Y        |        | 
+| 12       | workingconditioncode          | 工况类型                 |             | NUMBER(4)      | Y        |        | 
+| 13       | workingconditionstring        | 工况字符串               |             | VARCHAR2(4000) | Y        |        | 
+| 14       | rpm                           | 转速                     | r/min       | NUMBER(4)      | Y        |        | 
+| 15       | rpmmax                        | 转速最大值               | r/min       | VARCHAR2(4000) | Y        |        | 
+| 16       | rpmmin                        | 转速最小值               | r/min       | NUMBER(10,4)   | Y        |        | 
+| 17       | torque                        | 扭矩                     | kN·m        | NUMBER(10,4)   | Y        |        | 
+| 18       | torquemax                     | 扭矩最大值               | kN·m        | NUMBER(10,4)   | Y        |        | 
+| 19       | torquemin                     | 扭矩最小值               | kN·m        | NUMBER(8,2)    | Y        |        | 
+| 20       | liquidvolumetricproduction    | 计算单井日产液量         | m^3/d      | NUMBER(8,2)    | Y        |        | 
+| 21       | oilvolumetricproduction       | 计算单井日产油量         | m^3/d      | NUMBER(8,2)    | Y        |        | 
+| 22       | watervolumetricproduction     | 计算单井日产水量         | m^3/d      | NUMBER(8,2)    | Y        |        | 
+| 23       | liquidweightproduction        | 计算单井日产液量吨       | t/d         | NUMBER(8,2)    | Y        |        | 
+| 24       | oilweightproduction           | 计算单井日产油量吨       | t/d         | NUMBER(8,2)    | Y        |        | 
+| 25       | waterweightproduction         | 计算单井日产水量吨       | t/d         | NUMBER(8,2)    | Y        |        | 
+| 26       | liquidvolumetricproductionmax | 计算单井日产液量最大值   | m^3/d      | NUMBER(8,2)    | Y        |        | 
+| 27       | liquidvolumetricproductionmin | 计算单井日产液量最小值   | m^3/d      | NUMBER(8,2)    | Y        |        | 
+| 28       | oilvolumetricproductionmax    | 计算单井日产油量最大值   | m^3/d      | NUMBER(8,2)    | Y        |        | 
+| 29       | oilvolumetricproductionmin    | 计算单井日产油量最小值   | m^3/d      | NUMBER(8,2)    | Y        |        | 
+| 30       | watervolumetricproductionmax  | 计算单井日产水量最大值   | m^3/d      | NUMBER(8,2)    | Y        |        | 
+| 31       | watervolumetricproductionmin  | 计算单井日产水量最小值   | m^3/d      | NUMBER(8,2)    | Y        |        | 
+| 32       | liquidweightproductionmax     | 计算单井日产液量最大值吨 | t/d         | NUMBER(8,2)    | Y        |        | 
+| 33       | liquidweightproductionmin     | 计算单井日产液量最小值吨 | t/d         | NUMBER(8,2)    | Y        |        | 
+| 34       | oilweightproductionmax        | 计算单井日产油量最大值吨 | t/d         | NUMBER(8,2)    | Y        |        | 
+| 35       | oilweightproductionmin        | 计算单井日产油量最小值吨 | t/d         | NUMBER(8,2)    | Y        |        | 
+| 36       | waterweightproductionmax      | 计算单井日产水量最大值吨 | t/d         | NUMBER(8,2)    | Y        |        | 
+| 37       | waterweightproductionmin      | 计算单井日产水量最小值吨 | t/d         | NUMBER(8,2)    | Y        |        | 
+| 38       | watercut                      | 含水率                   | %           | NUMBER(8,2)    | Y        |        | 
+| 39       | watercut_w                    | 含水率吨                 | %           | NUMBER(8,2)    | Y        |        | 
+| 40       | watercutmax                   | 含水率最大值             | %           | NUMBER(8,2)    | Y        |        | 
+| 41       | watercutmin                   | 含水率最小值             | %           | NUMBER(8,2)    | Y        |        | 
+| 42       | watercutmax_w                 | 含水率吨最大值           | %           | NUMBER(8,2)    | Y        |        | 
+| 43       | watercutmin_w                 | 含水率吨最小值           | %           | NUMBER(8,2)    | Y        |        | 
+| 44       | tubingpressure                | 油压                     | MPa         | NUMBER(8,2)    | Y        |        | 
+| 45       | tubingpressuremax             | 油压最大值               | MPa         | NUMBER(8,2)    | Y        |        | 
+| 46       | tubingpressuremin             | 油压最小值               | MPa         | NUMBER(8,2)    | Y        |        | 
+| 47       | casingpressure                | 套压                     | MPa         | NUMBER(8,2)    | Y        |        | 
+| 48       | casingpressuremax             | 套压最大值               | MPa         | NUMBER(8,2)    | Y        |        | 
+| 49       | casingpressuremin             | 套压最小值               | MPa         | NUMBER(8,2)    | Y        |        | 
+| 50       | wellheadfluidtemperature      | 井口油温                 | ℃           | NUMBER(8,2)    | Y        |        | 
+| 51       | wellheadfluidtemperaturemax   | 井口油温最大值           | ℃           | NUMBER(8,2)    | Y        |        | 
+| 52       | wellheadfluidtemperaturemin   | 井口油温最小值           | ℃           | NUMBER(10,4)   | Y        |        | 
+| 53       | productiongasoilratio         | 生产气油比               | m^3/t      | NUMBER(10,4)   | Y        |        | 
+| 54       | productiongasoilratiomax      | 生产气油比最大值         | m^3/t      | NUMBER(10,4)   | Y        |        | 
+| 55       | productiongasoilratiomin      | 生产气油比最小值         | m^3/t      | NUMBER(10,4)   | Y        |        | 
+| 56       | producingfluidlevel           | 动液面                   | m           | NUMBER(10,4)   | Y        |        | 
+| 57       | producingfluidlevelmax        | 动液面最大值             | m           | NUMBER(10,4)   | Y        |        | 
+| 58       | producingfluidlevelmin        | 动液面最小值             | m           | NUMBER(8,2)    | Y        |        | 
+| 59       | pumpsettingdepth              | 泵挂                     | m           | NUMBER(8,2)    | Y        |        | 
+| 60       | pumpsettingdepthmax           | 泵挂最大值               | m           | NUMBER(8,2)    | Y        |        | 
+| 61       | pumpsettingdepthmin           | 泵挂最小值               | m           | NUMBER(8,2)    | Y        |        | 
+| 62       | submergence                   | 沉没度                   | m           | NUMBER(8,2)    | Y        |        | 
+| 63       | submergencemax                | 沉没度最大值             | m           | NUMBER(8,2)    | Y        |        | 
+| 64       | submergencemin                | 沉没度最小值             | m           | NUMBER(8,2)    | Y        |        | 
+| 65       | pumpborediameter              | 泵径                     | mm          | NUMBER(8,2)    | Y        |        | 
+| 66       | pumpborediametermax           | 泵径最大值               | mm          | NUMBER(8,2)    | Y        |        | 
+| 67       | pumpborediametermin           | 泵径最小值               | mm          | NUMBER(8,2)    | Y        |        | 
+| 68       | systemefficiency              | 系统效率                 | 小数        | NUMBER(8,2)    | Y        |        | 
+| 69       | systemefficiencymax           | 系统效率最大值           | 小数        | NUMBER(8,2)    | Y        |        | 
+| 70       | systemefficiencymin           | 系统效率最小值           | 小数        | NUMBER(8,2)    | Y        |        | 
+| 71       | surfacesystemefficiency       | 地面效率                 | 小数        | NUMBER(8,2)    | Y        |        | 
+| 72       | surfacesystemefficiencymax    | 地面效率最大值           | 小数        | NUMBER(8,2)    | Y        |        | 
+| 73       | surfacesystemefficiencymin    | 地面效率最小值           | 小数        | NUMBER(8,2)    | Y        |        | 
+| 74       | welldownsystemefficiency      | 井下效率                 | 小数        | NUMBER(8,2)    | Y        |        | 
+| 75       | welldownsystemefficiencymax   | 井下效率最大值           | 小数        | NUMBER(8,2)    | Y        |        | 
+| 76       | welldownsystemefficiencymin   | 井下效率最小值           | 小数        | NUMBER(8,2)    | Y        |        | 
+| 77       | powerconsumptionperthm        | 吨液百米耗电量           | kW·h/100m·t | NUMBER(8,2)    | Y        |        | 
+| 78       | powerconsumptionperthmmax     | 吨液百米耗电量最大值     | kW·h/100m·t | NUMBER(8,2)    | Y        |        | 
+| 79       | powerconsumptionperthmmin     | 吨液百米耗电量最小值     | kW·h/100m·t | NUMBER(8,2)    | Y        |        | 
+| 80       | pumpeff                       | 总泵效                   | 小数        | NUMBER(8,2)    | Y        |        | 
+| 81       | pumpeffmax                    | 总泵效最大值             | 小数        | NUMBER(8,2)    | Y        |        | 
+| 82       | pumpeffmin                    | 总泵效最小值             | 小数        | NUMBER(10,4)   | Y        |        | 
+| 83       | ia                            | A相电流                  | A           | NUMBER(10,4)   | Y        |        | 
+| 84       | iamax                         | A相电流最大值            | A           | NUMBER(10,4)   | Y        |        | 
+| 85       | iamin                         | A相电流最小值            | A           | NUMBER(10,4)   | Y        |        | 
+| 86       | ib                            | B相电流                  | A           | NUMBER(10,4)   | Y        |        | 
+| 87       | ibmax                         | B相电流最大值            | A           | NUMBER(10,4)   | Y        |        | 
+| 88       | ibmin                         | B相电流最小值            | A           | NUMBER(10,4)   | Y        |        | 
+| 89       | ic                            | C相电流                  | A           | NUMBER(10,4)   | Y        |        | 
+| 90       | icmax                         | C相电流最大值            | A           | NUMBER(10,4)   | Y        |        | 
+| 91       | icmin                         | C相电流最小值            | A           | NUMBER(8,2)    | Y        |        | 
+| 92       | va                            | A相电压                  | V           | NUMBER(8,2)    | Y        |        | 
+| 93       | vamax                         | A相电压最大值            | V           | NUMBER(8,2)    | Y        |        | 
+| 94       | vamin                         | A相电压最小值            | V           | NUMBER(10,4)   | Y        |        | 
+| 95       | vb                            | B相电压                  | V           | NUMBER(10,4)   | Y        |        | 
+| 96       | vbmax                         | B相电压最大值            | V           | NUMBER(10,4)   | Y        |        | 
+| 97       | vbmin                         | B相电压最小值            | V           | NUMBER(8,2)    | Y        |        | 
+| 98       | vc                            | C相电压                  | V           | NUMBER(8,2)    | Y        |        | 
+| 99       | vcmax                         | C相电压最大值            | V           | NUMBER(8,2)    | Y        |        | 
+| 100      | vcmin                         | C相电压最小值            | V           | NUMBER(8,2)    | Y        |        | 
+| 101      | wattsum                       | 有功功率                 | kW          | NUMBER(8,2)    | Y        |        | 
+| 102      | wattsummax                    | 有功功率最大值           | kW          | NUMBER(8,2)    | Y        |        | 
+| 103      | wattsummin                    | 有功功率最小值           | kW          | NUMBER(8,2)    | Y        |        | 
+| 104      | varsum                        | 无功功率                 | kVar        | NUMBER(8,2)    | Y        |        | 
+| 105      | varsummax                     | 无功功率最大值           | kVar        | NUMBER(8,2)    | Y        |        | 
+| 106      | varsummin                     | 无功功率最小值           | kVar        | NUMBER(8,2)    | Y        |        | 
+| 107      | pfsum                         | 功率因数                 |             | NUMBER(8,2)    | Y        |        | 
+| 108      | pfsummax                      | 功率因数最大值           |             | NUMBER(8,2)    | Y        |        | 
+| 109      | pfsummin                      | 功率因数最小值           |             | NUMBER(8,2)    | Y        |        | 
+| 110      | frequency                     | 运行频率                 | HZ          | NUMBER(8,2)    | Y        |        | 
+| 111      | frequencymax                  | 运行频率最大值           | HZ          | NUMBER(8,2)    | Y        |        | 
+| 112      | frequencymin                  | 运行频率最小值           | HZ          | NUMBER(8,2)    | Y        |        | 
+| 113      | todaywattenergy               | 日有功电能               | kW·h        | NUMBER(8,2)    | Y        |        | 
+| 114      | todaypwattenergy              | 日正向有功电能           | kW·h        | NUMBER(8,2)    | Y        |        | 
+| 115      | todaynwattenergy              | 日反向有功电能           | kW·h        | NUMBER(8,2)    | Y        |        | 
+| 116      | todayvarenergy                | 日无功电能               | kVar·h      | NUMBER(8,2)    | Y        |        | 
+| 117      | todaypvarenergy               | 日正向无功电能           | kVar·h      | NUMBER(8,2)    | Y        |        | 
+| 118      | todaynvarenergy               | 日反向无功电能           | kVar·h      | NUMBER(8,2)    | Y        |        | 
+| 119      | todayvaenergy                 | 日视在电能               | kVA·h       | NUMBER(8,2)    | Y        |        | 
+| 120      | totalwattenergy               | 累计有功电能             | kW·h        | NUMBER(8,2)    | Y        |        | 
+| 121      | totalpwattenergy              | 累计正向有功电能         | kW·h        | NUMBER(8,2)    | Y        |        | 
+| 122      | totalnwattenergy              | 累计反向有功电能         | kW·h        | NUMBER(8,2)    | Y        |        | 
+| 123      | totalvarenergy                | 累计无功电能             | kVar·h      | NUMBER(8,2)    | Y        |        | 
+| 124      | totalpvarenergy               | 累计正向无功电能         | kVar·h      | NUMBER(8,2)    | Y        |        | 
+| 125      | totalnvarenergy               | 累计反向无功电能         | kVar·h      | NUMBER(8,2)    | Y        |        | 
+| 126      | totalvaenergy                 | 累计视在电能             | kVA·h       | NUMBER(8,2)    | Y        |        | 
+| 127      | extendeddays                  | 延用天数                 |             | NUMBER(8,2)    | Y        |        | 
+| 128      | resultstatus                  | 计算标志                 |             | NUMBER(8,2)    | Y        |        | 
+| 129      | signal                        | 信号强度                 |             | NUMBER(8,2)    | Y        |        | 
+| 130      | signalmax                     | 信号强度最大值           |             | NUMBER(8,2)    | Y        |        | 
+| 131      | signalmin                     | 信号强度最小值           |             | NUMBER(8,2)    | Y        |        | 
+| 132      | savetime                      | 存储时间                 |             | NUMBER(8,2)    | Y        |        | 
+
+
 # 二、视图
 
 ## 2.1 视图概览
@@ -791,6 +1138,15 @@
 | 12       | viw_rpc_diagramquery_hist     | 抽油机图形查询历史视图 |
 | 13       | viw_rpc_total_day             | 抽油机日累计数据视图   |
 | 14       | viw_rpc_calculatemain         | 抽油机计算结果管理视图 |
+| 15       | viw_pcp_productiondata_latest | 螺杆泵生产数据实时视图 |
+| 16       | viw_pcp_productiondata_hist   | 螺杆泵生产数据历史视图 |
+| 17       | viw_pcp_rpm_latest            | 螺杆泵曲线数据实时视图 |
+| 18       | viw_pcp_rpm_hist              | 螺杆泵曲线数据历史视图 |
+| 19       | viw_pcp_discrete_latest       | 螺杆泵离散数据实时视图 |
+| 20       | viw_pcp_discrete_hist         | 螺杆泵离散数据历史视图 |
+| 21       | viw_pcp_comprehensive_latest  | 螺杆泵综合数据实时视图 |
+| 22       | viw_pcp_comprehensive_hist    | 螺杆泵综合数据历史视图 |
+| 23       | viw_pcp_total_day             | 螺杆泵日累计数据视图   |
 
 ## 2.2 详述
 
@@ -878,92 +1234,95 @@
 
 ### 2.2.5 viw_rpc_diagram_latest 抽油机曲线数据实时视图
 
-| **序号** | **代码**                      | **名称**             | **类型**      | **单位**    |
+| **序号** | **名称**                      | **代码**             | **类型**      | **单位**    | 
 |----------|-------------------------------|----------------------|---------------|-------------|
-| 1        | id                            | 记录编号             | NUMBER(10)    |             |
-| 2        | wellname                      | 井名                 | VARCHAR2(200) |             |
-| 3        | wellid                        | 井编号               | NUMBER(10)    |             |
-| 4        | liftingtype                   | 举升类型             | NUMBER(10)    |             |
-| 5        | acquisitiontime               | 采集时间             | DATE          |             |
-| 6        | commstatus                    | 通信状态             | NUMBER(1)     |             |
-| 7        | commstatusname                | 通信状态名称         | VARCHAR2      |             |
-| 8        | commalarmlevel                | 通信报警级别         | NUMBER(3)     |             |
-| 9        | workingconditioncode          | 工况代码             | NUMBER(4)     |             |
-| 10       | workingconditionname          | 工况名称             | VARCHAR2(200) |             |
-| 11       | optimizationsuggestion        | 优化建议             | VARCHAR2(200) |             |
-| 12       | workingconditionrunalarmlevel | 工况报警级别         | NUMBER(3)     |             |
-| 13       | theoreticalproduction         | 理论排量             | NUMBER(8,2)   | m^3/d         |
-| 14       | liquidweightproduction        | 产液量               | NUMBER(8,2)   | t/d         |
-| 15       | oilweightproduction           | 产油量               | NUMBER(8,2)   | t/d         |
-| 16       | waterweightproduction         | 产水量               | NUMBER(8,2)   | t/d         |
-| 17       | watercut_w                    | 含水率               | NUMBER(8,2)   | %           |
-| 18       | liquidweightproductionlevel   | 产液级别             | VARCHAR2(50)  |             |
-| 19       | productiongasoilratio         | 生产气油比           | NUMBER(8,2)   | m^3/t      |
-| 20       | tubingpressure                | 油压                 | NUMBER(8,2)   | MPa         |
-| 21       | casingpressure                | 套压                 | NUMBER(8,2)   | MPa         |
-| 22       | wellheadfluidtemperature      | 井口油温             | NUMBER(8,2)   | ℃           |
-| 23       | producingfluidlevel           | 动液面               | NUMBER(8,2)   | m           |
-| 24       | pumpsettingdepth              | 泵挂                 | NUMBER(8,2)   | m           |
-| 25       | submergence                   | 沉没度               | NUMBER(8,2)   | m           |
-| 26       | pumpborediameter              | 泵径                 | NUMBER(8,2)   | mm          |
-| 27       | crudeoildensity               | 原油密度             | NUMBER(16,2)  | g/cm^3     |
-| 28       | netgrossratio                 | 净毛比               | NUMBER(8,2)   |             |
-| 29       | availableplungerstrokeprod    | 柱塞有效冲程计算产量 | NUMBER(8,2)   | t/d         |
-| 30       | pumpclearanceleakprod         | 泵间隙漏失量         | NUMBER(8,2)   | t/d         |
-| 31       | tvleakweightproduction        | 游动凡尔漏失量       | NUMBER(8,2)   | t/d         |
-| 32       | svleakweightproduction        | 固定凡尔漏失量       | NUMBER(8,2)   | t/d         |
-| 33       | gasinfluenceprod              | 气影响               | NUMBER(8,2)   | t/d         |
-| 34       | rodstring                     | 抽油杆数据           | VARCHAR2(200) |             |
-| 35       | stroke                        | 冲程                 | NUMBER(8,2)   | m           |
-| 36       | spm                           | 冲次                 | NUMBER(8,2)   | 次/min      |
-| 37       | upperloadline                 | 理论上载荷           | NUMBER(8,2)   | kN          |
-| 38       | upperloadlineofexact          | 真实理论上载荷       | NUMBER(8,2)   | kN          |
-| 39       | lowerloadline                 | 理论下载荷           | NUMBER(8,2)   | kN          |
-| 40       | fmax                          | 最大载荷             | NUMBER(8,2)   | kN          |
-| 41       | fmin                          | 最小载荷             | NUMBER(8,2)   | kN          |
-| 42       | motorinputactivepower         | 电机输入有功功率     | NUMBER(8,2)   | kW          |
-| 43       | polishrodpower                | 光杆功率             | NUMBER(8,2)   | kW          |
-| 44       | waterpower                    | 水功率               | NUMBER(8,2)   | kW          |
-| 45       | systemefficiency              | 系统效率             | NUMBER(12,3)  | 小数        |
-| 46       | systemefficiencylevel         | 系统效率级别         | VARCHAR2(50)  |             |
-| 47       | surfacesystemefficiency       | 地面效率             | NUMBER(12,3)  | 小数        |
-| 48       | surfacesystemefficiencylevel  | 地面效率级别         | VARCHAR2(50)  |             |
-| 49       | welldownsystemefficiency      | 井下效率             | NUMBER(12,3)  | 小数        |
-| 50       | welldownsystemefficiencylevel | 井下效率级别         | VARCHAR2(50)  |             |
-| 51       | fsdiagramarea                 | 功图面积             | NUMBER(8,2)   |             |
-| 52       | powerconsumptionperthm        | 吨液百米耗电量       | NUMBER(8,2)   | kW·h/100m·t |
-| 53       | idegreebalance                | 电流平衡度           | NUMBER(8,2)   | %           |
-| 54       | idegreebalancename            | 电流平衡状态         | VARCHAR2(200) |             |
-| 55       | upstrokeimax                  | 上冲程最大电流       | NUMBER(8,2)   | A           |
-| 56       | downstrokeimax                | 下冲程最大电流       | NUMBER(8,2)   | A           |
-| 57       | idegreebalancealarmlevel      | 电流平衡报警级别     | NUMBER(3)     |             |
-| 58       | wattdegreebalance             | 功率平衡度           | NUMBER(8,2)   | %           |
-| 59       | wattdegreebalancename         | 功率平衡状态         | VARCHAR2(200) |             |
-| 60       | upstrokewattmax               | 上冲程最大功率       | NUMBER(8,2)   | kW          |
-| 61       | downstrokewattmax             | 下冲程最大功率       | NUMBER(8,2)   | kW          |
-| 62       | wattdegreebalancealarmlevel   | 功率平衡报警级别     | NUMBER(3)     |             |
-| 63       | pumpeff1                      | 冲程损失系数         | NUMBER(12,3)  | 小数        |
-| 64       | pumpeff2                      | 充满系数             | NUMBER(12,3)  | 小数        |
-| 65       | pumpeff3                      | 间隙漏失系数         | NUMBER(12,3)  | 小数        |
-| 66       | pumpeff4                      | 液体收缩系数         | NUMBER(12,3)  | 小数        |
-| 67       | pumpeff                       | 总泵效               | NUMBER(12,3)  | 小数        |
-| 68       | rodflexlength                 | 抽油杆伸长量         | NUMBER(8,2)   | m           |
-| 69       | tubingflexlength              | 油管伸缩值           | NUMBER(8,2)   | m           |
-| 70       | inertialength                 | 惯性载荷增量         | NUMBER(8,2)   | m           |
-| 71       | pumpintakep                   | 泵入口压力           | NUMBER(8,2)   | MPa         |
-| 72       | pumpintaket                   | 泵入口温度           | NUMBER(8,2)   | ℃           |
-| 73       | pumpintakegol                 | 泵入口就地气液比     | NUMBER(8,2)   | m^3/m^3   |
-| 74       | pumpinletvisl                 | 泵入口粘度           | NUMBER(8,2)   | mPa·s       |
-| 75       | pumpinletbo                   | 泵入口原油体积系数   | NUMBER(8,2)   | 小数        |
-| 76       | pumpoutletp                   | 泵出口压力           | NUMBER(8,2)   | MPa         |
-| 77       | pumpoutlett                   | 泵出口温度           | NUMBER(8,2)   | ℃           |
-| 78       | pumpoutletgol                 | 泵出口就地气液比     | NUMBER(8,2)   | m^3/m^3   |
-| 79       | pumpoutletvisl                | 泵出口粘度           | NUMBER(8,2)   | mPa·s       |
-| 80       | pumpoutletbo                  | 泵出口原油体积系数   | NUMBER(8,2)   | 小数        |
-| 81       | videourl                      | 视频路径             | VARCHAR2(400) |             |
-| 82       | org_id                        | 组织标号             | NUMBER(10)    |             |
-| 83       | org_code                      | 组织代码             | VARCHAR2(20)  |             |
-| 84       | sortnum                       | 井排序编号           | NUMBER(10)    |             |
+| 1        | id                            | 记录编号             | NUMBER(10)    |             | 
+| 2        | wellname                      | 井名                 | VARCHAR2(200) |             | 
+| 3        | wellid                        | 井编号               | NUMBER(10)    |             | 
+| 4        | liftingtype                   | 举升类型             | NUMBER(10)    |             | 
+| 5        | acquisitiontime               | 采集时间             | DATE          |             | 
+| 6        | commstatus                    | 通信状态             | NUMBER(1)     |             | 
+| 7        | commstatusname                | 通信状态名称         | VARCHAR2      |             | 
+| 8        | commalarmlevel                | 通信报警级别         | NUMBER(3)     |             | 
+| 9        | workingconditioncode          | 工况代码             | NUMBER(4)     |             | 
+| 10       | workingconditionname          | 工况名称             | VARCHAR2(200) |             | 
+| 11       | optimizationsuggestion        | 优化建议             | VARCHAR2(200) |             | 
+| 12       | workingconditionrunalarmlevel | 工况报警级别         | NUMBER(3)     |             | 
+| 13       | theoreticalproduction         | 理论排量             | NUMBER(8,2)   | m^3/d      | 
+| 14       | liquidweightproduction        | 产液量               | NUMBER(8,2)   | t/d         | 
+| 15       | oilweightproduction           | 产油量               | NUMBER(8,2)   | t/d         | 
+| 16       | waterweightproduction         | 产水量               | NUMBER(8,2)   | t/d         | 
+| 17       | watercut_w                    | 含水率               | NUMBER(8,2)   | %           | 
+| 18       | liquidweightproductionlevel   | 产液级别             | VARCHAR2(50)  |             | 
+| 19       | productiongasoilratio         | 生产气油比           | NUMBER(8,2)   | m^3/t      | 
+| 20       | tubingpressure                | 油压                 | NUMBER(8,2)   | MPa         | 
+| 21       | casingpressure                | 套压                 | NUMBER(8,2)   | MPa         | 
+| 22       | wellheadfluidtemperature      | 井口油温             | NUMBER(8,2)   | ℃           | 
+| 23       | producingfluidlevel           | 动液面               | NUMBER(8,2)   | m           | 
+| 24       | pumpsettingdepth              | 泵挂                 | NUMBER(8,2)   | m           | 
+| 25       | submergence                   | 沉没度               | NUMBER(8,2)   | m           | 
+| 26       | pumpborediameter              | 泵径                 | NUMBER(8,2)   | mm          | 
+| 27       | crudeoildensity               | 原油密度             | NUMBER(16,2)  | g/cm^3     | 
+| 28       | netgrossratio                 | 净毛比               | NUMBER(8,2)   |             | 
+| 29       | availableplungerstrokeprod    | 柱塞有效冲程计算产量 | NUMBER(8,2)   | t/d         | 
+| 30       | pumpclearanceleakprod         | 泵间隙漏失量         | NUMBER(8,2)   | t/d         | 
+| 31       | tvleakweightproduction        | 游动凡尔漏失量       | NUMBER(8,2)   | t/d         | 
+| 32       | svleakweightproduction        | 固定凡尔漏失量       | NUMBER(8,2)   | t/d         | 
+| 33       | gasinfluenceprod              | 气影响               | NUMBER(8,2)   | t/d         | 
+| 34       | rodstring                     | 抽油杆数据           | VARCHAR2(200) |             | 
+| 35       | stroke                        | 冲程                 | NUMBER(8,2)   | m           | 
+| 36       | spm                           | 冲次                 | NUMBER(8,2)   | 次/min      | 
+| 37       | upperloadline                 | 理论上载荷           | NUMBER(8,2)   | kN          | 
+| 38       | upperloadlineofexact          | 真实理论上载荷       | NUMBER(8,2)   | kN          | 
+| 39       | lowerloadline                 | 理论下载荷           | NUMBER(8,2)   | kN          | 
+| 40       | fmax                          | 最大载荷             | NUMBER(8,2)   | kN          | 
+| 41       | fmin                          | 最小载荷             | NUMBER(8,2)   | kN          | 
+| 42       | fullnesscoefficient           | 充满系数             | NUMBER(8,2)   | 小数        | 
+| 43       | plungerstroke                 | 柱塞冲程             | NUMBER(8,2)   | m           | 
+| 44       | availableplungerstroke        | 柱塞有效冲程         | NUMBER(8,2)   | m           | 
+| 45       | motorinputactivepower         | 电机输入有功功率     | NUMBER(8,2)   | kW          | 
+| 46       | polishrodpower                | 光杆功率             | NUMBER(8,2)   | kW          | 
+| 47       | waterpower                    | 水功率               | NUMBER(8,2)   | kW          | 
+| 48       | systemefficiency              | 系统效率             | NUMBER(12,3)  | 小数        | 
+| 49       | systemefficiencylevel         | 系统效率级别         | VARCHAR2(50)  |             | 
+| 50       | surfacesystemefficiency       | 地面效率             | NUMBER(12,3)  | 小数        | 
+| 51       | surfacesystemefficiencylevel  | 地面效率级别         | VARCHAR2(50)  |             | 
+| 52       | welldownsystemefficiency      | 井下效率             | NUMBER(12,3)  | 小数        | 
+| 53       | welldownsystemefficiencylevel | 井下效率级别         | VARCHAR2(50)  |             | 
+| 54       | fsdiagramarea                 | 功图面积             | NUMBER(8,2)   |             | 
+| 55       | powerconsumptionperthm        | 吨液百米耗电量       | NUMBER(8,2)   | kW·h/100m·t | 
+| 56       | idegreebalance                | 电流平衡度           | NUMBER(8,2)   | %           | 
+| 57       | idegreebalancename            | 电流平衡状态         | VARCHAR2(200) |             | 
+| 58       | upstrokeimax                  | 上冲程最大电流       | NUMBER(8,2)   | A           | 
+| 59       | downstrokeimax                | 下冲程最大电流       | NUMBER(8,2)   | A           | 
+| 60       | idegreebalancealarmlevel      | 电流平衡报警级别     | NUMBER(3)     |             | 
+| 61       | wattdegreebalance             | 功率平衡度           | NUMBER(8,2)   | %           | 
+| 62       | wattdegreebalancename         | 功率平衡状态         | VARCHAR2(200) |             | 
+| 63       | upstrokewattmax               | 上冲程最大功率       | NUMBER(8,2)   | kW          | 
+| 64       | downstrokewattmax             | 下冲程最大功率       | NUMBER(8,2)   | kW          | 
+| 65       | wattdegreebalancealarmlevel   | 功率平衡报警级别     | NUMBER(3)     |             | 
+| 66       | pumpeff1                      | 冲程损失系数         | NUMBER(12,3)  | 小数        | 
+| 67       | pumpeff2                      | 充满系数             | NUMBER(12,3)  | 小数        | 
+| 68       | pumpeff3                      | 间隙漏失系数         | NUMBER(12,3)  | 小数        | 
+| 69       | pumpeff4                      | 液体收缩系数         | NUMBER(12,3)  | 小数        | 
+| 70       | pumpeff                       | 总泵效               | NUMBER(12,3)  | 小数        | 
+| 71       | rodflexlength                 | 抽油杆伸长量         | NUMBER(8,2)   | m           | 
+| 72       | tubingflexlength              | 油管伸缩值           | NUMBER(8,2)   | m           | 
+| 73       | inertialength                 | 惯性载荷增量         | NUMBER(8,2)   | m           | 
+| 74       | pumpintakep                   | 泵入口压力           | NUMBER(8,2)   | MPa         | 
+| 75       | pumpintaket                   | 泵入口温度           | NUMBER(8,2)   | ℃           | 
+| 76       | pumpintakegol                 | 泵入口就地气液比     | NUMBER(8,2)   | m^3/m^3   | 
+| 77       | pumpinletvisl                 | 泵入口粘度           | NUMBER(8,2)   | mPa·s       | 
+| 78       | pumpinletbo                   | 泵入口原油体积系数   | NUMBER(8,2)   | 小数        | 
+| 79       | pumpoutletp                   | 泵出口压力           | NUMBER(8,2)   | MPa         | 
+| 80       | pumpoutlett                   | 泵出口温度           | NUMBER(8,2)   | ℃           | 
+| 81       | pumpoutletgol                 | 泵出口就地气液比     | NUMBER(8,2)   | m^3/m^3   | 
+| 82       | pumpoutletvisl                | 泵出口粘度           | NUMBER(8,2)   | mPa·s       | 
+| 83       | pumpoutletbo                  | 泵出口原油体积系数   | NUMBER(8,2)   | 小数        | 
+| 84       | videourl                      | 视频路径             | VARCHAR2(400) |             | 
+| 85       | org_id                        | 组织标号             | NUMBER(10)    |             | 
+| 86       | org_code                      | 组织代码             | VARCHAR2(20)  |             | 
+| 87       | sortnum                       | 井排序编号           | NUMBER(10)    |             | 
 
 ### 2.2.6 viw_rpc_diagram_hist 抽油机曲线数据历史视图
 
@@ -1077,188 +1436,191 @@
 
 ### 2.2.9 viw_rpc_comprehensive_latest 抽油机综合数据实时视图
 
-| **序号** | **代码**                      | **名称**                     | **类型**       | **单位**    |
+| **序号** | **名称**                      | **代码**                     | **类型**       | **单位**    | 
 |----------|-------------------------------|------------------------------|----------------|-------------|
-| 1        | id                            | 记录编号                         | NUMBER(10)     |             |
-| 2        | wellname                      | 井名                         | VARCHAR2(200)  |             |
-| 3        | wellid                        | 井编号                       | NUMBER(10)     |             |
-| 4        | liftingtype                   | 举升类型                     | NUMBER(10)     |             |
-| 5        | acquisitiontime               | 采集时间                     | DATE           |             |
-| 6        | commstatus                    | 通信状态                     | NUMBER(2)      |             |
-| 7        | commstatusname                | 通信状态名称                 | VARCHAR2       |             |
-| 8        | commalarmlevel                | 通信报警级别                 | NUMBER(3)      |             |
-| 9        | runstatus                     | 运行状态                     | NUMBER(1)      |             |
-| 10       | runstatusname                 | 运行状态名称                 | VARCHAR2       |             |
-| 11       | runalarmlevel                 | 运行状态报警级别             | NUMBER(3)      |             |
-| 12       | commtime                      | 通信时间                     | NUMBER(8,2)    | h           |
-| 13       | commrange                     | 通信区间                     | VARCHAR2(2000) |             |
-| 14       | commtimeefficiency            | 通信时率                     | NUMBER(10,4)   |             |
-| 15       | commtimeefficiencylevel       | 通信时率级别                 | VARCHAR2(50)   |             |
-| 16       | runtime                       | 运行时间                     | NUMBER(8,2)    | h           |
-| 17       | runrange                      | 运行区间                     | VARCHAR2(2000) |             |
-| 18       | runtimeefficiency             | 生产时率                     | NUMBER(10,4)   |             |
-| 19       | runtimeefficiencylevel        | 生产时率等级                 | VARCHAR2(50)   |             |
-| 20       | workingconditioncode          | 工况代码                     | NUMBER(4)      |             |
-| 21       | workingconditionname          | 工况名称                     | VARCHAR2(200)  |             |
-| 22       | optimizationsuggestion        | 优化建议                     | VARCHAR2(200)  |             |
-| 23       | workingconditionalarmlevel    | 工况报警级别                 | VARCHAR2       |             |
-| 24       | workingconditioncode_e        | 电参工况代码                 | NUMBER(4)      |             |
-| 25       | workingconditionstring_e      | 电参功率字符串               | VARCHAR2(4000) |             |
-| 26       | workingconditionname_e        | 电参工况名称                 | VARCHAR2(200)  |             |
-| 27       | optimizationsuggestion_e      | 电参工况优化建议             | VARCHAR2(200)  |             |
-| 28       | workingconditionalarmlevel_e  | 电参工况报警级别             | NUMBER(3)      |             |
-| 29       | theoreticalproduction         | 理论排量                     | NUMBER(8,2)    | m^3/d      |
-| 30       | liquidweightproduction        | 产液量                       | NUMBER(8,2)    | t/d         |
-| 31       | oilweightproduction           | 产油量                       | NUMBER(8,2)    | t/d         |
-| 32       | waterweightproduction         | 产水量                       | NUMBER(8,2)    | t/d         |
-| 33       | watercut                      | 含水率                       | NUMBER(8,2)    | %           |
-| 34       | liquidweightproductionlevel   | 产液级别                     | VARCHAR2(50)   |             |
-| 35       | productiongasoilratio         | 生产气油比                   | NUMBER(8,2)    | m^3/t      |
-| 36       | tubingpressure                | 油压                         | NUMBER(8,2)    | MPa         |
-| 37       | casingpressure                | 套压                         | NUMBER(8,2)    | MPa         |
-| 38       | wellheadfluidtemperature      | 井口油温                     | NUMBER(8,2)    | ℃           |
-| 39       | producingfluidlevel           | 动液面                       | NUMBER(8,2)    | m           |
-| 40       | pumpsettingdepth              | 泵挂                         | NUMBER(8,2)    | m           |
-| 41       | submergence                   | 沉没度                       | NUMBER(8,2)    | m           |
-| 42       | pumpborediameter              | 泵径                         | NUMBER(8,2)    | mm          |
-| 43       | crudeoildensity               | 原油密度                     | NUMBER(16,2)   | g/cm^3     |
-| 44       | netgrossratio                 | 净毛比                       | NUMBER(8,2)    |             |
-| 45       | availableplungerstrokeprod    | 柱塞有效冲程计算产量         | NUMBER(8,2)    | t/d         |
-| 46       | pumpclearanceleakprod         | 泵间隙漏失量                 | NUMBER(8,2)    | t/d         |
-| 47       | tvleakweightproduction        | 游动凡尔漏失量               | NUMBER(8,2)    | t/d         |
-| 48       | svleakweightproduction        | 固定凡尔漏失量               | NUMBER(8,2)    | t/d         |
-| 49       | gasinfluenceprod              | 气影响                       | NUMBER(8,2)    | t/d         |
-| 50       | rodstring                     | 抽油杆数据                   | VARCHAR2(200)  |             |
-| 51       | stroke                        | 冲程                         | NUMBER(8,2)    | m           |
-| 52       | spm                           | 冲次                         | NUMBER(8,2)    | 次/min      |
-| 53       | upperloadline                 | 理论上载荷                   | NUMBER(8,2)    | kN          |
-| 54       | upperloadlineofexact          | 真实理论上载荷               | NUMBER(8,2)    | kN          |
-| 55       | lowerloadline                 | 理论下载荷                   | NUMBER(8,2)    | kN          |
-| 56       | fmax                          | 最大载荷                     | NUMBER(8,2)    | kN          |
-| 57       | fmin                          | 最小载荷                     | NUMBER(8,2)    | kN          |
-| 58       | fullnesscoefficient           | 功图充满系数                 | NUMBER(8,2)    | 小数        |
-| 59       | motorinputactivepower         | 电机输入有功功率             | NUMBER(8,2)    | kW          |
-| 60       | polishrodpower                | 光杆功率                     | NUMBER(8,2)    | kW          |
-| 61       | waterpower                    | 水功率                       | NUMBER(8,2)    | kW          |
-| 62       | systemefficiency              | 系统效率                     | NUMBER(12,3)   | 小数        |
-| 63       | systemefficiencylevel         | 系统效率级别                 | VARCHAR2(50)   |             |
-| 64       | surfacesystemefficiency       | 地面效率                     | NUMBER(12,3)   | 小数        |
-| 65       | surfacesystemefficiencylevel  | 地面效率级别                 | VARCHAR2(50)   |             |
-| 66       | welldownsystemefficiency      | 井下效率                     | NUMBER(12,3)   | 小数        |
-| 67       | welldownsystemefficiencylevel | 井下效率级别                 | VARCHAR2(50)   |             |
-| 68       | fsdiagramarea                 | 功图面积                     | NUMBER(8,2)    |             |
-| 69       | powerconsumptionperthm        | 吨液百米耗电量               | NUMBER(8,2)    | kW·h/100m·t |
-| 70       | idegreebalance                | 电流平衡度                   | NUMBER(8,2)    | %           |
-| 71       | idegreebalancename            | 电流平衡状态                 | VARCHAR2(200)  |             |
-| 72       | upstrokeimax                  | 上冲程最大电流               | NUMBER(8,2)    | A           |
-| 73       | downstrokeimax                | 下冲程最大电流               | NUMBER(8,2)    | A           |
-| 74       | iratio                        | 电流比                       | VARCHAR2       |             |
-| 75       | idegreebalancealarmlevel      | 电流平衡报警级别             | NUMBER(4)      |             |
-| 76       | wattdegreebalance             | 功率平衡度                   | NUMBER(8,2)    | %           |
-| 77       | wattdegreebalancename         | 功率平衡状态                 | VARCHAR2(200)  |             |
-| 78       | upstrokewattmax               | 上冲程最大功率               | NUMBER(8,2)    | kW          |
-| 79       | downstrokewattmax             | 下冲程最大功率               | NUMBER(8,2)    | kW          |
-| 80       | wattratio                     | 功率比                       | VARCHAR2       |             |
-| 81       | wattdegreebalancealarmlevel   | 功率平衡报警级别             | NUMBER(4)      |             |
-| 82       | pumpeff1                      | 冲程损失系数                 | NUMBER(8,2)    | 小数        |
-| 83       | pumpeff2                      | 充满系数                     | NUMBER(8,2)    | 小数        |
-| 84       | pumpeff3                      | 间隙漏失系数                 | NUMBER(8,2)    | 小数        |
-| 85       | pumpeff4                      | 液体收缩系数                 | NUMBER(8,2)    | 小数        |
-| 86       | pumpeff                       | 总泵效                       | NUMBER(8,2)    | 小数        |
-| 87       | rodflexlength                 | 抽油杆伸长量                 | NUMBER(8,2)    | m           |
-| 88       | tubingflexlength              | 油管伸缩值                   | NUMBER(8,2)    | m           |
-| 89       | inertialength                 | 惯性载荷增量                 | NUMBER(8,2)    | m           |
-| 90       | pumpintakep                   | 泵入口压力                   | NUMBER(8,2)    | MPa         |
-| 91       | pumpintaket                   | 泵入口温度                   | NUMBER(8,2)    | ℃           |
-| 92       | pumpintakegol                 | 泵入口就地气液比             | NUMBER(8,2)    | m^3/m^3   |
-| 93       | pumpinletvisl                 | 泵入口粘度                   | NUMBER(8,2)    | mPa·s       |
-| 94       | pumpinletbo                   | 泵入口原油体积系数           | NUMBER(8,2)    | 小数        |
-| 95       | pumpoutletp                   | 泵出口压力                   | NUMBER(8,2)    | MPa         |
-| 96       | pumpoutlett                   | 泵出口温度                   | NUMBER(8,2)    | ℃           |
-| 97       | pumpoutletgol                 | 泵出口就地气液比             | NUMBER(8,2)    | m^3/m^3   |
-| 98       | pumpoutletvisl                | 泵出口粘度                   | NUMBER(8,2)    | mPa·s       |
-| 99       | pumpoutletbo                  | 泵出口原油体积系数           | NUMBER(8,2)    | 小数        |
-| 100      | todaywattenergy               | 日有功功耗                   | NUMBER(8,2)    | kW·h        |
-| 101      | todaywattenergylevel          | 日耗电量等级                 | VARCHAR2(50)   |             |
-| 102      | todaypwattenergy              | 日正向有功功耗               | NUMBER(8,2)    | kW·h        |
-| 103      | todaynwattenergy              | 日反向有功功耗               | NUMBER(8,2)    | kW·h        |
-| 104      | todayvarenergy                | 日无功功耗                   | NUMBER(8,2)    | kVar·h      |
-| 105      | todaypvarenergy               | 日正向无功功耗               | NUMBER(8,2)    | kVar·h      |
-| 106      | todaynvarenergy               | 日反向无功功耗               | NUMBER(8,2)    | kVar·h      |
-| 107      | todayvaenergy                 | 日视在功耗                   | NUMBER(8,2)    | kVA·h       |
-| 108      | ia                            | A相电流                      | NUMBER(8,2)    | A           |
-| 109      | ib                            | B相电流                      | NUMBER(8,2)    | A           |
-| 110      | ic                            | C相电流                      | NUMBER(8,2)    | A           |
-| 111      | iavg                          | 三相平均电流                 | NUMBER(8,2)    | A           |
-| 112      | istr                          | 电流字符串                   | VARCHAR2       |             |
-| 113      | iauplimit                     | A相电流上限                  | NUMBER(8,2)    | A           |
-| 114      | iadownlimit                   | A相电流下限                  | NUMBER(8,2)    | A           |
-| 115      | iazero                        | A相电流零值                  | NUMBER(8,2)    | A           |
-| 116      | ibuplimit                     | B相电流上限                  | NUMBER(8,2)    | A           |
-| 117      | ibdownlimit                   | B相电流下限                  | NUMBER(8,2)    | A           |
-| 118      | ibzero                        | B相电流零值                  | NUMBER(8,2)    | A           |
-| 119      | icuplimit                     | C相电流上限                  | NUMBER(8,2)    | A           |
-| 120      | icdownlimit                   | C相电流下限                  | NUMBER(8,2)    | A           |
-| 121      | iczero                        | C相电流零值                  | NUMBER(8,2)    | A           |
-| 122      | va                            | A相电压                      | NUMBER(8,2)    | V           |
-| 123      | vb                            | B相电压                      | NUMBER(8,2)    | V           |
-| 124      | vc                            | C相电压                      | NUMBER(8,2)    | V           |
-| 125      | vavg                          | 三相平均电压                 | NUMBER(8,2)    | V           |
-| 126      | vstr                          | 电压字符串                   | VARCHAR2       |             |
-| 127      | vauplimit                     | A相电压上限                  | NUMBER(8,2)    | V           |
-| 128      | vadownlimit                   | A相电压下限                  | NUMBER(8,2)    | V           |
-| 129      | vazero                        | A相电压零值                  | NUMBER(8,2)    | V           |
-| 130      | vbuplimit                     | B相电压上限                  | NUMBER(8,2)    | V           |
-| 131      | vbdownlimit                   | B相电压下限                  | NUMBER(8,2)    | V           |
-| 132      | vbzero                        | B相电压零值                  | NUMBER(8,2)    | V           |
-| 133      | vcuplimit                     | C相电压上限                  | NUMBER(8,2)    | V           |
-| 134      | vcdownlimit                   | C相电压下限                  | NUMBER(8,2)    | V           |
-| 135      | vczero                        | C相电压零值                  | NUMBER(8,2)    | V           |
-| 136      | totalwattenergy               | 累计有功功耗                 | NUMBER(8,2)    | kW·h        |
-| 137      | totalpwattenergy              | 累计正向有功功耗             | NUMBER(8,2)    | kW·h        |
-| 138      | totalnwattenergy              | 累计反向有功功耗             | NUMBER(8,2)    | kW·h        |
-| 139      | totalvarenergy                | 累计无功功耗                 | NUMBER(8,2)    | kVar·h      |
-| 140      | totalpvarenergy               | 累计正向无功功耗             | NUMBER(8,2)    | kVar·h      |
-| 141      | totalnvarenergy               | 累计反向无功功耗             | NUMBER(8,2)    | kVar·h      |
-| 142      | totalvaenergy                 | 累计视在功耗                 | NUMBER(8,2)    | kVA·h       |
-| 143      | watta                         | A相有功功率                  | NUMBER(8,2)    | kW          |
-| 144      | wattb                         | B相有功功率                  | NUMBER(8,2)    | kW          |
-| 145      | wattc                         | C相有功功率                  | NUMBER(8,2)    | kW          |
-| 146      | wattsum                       | 三相总有功功率               | NUMBER(8,2)    | kW          |
-| 147      | wattstr                       | 有功功率字符串               | VARCHAR2       |             |
-| 148      | vara                          | A相无功功率                  | NUMBER(8,2)    | kVar        |
-| 149      | varb                          | B相无功功率                  | NUMBER(8,2)    | kVar        |
-| 150      | varc                          | C相无功功率                  | NUMBER(8,2)    | kVar        |
-| 151      | varsum                        | 三相总无功功率               | NUMBER(8,2)    | kVar        |
-| 152      | varstr                        | 无功功率字符串               | VARCHAR2       |             |
-| 153      | reversepower                  | 反向功率                     | NUMBER(8,2)    |             |
-| 154      | pfa                           | A相功率因数                  | NUMBER(8,2)    |             |
-| 155      | pfb                           | B相功率因数                  | NUMBER(8,2)    |             |
-| 156      | pfc                           | C相功率因数                  | NUMBER(8,2)    |             |
-| 157      | pfsum                         | 三相综合功率因数             | NUMBER(8,2)    |             |
-| 158      | pfstr                         | 功率因数字符串               | VARCHAR2       |             |
-| 159      | frequencysetvalue             | 设置频率                     | NUMBER(8,2)    | HZ          |
-| 160      | frequencyrunvalue             | 运行频率                     | NUMBER(8,2)    | HZ          |
-| 161      | signal                        | 信号强度                     | NUMBER(8,2)    |             |
-| 162      | interval                      | 传输间隔                     | NUMBER(10)     |             |
-| 163      | devicever                     | 设备版本                     | VARCHAR2(50)   |             |
-| 164      | balancecontrolmode            | 平衡远程调节远程触发控制     | NUMBER(10)     |             |
-| 165      | balancecalculatemode          | 平衡计算方式                 | NUMBER(10)     |             |
-| 166      | balanceawaytime               | 重心远离支点调节时间         | NUMBER(10)     | ms          |
-| 167      | balanceclosetime              | 重心接近支点调节时间         | NUMBER(10)     | ms          |
-| 168      | balanceawaytimeperbeat        | 重心远离支点每拍调节时间     | NUMBER(10)     | ms          |
-| 169      | balanceclosetimeperbeat       | 重心接近支点每拍调节时间     | NUMBER(10)     | ms          |
-| 170      | balancestrokecount            | 参与平衡度计算的冲程测量次数 | NUMBER(10)     |             |
-| 171      | balanceoperationuplimit       | 平衡调节上限                 | NUMBER(10)     | %           |
-| 172      | balanceoperationdownlimit     | 平衡调节下限                 | NUMBER(10)     | %           |
-| 173      | balanceautocontrol            | 平衡远程自动调节             | NUMBER(1)      |             |
-| 174      | spmautocontrol                | 冲次远程自动调节             | NUMBER(1)      |             |
-| 175      | balancefrontlimit             | 平衡前限位                   | NUMBER(1)      |             |
-| 176      | balanceafterlimit             | 平衡后限位                   | NUMBER(1)      |             |
-| 177      | videourl                      | 视频路径                     | VARCHAR2(400)  |             |
-| 178      | org_id                        | 组织编号                     | NUMBER(10)     |             |
-| 179      | org_code                      | 组织代码                     | VARCHAR2(20)   |             |
-| 180      | sortnum                       | 井排序编号                   | NUMBER(10)     |             |
+| 1        | id                            | 记录编号                     | NUMBER(10)     |             | 
+| 2        | wellname                      | 井名                         | VARCHAR2(200)  |             | 
+| 3        | wellid                        | 井编号                       | NUMBER(10)     |             | 
+| 4        | liftingtype                   | 举升类型                     | NUMBER(10)     |             | 
+| 5        | acquisitiontime               | 采集时间                     | DATE           |             | 
+| 6        | acquisitiontime_d             | 离散数据采集时间             | DATE           |             | 
+| 7        | commstatus                    | 通信状态                     | NUMBER(2)      |             | 
+| 8        | commstatusname                | 通信状态名称                 | VARCHAR2       |             | 
+| 9        | commalarmlevel                | 通信报警级别                 | NUMBER(3)      |             | 
+| 10       | runstatus                     | 运行状态                     | NUMBER(1)      |             | 
+| 11       | runstatusname                 | 运行状态名称                 | VARCHAR2       |             | 
+| 12       | runalarmlevel                 | 运行状态报警级别             | NUMBER(3)      |             | 
+| 13       | commtime                      | 通信时间                     | NUMBER(8,2)    | h           | 
+| 14       | commrange                     | 通信区间                     | VARCHAR2(2000) |             | 
+| 15       | commtimeefficiency            | 通信时率                     | NUMBER(10,4)   |             | 
+| 16       | commtimeefficiencylevel       | 通信时率级别                 | VARCHAR2(50)   |             | 
+| 17       | runtime                       | 运行时间                     | NUMBER(8,2)    | h           | 
+| 18       | runrange                      | 运行区间                     | VARCHAR2(2000) |             | 
+| 19       | runtimeefficiency             | 生产时率                     | NUMBER(10,4)   |             | 
+| 20       | runtimeefficiencylevel        | 生产时率等级                 | VARCHAR2(50)   |             | 
+| 21       | workingconditioncode          | 工况代码                     | NUMBER(4)      |             | 
+| 22       | workingconditionname          | 工况名称                     | VARCHAR2(200)  |             | 
+| 23       | optimizationsuggestion        | 优化建议                     | VARCHAR2(200)  |             | 
+| 24       | workingconditionalarmlevel    | 工况报警级别                 | VARCHAR2       |             | 
+| 25       | workingconditioncode_e        | 电参工况代码                 | NUMBER(4)      |             | 
+| 26       | workingconditionstring_e      | 电参功率字符串               | VARCHAR2(4000) |             | 
+| 27       | workingconditionname_e        | 电参工况名称                 | VARCHAR2(200)  |             | 
+| 28       | optimizationsuggestion_e      | 电参工况优化建议             | VARCHAR2(200)  |             | 
+| 29       | workingconditionalarmlevel_e  | 电参工况报警级别             | NUMBER(3)      |             | 
+| 30       | theoreticalproduction         | 理论排量                     | NUMBER(8,2)    | m^3/d      | 
+| 31       | liquidweightproduction        | 产液量                       | NUMBER(8,2)    | t/d         | 
+| 32       | oilweightproduction           | 产油量                       | NUMBER(8,2)    | t/d         | 
+| 33       | waterweightproduction         | 产水量                       | NUMBER(8,2)    | t/d         | 
+| 34       | watercut                      | 含水率                       | NUMBER(8,2)    | %           | 
+| 35       | liquidweightproductionlevel   | 产液级别                     | VARCHAR2(50)   |             | 
+| 36       | productiongasoilratio         | 生产气油比                   | NUMBER(8,2)    | m^3/t      | 
+| 37       | tubingpressure                | 油压                         | NUMBER(8,2)    | MPa         | 
+| 38       | casingpressure                | 套压                         | NUMBER(8,2)    | MPa         | 
+| 39       | wellheadfluidtemperature      | 井口油温                     | NUMBER(8,2)    | ℃           | 
+| 40       | producingfluidlevel           | 动液面                       | NUMBER(8,2)    | m           | 
+| 41       | pumpsettingdepth              | 泵挂                         | NUMBER(8,2)    | m           | 
+| 42       | submergence                   | 沉没度                       | NUMBER(8,2)    | m           | 
+| 43       | pumpborediameter              | 泵径                         | NUMBER(8,2)    | mm          | 
+| 44       | crudeoildensity               | 原油密度                     | NUMBER(16,2)   | g/cm^3     | 
+| 45       | netgrossratio                 | 净毛比                       | NUMBER(8,2)    |             | 
+| 46       | availableplungerstrokeprod    | 柱塞有效冲程计算产量         | NUMBER(8,2)    | t/d         | 
+| 47       | pumpclearanceleakprod         | 泵间隙漏失量                 | NUMBER(8,2)    | t/d         | 
+| 48       | tvleakweightproduction        | 游动凡尔漏失量               | NUMBER(8,2)    | t/d         | 
+| 49       | svleakweightproduction        | 固定凡尔漏失量               | NUMBER(8,2)    | t/d         | 
+| 50       | gasinfluenceprod              | 气影响                       | NUMBER(8,2)    | t/d         | 
+| 51       | rodstring                     | 抽油杆数据                   | VARCHAR2(200)  |             | 
+| 52       | stroke                        | 冲程                         | NUMBER(8,2)    | m           | 
+| 53       | spm                           | 冲次                         | NUMBER(8,2)    | 次/min      | 
+| 54       | upperloadline                 | 理论上载荷                   | NUMBER(8,2)    | kN          | 
+| 55       | upperloadlineofexact          | 真实理论上载荷               | NUMBER(8,2)    | kN          | 
+| 56       | lowerloadline                 | 理论下载荷                   | NUMBER(8,2)    | kN          | 
+| 57       | fmax                          | 最大载荷                     | NUMBER(8,2)    | kN          | 
+| 58       | fmin                          | 最小载荷                     | NUMBER(8,2)    | kN          | 
+| 59       | fullnesscoefficient           | 充满系数                     | NUMBER(8,2)    | 小数        | 
+| 60       | plungerstroke                 | 柱塞冲程                     | NUMBER(8,2)    | m           | 
+| 61       | availableplungerstroke        | 柱塞有效冲程                 | NUMBER(8,2)    | m           | 
+| 62       | motorinputactivepower         | 电机输入有功功率             | NUMBER(8,2)    | kW          | 
+| 63       | polishrodpower                | 光杆功率                     | NUMBER(8,2)    | kW          | 
+| 64       | waterpower                    | 水功率                       | NUMBER(8,2)    | kW          | 
+| 65       | systemefficiency              | 系统效率                     | NUMBER(12,3)   | 小数        | 
+| 66       | systemefficiencylevel         | 系统效率级别                 | VARCHAR2(50)   |             | 
+| 67       | surfacesystemefficiency       | 地面效率                     | NUMBER(12,3)   | 小数        | 
+| 68       | surfacesystemefficiencylevel  | 地面效率级别                 | VARCHAR2(50)   |             | 
+| 69       | welldownsystemefficiency      | 井下效率                     | NUMBER(12,3)   | 小数        | 
+| 70       | welldownsystemefficiencylevel | 井下效率级别                 | VARCHAR2(50)   |             | 
+| 71       | fsdiagramarea                 | 功图面积                     | NUMBER(8,2)    |             | 
+| 72       | powerconsumptionperthm        | 吨液百米耗电量               | NUMBER(8,2)    | kW·h/100m·t | 
+| 73       | idegreebalance                | 电流平衡度                   | NUMBER(8,2)    | %           | 
+| 74       | idegreebalancename            | 电流平衡状态                 | VARCHAR2(200)  |             | 
+| 75       | upstrokeimax                  | 上冲程最大电流               | NUMBER(8,2)    | A           | 
+| 76       | downstrokeimax                | 下冲程最大电流               | NUMBER(8,2)    | A           | 
+| 77       | iratio                        | 电流比                       | VARCHAR2       |             | 
+| 78       | idegreebalancealarmlevel      | 电流平衡报警级别             | NUMBER(4)      |             | 
+| 79       | wattdegreebalance             | 功率平衡度                   | NUMBER(8,2)    | %           | 
+| 80       | wattdegreebalancename         | 功率平衡状态                 | VARCHAR2(200)  |             | 
+| 81       | upstrokewattmax               | 上冲程最大功率               | NUMBER(8,2)    | kW          | 
+| 82       | downstrokewattmax             | 下冲程最大功率               | NUMBER(8,2)    | kW          | 
+| 83       | wattratio                     | 功率比                       | VARCHAR2       |             | 
+| 84       | wattdegreebalancealarmlevel   | 功率平衡报警级别             | NUMBER(4)      |             | 
+| 85       | pumpeff1                      | 冲程损失系数                 | NUMBER(8,2)    | 小数        | 
+| 86       | pumpeff2                      | 充满系数                     | NUMBER(8,2)    | 小数        | 
+| 87       | pumpeff3                      | 间隙漏失系数                 | NUMBER(8,2)    | 小数        | 
+| 88       | pumpeff4                      | 液体收缩系数                 | NUMBER(8,2)    | 小数        | 
+| 89       | pumpeff                       | 总泵效                       | NUMBER(8,2)    | 小数        | 
+| 90       | rodflexlength                 | 抽油杆伸长量                 | NUMBER(8,2)    | m           | 
+| 91       | tubingflexlength              | 油管伸缩值                   | NUMBER(8,2)    | m           | 
+| 92       | inertialength                 | 惯性载荷增量                 | NUMBER(8,2)    | m           | 
+| 93       | pumpintakep                   | 泵入口压力                   | NUMBER(8,2)    | MPa         | 
+| 94       | pumpintaket                   | 泵入口温度                   | NUMBER(8,2)    | ℃           | 
+| 95       | pumpintakegol                 | 泵入口就地气液比             | NUMBER(8,2)    | m^3/m^3   | 
+| 96       | pumpinletvisl                 | 泵入口粘度                   | NUMBER(8,2)    | mPa·s       | 
+| 97       | pumpinletbo                   | 泵入口原油体积系数           | NUMBER(8,2)    | 小数        | 
+| 98       | pumpoutletp                   | 泵出口压力                   | NUMBER(8,2)    | MPa         | 
+| 99       | pumpoutlett                   | 泵出口温度                   | NUMBER(8,2)    | ℃           | 
+| 100      | pumpoutletgol                 | 泵出口就地气液比             | NUMBER(8,2)    | m^3/m^3   | 
+| 101      | pumpoutletvisl                | 泵出口粘度                   | NUMBER(8,2)    | mPa·s       | 
+| 102      | pumpoutletbo                  | 泵出口原油体积系数           | NUMBER(8,2)    | 小数        | 
+| 103      | todaywattenergy               | 日有功功耗                   | NUMBER(8,2)    | kW·h        | 
+| 104      | todaywattenergylevel          | 日耗电量等级                 | VARCHAR2(50)   |             | 
+| 105      | todaypwattenergy              | 日正向有功功耗               | NUMBER(8,2)    | kW·h        | 
+| 106      | todaynwattenergy              | 日反向有功功耗               | NUMBER(8,2)    | kW·h        | 
+| 107      | todayvarenergy                | 日无功功耗                   | NUMBER(8,2)    | kVar·h      | 
+| 108      | todaypvarenergy               | 日正向无功功耗               | NUMBER(8,2)    | kVar·h      | 
+| 109      | todaynvarenergy               | 日反向无功功耗               | NUMBER(8,2)    | kVar·h      | 
+| 110      | todayvaenergy                 | 日视在功耗                   | NUMBER(8,2)    | kVA·h       | 
+| 111      | ia                            | A相电流                      | NUMBER(8,2)    | A           | 
+| 112      | ib                            | B相电流                      | NUMBER(8,2)    | A           | 
+| 113      | ic                            | C相电流                      | NUMBER(8,2)    | A           | 
+| 114      | iavg                          | 三相平均电流                 | NUMBER(8,2)    | A           | 
+| 115      | istr                          | 电流字符串                   | VARCHAR2       |             | 
+| 116      | iauplimit                     | A相电流上限                  | NUMBER(8,2)    | A           | 
+| 117      | iadownlimit                   | A相电流下限                  | NUMBER(8,2)    | A           | 
+| 118      | iazero                        | A相电流零值                  | NUMBER(8,2)    | A           | 
+| 119      | ibuplimit                     | B相电流上限                  | NUMBER(8,2)    | A           | 
+| 120      | ibdownlimit                   | B相电流下限                  | NUMBER(8,2)    | A           | 
+| 121      | ibzero                        | B相电流零值                  | NUMBER(8,2)    | A           | 
+| 122      | icuplimit                     | C相电流上限                  | NUMBER(8,2)    | A           | 
+| 123      | icdownlimit                   | C相电流下限                  | NUMBER(8,2)    | A           | 
+| 124      | iczero                        | C相电流零值                  | NUMBER(8,2)    | A           | 
+| 125      | va                            | A相电压                      | NUMBER(8,2)    | V           | 
+| 126      | vb                            | B相电压                      | NUMBER(8,2)    | V           | 
+| 127      | vc                            | C相电压                      | NUMBER(8,2)    | V           | 
+| 128      | vavg                          | 三相平均电压                 | NUMBER(8,2)    | V           | 
+| 129      | vstr                          | 电压字符串                   | VARCHAR2       |             | 
+| 130      | vauplimit                     | A相电压上限                  | NUMBER(8,2)    | V           | 
+| 131      | vadownlimit                   | A相电压下限                  | NUMBER(8,2)    | V           | 
+| 132      | vazero                        | A相电压零值                  | NUMBER(8,2)    | V           | 
+| 133      | vbuplimit                     | B相电压上限                  | NUMBER(8,2)    | V           | 
+| 134      | vbdownlimit                   | B相电压下限                  | NUMBER(8,2)    | V           | 
+| 135      | vbzero                        | B相电压零值                  | NUMBER(8,2)    | V           | 
+| 136      | vcuplimit                     | C相电压上限                  | NUMBER(8,2)    | V           | 
+| 137      | vcdownlimit                   | C相电压下限                  | NUMBER(8,2)    | V           | 
+| 138      | vczero                        | C相电压零值                  | NUMBER(8,2)    | V           | 
+| 139      | totalwattenergy               | 累计有功功耗                 | NUMBER(8,2)    | kW·h        | 
+| 140      | totalpwattenergy              | 累计正向有功功耗             | NUMBER(8,2)    | kW·h        | 
+| 141      | totalnwattenergy              | 累计反向有功功耗             | NUMBER(8,2)    | kW·h        | 
+| 142      | totalvarenergy                | 累计无功功耗                 | NUMBER(8,2)    | kVar·h      | 
+| 143      | totalpvarenergy               | 累计正向无功功耗             | NUMBER(8,2)    | kVar·h      | 
+| 144      | totalnvarenergy               | 累计反向无功功耗             | NUMBER(8,2)    | kVar·h      | 
+| 145      | totalvaenergy                 | 累计视在功耗                 | NUMBER(8,2)    | kVA·h       | 
+| 146      | watta                         | A相有功功率                  | NUMBER(8,2)    | kW          | 
+| 147      | wattb                         | B相有功功率                  | NUMBER(8,2)    | kW          | 
+| 148      | wattc                         | C相有功功率                  | NUMBER(8,2)    | kW          | 
+| 149      | wattsum                       | 三相总有功功率               | NUMBER(8,2)    | kW          | 
+| 150      | wattstr                       | 有功功率字符串               | VARCHAR2       |             | 
+| 151      | vara                          | A相无功功率                  | NUMBER(8,2)    | kVar        | 
+| 152      | varb                          | B相无功功率                  | NUMBER(8,2)    | kVar        | 
+| 153      | varc                          | C相无功功率                  | NUMBER(8,2)    | kVar        | 
+| 154      | varsum                        | 三相总无功功率               | NUMBER(8,2)    | kVar        | 
+| 155      | varstr                        | 无功功率字符串               | VARCHAR2       |             | 
+| 156      | reversepower                  | 反向功率                     | NUMBER(8,2)    |             | 
+| 157      | pfa                           | A相功率因数                  | NUMBER(8,2)    |             | 
+| 158      | pfb                           | B相功率因数                  | NUMBER(8,2)    |             | 
+| 159      | pfc                           | C相功率因数                  | NUMBER(8,2)    |             | 
+| 160      | pfsum                         | 三相综合功率因数             | NUMBER(8,2)    |             | 
+| 161      | pfstr                         | 功率因数字符串               | VARCHAR2       |             | 
+| 162      | frequencysetvalue             | 设置频率                     | NUMBER(8,2)    | HZ          | 
+| 163      | frequencyrunvalue             | 运行频率                     | NUMBER(8,2)    | HZ          | 
+| 164      | signal                        | 信号强度                     | NUMBER(8,2)    |             | 
+| 165      | interval                      | 传输间隔                     | NUMBER(10)     |             | 
+| 166      | devicever                     | 设备版本                     | VARCHAR2(50)   |             | 
+| 167      | balancecontrolmode            | 平衡远程调节远程触发控制     | NUMBER(10)     |             | 
+| 168      | balancecalculatemode          | 平衡计算方式                 | NUMBER(10)     |             | 
+| 169      | balanceawaytime               | 重心远离支点调节时间         | NUMBER(10)     | ms          | 
+| 170      | balanceclosetime              | 重心接近支点调节时间         | NUMBER(10)     | ms          | 
+| 171      | balanceawaytimeperbeat        | 重心远离支点每拍调节时间     | NUMBER(10)     | ms          | 
+| 172      | balanceclosetimeperbeat       | 重心接近支点每拍调节时间     | NUMBER(10)     | ms          | 
+| 173      | balancestrokecount            | 参与平衡度计算的冲程测量次数 | NUMBER(10)     |             | 
+| 174      | balanceoperationuplimit       | 平衡调节上限                 | NUMBER(10)     | %           | 
+| 175      | balanceoperationdownlimit     | 平衡调节下限                 | NUMBER(10)     | %           | 
+| 176      | balanceautocontrol            | 平衡远程自动调节             | NUMBER(1)      |             | 
+| 177      | spmautocontrol                | 冲次远程自动调节             | NUMBER(1)      |             | 
+| 178      | balancefrontlimit             | 平衡前限位                   | NUMBER(1)      |             | 
+| 179      | balanceafterlimit             | 平衡后限位                   | NUMBER(1)      |             | 
+| 180      | videourl                      | 视频路径                     | VARCHAR2(400)  |             | 
+| 181      | org_id                        | 组织编号                     | NUMBER(10)     |             | 
+| 182      | org_code                      | 组织代码                     | VARCHAR2(20)   |             | 
+| 183      | sortnum                       | 井排序编号                   | NUMBER(10)     |             |
 
 ### 2.2.10 viw_rpc_comprehensive_hist 抽油机综合数据历史视图
 
@@ -1468,6 +1830,462 @@
 | 29       | resultstatus               | 计算结果       | NUMBER(2)     |          |
 | 30       | orgid                      | 组织编号       | NUMBER(10)    |          |
 
+### 2.1.15 viw_pcp_productiondata_latest 螺杆泵生产数据实时视图 
+
+| **序号** | **名称**                   | **代码**       | **类型**      | **单位** | 
+|----------|----------------------------|----------------|---------------|----------|
+| 1        | id                         | 记录编号       | NUMBER(10)    |          | 
+| 2        | wellname                   | 井名           | VARCHAR2(200) |          | 
+| 3        | wellid                     | 井编号         | NUMBER(10)    |          | 
+| 4        | liftingtype                | 举升类型       | NUMBER(10)    |          | 
+| 5        | acquisitiontime            | 采集时间       | DATE          |          | 
+| 6        | runtime                    | 运行时间       | NUMBER(8,2)   | h        | 
+| 7        | crudeoildensity            | 原油密度       | NUMBER(16,2)  | g/cm^3  | 
+| 8        | waterdensity               | 水密度         | NUMBER(16,2)  | g/cm^3  | 
+| 9        | naturalgasrelativedensity  | 天然气相对密度 | NUMBER(16,2)  |          | 
+| 10       | saturationpressure         | 饱和压力       | NUMBER(16,2)  | MPa      | 
+| 11       | reservoirdepth             | 油层中部深度   | NUMBER(16,2)  | m        | 
+| 12       | reservoirtemperature       | 油层中部温度   | NUMBER(16,2)  | ℃        | 
+| 13       | watercut_w                 | 重量含水率     | NUMBER(8,2)   | %        | 
+| 14       | watercut                   | 体积含水率     | NUMBER(8,2)   | %        | 
+| 15       | tubingpressure             | 油压           | NUMBER(8,2)   | MPa      | 
+| 16       | casingpressure             | 套压           | NUMBER(8,2)   | MPa      | 
+| 17       | backpressure               | 回压           | NUMBER(8,2)   | MPa      | 
+| 18       | wellheadfluidtemperature   | 井口油温       | NUMBER(8,2)   | ℃        | 
+| 19       | producingfluidlevel        | 动液面         | NUMBER(8,2)   | m        | 
+| 20       | pumpsettingdepth           | 泵挂           | NUMBER(8,2)   | m        | 
+| 21       | productiongasoilratio      | 生产气油比     | NUMBER(8,2)   | m^3/t   | 
+| 22       | pumpborediameter           | 泵径           | NUMBER(8,2)   | mm       | 
+| 23       | pumptype                   | 泵类型         | VARCHAR2(20)  |          | 
+| 24       | pumptypename               | 泵类型名称     | VARCHAR2(200) |          | 
+| 25       | pumpgrade                  | 泵级别         | NUMBER(1)     |          | 
+| 26       | plungerlength              | 柱塞长         | NUMBER(8,2)   | m        | 
+| 27       | barreltype                 | 泵筒类型       | VARCHAR2(20)  |          | 
+| 28       | barreltypename             | 泵筒类型名称   | VARCHAR2(200) |          | 
+| 29       | barrellength               | 泵筒长         | NUMBER(8,2)   | m        | 
+| 30       | barrelseries               | 泵级数         | NUMBER(8,2)   |          | 
+| 31       | rotordiameter              | 转子截面直径   | NUMBER(8,2)   | mm       | 
+| 32       | qpr                        | 转速           | NUMBER(8,2)   | r/min    | 
+| 33       | tubingstringinsidediameter | 油管内径       | NUMBER(8,2)   | mm       | 
+| 34       | casingstringinsidediameter | 套管内径       | NUMBER(8,2)   | mm       | 
+| 35       | rodstring                  | 杆数据         | VARCHAR2(200) |          | 
+| 36       | anchoringstate             | 锚定状态       | NUMBER(1)     |          | 
+| 37       | anchoringstatename         | 锚定状态名称   | VARCHAR2(200) |          | 
+| 38       | netgrossratio              | 净毛比         | NUMBER(8,2)   |          | 
+| 39       | manualintervention         | 人工干预代码   | NUMBER(4)     |          | 
+| 40       | sortnum                    | 井排序编号     | NUMBER(10)    |          | 
+| 41       | org_id                     | 组织编号       | NUMBER(10)    |          | 
+### 2.1.16 viw_pcp_productiondata_hist 螺杆泵生产数据历史视图
+
+同viw_pcp_productiondata_latest
+
+### 2.1.17 viw_pcp_rpm_latest 螺杆泵曲线数据实时视图 
+
+| **序号** | **名称**                      | **代码**           | **类型**      | **单位**    | 
+|----------|-------------------------------|--------------------|---------------|-------------|
+| 1        | id                            | 记录编号           | NUMBER(10)    |             | 
+| 2        | wellname                      | 井名               | VARCHAR2(200) |             | 
+| 3        | wellid                        | 井编号             | NUMBER(10)    |             | 
+| 4        | liftingtype                   | 举升类型           | NUMBER(10)    |             | 
+| 5        | acquisitiontime               | 采集时间           | DATE          |             | 
+| 6        | rpm                           | 转速               | NUMBER(8,2)   | r/min       | 
+| 7        | torque                        | 扭矩               | NUMBER(8,2)   | kN·m        | 
+| 8        | workingconditioncode          | 工况代码           | NUMBER(4)     |             | 
+| 9        | workingconditionname          | 工况名称           | VARCHAR2(200) |             | 
+| 10       | optimizationsuggestion        | 优化建议           | VARCHAR2(200) |             | 
+| 11       | workingconditionrunalarmlevel | 工况报警级别       | NUMBER(3)     |             | 
+| 12       | theoreticalproduction         | 理论排量           | NUMBER(8,2)   | m\^3/d      | 
+| 13       | liquidweightproduction        | 产液量             | NUMBER(8,2)   | t/d         | 
+| 14       | oilweightproduction           | 产油量             | NUMBER(8,2)   | t/d         | 
+| 15       | waterweightproduction         | 产水量             | NUMBER(8,2)   | t/d         | 
+| 16       | watercut                      | 含水率             | NUMBER(8,2)   | %           | 
+| 17       | liquidweightproductionlevel   | 产液级别           | VARCHAR2(50)  |             | 
+| 18       | productiongasoilratio         | 生产气油比         | NUMBER(8,2)   | m\^3/t      | 
+| 19       | tubingpressure                | 油压               | NUMBER(8,2)   | MPa         | 
+| 20       | casingpressure                | 套压               | NUMBER(8,2)   | MPa         | 
+| 21       | wellheadfluidtemperature      | 井口油温           | NUMBER(8,2)   | ℃           | 
+| 22       | qpr                           | 公称排量           | NUMBER(8,2)   | m\^3/r      | 
+| 23       | barrellength                  | 泵筒长             | NUMBER(8,2)   | m           | 
+| 24       | barrelseries                  | 泵级数             | NUMBER(8,2)   |             | 
+| 25       | rotordiameter                 | 转子截面直径       | NUMBER(8,2)   | mm          | 
+| 26       | producingfluidlevel           | 动液面             | NUMBER(8,2)   | m           | 
+| 27       | pumpsettingdepth              | 泵挂               | NUMBER(8,2)   | m           | 
+| 28       | submergence                   | 沉没度             | NUMBER(8,2)   | m           | 
+| 29       | pumpborediameter              | 泵径               | NUMBER(8,2)   | mm          | 
+| 30       | crudeoildensity               | 原油密度           | NUMBER(16,2)  | g/cm\^3     | 
+| 31       | netgrossratio                 | 净毛比             | NUMBER(8,2)   |             | 
+| 32       | rodstring                     | 抽油杆柱分析数据   | VARCHAR2(200) |             | 
+| 33       | motorinputactivepower         | 电机输入有功功率   | NUMBER(8,2)   | kW          | 
+| 34       | waterpower                    | 水功率             | NUMBER(8,2)   | kW          | 
+| 35       | systemefficiency              | 系统效率           | NUMBER(12,3)  | 小数        | 
+| 36       | systemefficiencylevel         | 系统效率级别       | VARCHAR2(50)  |             | 
+| 37       | powerconsumptionperthm        | 吨液百米耗电量     | NUMBER(8,2)   | kW·h/100m·t | 
+| 38       | pumpeff1                      | 容积效率           | NUMBER(12,3)  | 小数        | 
+| 39       | pumpeff2                      | 液体收缩系数       | NUMBER(12,3)  | 小数        | 
+| 40       | pumpeff                       | 泵效               | NUMBER(12,3)  | 小数        | 
+| 41       | pumpintakep                   | 泵入口压力         | NUMBER(8,2)   | MPa         | 
+| 42       | pumpintaket                   | 泵入口温度         | NUMBER(8,2)   | ℃           | 
+| 43       | pumpintakegol                 | 泵入口就地气液比   | NUMBER(8,2)   | m\^3/m\^3   | 
+| 44       | pumpinletvisl                 | 泵入口粘度         | NUMBER(8,2)   | mPa·s       | 
+| 45       | pumpinletbo                   | 泵入口原油体积系数 | NUMBER(8,2)   | 小数        | 
+| 46       | pumpoutletp                   | 泵出口压力         | NUMBER(8,2)   | MPa         | 
+| 47       | pumpoutlett                   | 泵出口温度         | NUMBER(8,2)   | ℃           | 
+| 48       | pumpoutletgol                 | 泵出口就地气液比   | NUMBER(8,2)   | m\^3/m\^3   | 
+| 49       | pumpoutletvisl                | 泵出口粘度         | NUMBER(8,2)   | mPa·s       | 
+| 50       | pumpoutletbo                  | 泵出口原油体积系数 | NUMBER(8,2)   | 小数        | 
+| 51       | videourl                      | 视频路径           | VARCHAR2(400) |             | 
+| 52       | org_id                        | 组织标号           | NUMBER(10)    |             | 
+| 53       | org_code                      | 组织代码           | VARCHAR2(20)  |             | 
+| 54       | sortnum                       | 井排序编号         | NUMBER(10)    |             | 
+
+### 2.1.18 viw_pcp_rpm_hist 螺杆泵曲线数据历史视图
+
+同viw_pcp_rpm_latest
+
+### 2.1.19 viw_pcp_discrete_latest 螺杆泵离散数据实时视图
+
+| **序号** | **名称**                    | **代码**         | **类型**       | **单位** | 
+|----------|-----------------------------|------------------|----------------|----------|
+| 1        | id                          | 记录编号         | NUMBER(10)     |          | 
+| 2        | wellname                    | 井名             | VARCHAR2(200)  |          | 
+| 3        | liftingtype                 | 举升类型         | NUMBER(10)     |          | 
+| 4        | liftingtypename             | 举升类型名称     | VARCHAR2(200)  |          | 
+| 5        | wellid                      | 井编号           | NUMBER(10)     |          | 
+| 6        | commstatus                  | 通信状态         | NUMBER(1)      |          | 
+| 7        | commstatusname              | 通信状态名称     | VARCHAR2       |          | 
+| 8        | commalarmlevel              | 通信报警级别     | NUMBER(4)      |          | 
+| 9        | runstatus                   | 运行状态         | NUMBER(1)      |          | 
+| 10       | runstatusname               | 运行状态名称     | VARCHAR2       |          | 
+| 11       | runalarmlevel               | 运行状态报警级别 | NUMBER(3)      |          | 
+| 12       | commtime                    | 通信时间         | NUMBER(8,2)    | h        | 
+| 13       | commrange                   | 通信区间         | VARCHAR2(2000) |          | 
+| 14       | commtimeefficiency          | 通信时率         | NUMBER(10,4)   |          | 
+| 15       | commtimeefficiencylevel     | 通信时率级别     | VARCHAR2(50)   |          | 
+| 16       | runtime                     | 运行时间         | NUMBER(8,2)    | h        | 
+| 17       | runrange                    | 运行区间         | VARCHAR2(2000) |          | 
+| 18       | runtimeefficiency           | 生产时率         | NUMBER(10,4)   |          | 
+| 19       | runtimeefficiencylevel      | 生产时率等级     | VARCHAR2(50)   |          | 
+| 20       | acquisitiontime             | 采集时间         | DATE           |          | 
+| 21       | workingconditioncode_elec   | 工况代码         | NUMBER(4)      |          | 
+| 22       | workingconditionstring_elec | 工况累计字符串   | VARCHAR2(4000) |          | 
+| 23       | workingconditionname_elec   | 工况名称         | VARCHAR2(200)  |          | 
+| 24       | optimizationsuggestion_elec | 优化建议         | VARCHAR2(200)  |          | 
+| 25       | workingconditionalarmlevel  | 工况报警等级     | NUMBER(3)      |          | 
+| 26       | todaywattenergy             | 日有功功耗       | NUMBER(8,2)    | kW·h     | 
+| 27       | todaywattenergylevel        | 日耗电量等级     | VARCHAR2(50)   |          | 
+| 28       | todaypwattenergy            | 日正向有功功耗   | NUMBER(8,2)    | kW·h     | 
+| 29       | todaynwattenergy            | 日反向有功功耗   | NUMBER(8,2)    | kW·h     | 
+| 30       | todayvarenergy              | 日无功功耗       | NUMBER(8,2)    | kVar·h   | 
+| 31       | todaypvarenergy             | 日正向无功功耗   | NUMBER(8,2)    | kVar·h   | 
+| 32       | todaynvarenergy             | 日反向无功功耗   | NUMBER(8,2)    | kVar·h   | 
+| 33       | todayvaenergy               | 日视在功耗       | NUMBER(8,2)    | kVA·h    | 
+| 34       | ia                          | A相电流          | NUMBER(8,2)    | A        | 
+| 35       | ib                          | B相电流          | NUMBER(8,2)    | A        | 
+| 36       | ic                          | C相电流          | NUMBER(8,2)    | A        | 
+| 37       | iavg                        | 三项平均电流     | NUMBER(8,2)    | A        | 
+| 38       | istr                        | 电流字符串       | VARCHAR2       |          | 
+| 39       | iauplimit                   | A相电流上限      | NUMBER(8,2)    | A        | 
+| 40       | iadownlimit                 | A相电流下限      | NUMBER(8,2)    | A        | 
+| 41       | iazero                      | A相电流零值      | NUMBER(8,2)    | A        | 
+| 42       | ibuplimit                   | B相电流上限      | NUMBER(8,2)    | A        | 
+| 43       | ibdownlimit                 | B相电流下限      | NUMBER(8,2)    | A        | 
+| 44       | ibzero                      | B相电流零值      | NUMBER(8,2)    | A        | 
+| 45       | icuplimit                   | C相电流上限      | NUMBER(8,2)    | A        | 
+| 46       | icdownlimit                 | C相电流下限      | NUMBER(8,2)    | A        | 
+| 47       | iczero                      | C相电流零值      | NUMBER(8,2)    | A        | 
+| 48       | va                          | A相电压          | NUMBER(8,2)    | V        | 
+| 49       | vb                          | B相电压          | NUMBER(8,2)    | V        | 
+| 50       | vc                          | C相电压          | NUMBER(8,2)    | V        | 
+| 51       | vavg                        | 三项平均电压     | NUMBER(8,2)    | V        | 
+| 52       | vstr                        | 电压字符串       | VARCHAR2       |          | 
+| 53       | vauplimit                   | A相电压上限      | NUMBER(8,2)    | V        | 
+| 54       | vadownlimit                 | A相电压下限      | NUMBER(8,2)    | V        | 
+| 55       | vazero                      | A相电压零值      | NUMBER(8,2)    | V        | 
+| 56       | vbuplimit                   | B相电压上限      | NUMBER(8,2)    | V        | 
+| 57       | vbdownlimit                 | B相电压下限      | NUMBER(8,2)    | V        | 
+| 58       | vbzero                      | B相电压零值      | NUMBER(8,2)    | V        | 
+| 59       | vcuplimit                   | C相电压上限      | NUMBER(8,2)    | V        | 
+| 60       | vcdownlimit                 | C相电压下限      | NUMBER(8,2)    | V        | 
+| 61       | vczero                      | C相电压零值      | NUMBER(8,2)    | V        | 
+| 62       | totalwattenergy             | 累计有功功耗     | NUMBER(8,2)    | kW·h     | 
+| 63       | totalpwattenergy            | 累计正向有功功耗 | NUMBER(8,2)    | kW·h     | 
+| 64       | totalnwattenergy            | 累计反向有功功耗 | NUMBER(8,2)    | kW·h     | 
+| 65       | totalvarenergy              | 累计无功功耗     | NUMBER(8,2)    | kVar·h   | 
+| 66       | totalpvarenergy             | 累计正向无功功耗 | NUMBER(8,2)    | kVar·h   | 
+| 67       | totalnvarenergy             | 累计反向无功功耗 | NUMBER(8,2)    | kVar·h   | 
+| 68       | totalvaenergy               | 累计视在功耗     | NUMBER(8,2)    | kVA·h    | 
+| 69       | watta                       | A相有功功率      | NUMBER(8,2)    | kW       | 
+| 70       | wattb                       | B相有功功率      | NUMBER(8,2)    | kW       | 
+| 71       | wattc                       | C相有功功率      | NUMBER(8,2)    | kW       | 
+| 72       | wattsum                     | 三相总有功功率   | NUMBER(8,2)    | kW       | 
+| 73       | wattstr                     | 有功功率字符串   | VARCHAR2       |          | 
+| 74       | vara                        | A相无功功率      | NUMBER(8,2)    | kVar     | 
+| 75       | varb                        | B相无功功率      | NUMBER(8,2)    | kVar     | 
+| 76       | varc                        | C相无功功率      | NUMBER(8,2)    | kVar     | 
+| 77       | varsum                      | 三相总无功功率   | NUMBER(8,2)    | kVar     | 
+| 78       | varstr                      | 无功功率字符串   | VARCHAR2       |          | 
+| 79       | reversepower                | 反向功率         | NUMBER(8,2)    |          | 
+| 80       | pfa                         | A相功率因数      | NUMBER(8,2)    |          | 
+| 81       | pfb                         | B相功率因数      | NUMBER(8,2)    |          | 
+| 82       | pfc                         | C相功率因数      | NUMBER(8,2)    |          | 
+| 83       | pfsum                       | 三相综合功率因数 | NUMBER(8,2)    |          | 
+| 84       | pfstr                       | 功率因数字符串   | VARCHAR2       |          | 
+| 85       | frequencysetvalue           | 设置频率         | NUMBER(8,2)    | HZ       | 
+| 86       | frequencyrunvalue           | 运行频率         | NUMBER(8,2)    | HZ       | 
+| 87       | tubingpressure              | 油压             | NUMBER(8,2)    | MPa      | 
+| 88       | casingpressure              | 套压             | NUMBER(8,2)    | MPa      | 
+| 89       | backpressure                | 回压             | NUMBER(8,2)    | MPa      | 
+| 90       | wellheadfluidtemperature    | 井口油温         | NUMBER(8,2)    | ℃        | 
+| 91       | signal                      | 信号强度         | NUMBER(8,2)    |          | 
+| 92       | interval                    | 传输间隔         | NUMBER(10)     |          | 
+| 93       | devicever                   | 设备版本         | VARCHAR2(50)   |          | 
+| 94       | videourl                    | 视频路径         | VARCHAR2(400)  |          | 
+| 95       | sortnum                     | 井排序编号       | NUMBER(10)     |          | 
+| 96       | org_code                    | 组织代码         | VARCHAR2(20)   |          | 
+| 97       | org_id                      | 组织编号         | NUMBER(10)     |          | 
+
+### 2.1.20 viw_pcp_discrete_hist 螺杆泵离散数据历史视图
+
+同viw_pcp_discrete_latest
+
+### 2.1.21 viw_pcp_comprehensive_latest 螺杆泵综合数据实时视图 
+
+| **序号** | **名称**                     | **代码**           | **类型**       | **单位**    | 
+|----------|------------------------------|--------------------|----------------|-------------|
+| 1        | id                           | 记录编号           | NUMBER(10)     |             | 
+| 2        | wellname                     | 井名               | VARCHAR2(200)  |             | 
+| 3        | wellid                       | 井编号             | NUMBER(10)     |             | 
+| 4        | liftingtype                  | 举升类型           | NUMBER(10)     |             | 
+| 5        | acquisitiontime              | 采集时间           | DATE           |             | 
+| 6        | acquisitiontime_d            | 离散数据采集时间   | DATE           |             | 
+| 7        | commstatus                   | 通信状态           | NUMBER(2)      |             | 
+| 8        | commstatusname               | 通信状态名称       | VARCHAR2       |             | 
+| 9        | commalarmlevel               | 通信报警级别       | NUMBER(3)      |             | 
+| 10       | runstatus                    | 运行状态           | NUMBER(1)      |             | 
+| 11       | runstatusname                | 运行状态名称       | VARCHAR2       |             | 
+| 12       | runalarmlevel                | 运行状态报警级别   | NUMBER(3)      |             | 
+| 13       | commtime                     | 通信时间           | NUMBER(8,2)    | h           | 
+| 14       | commrange                    | 通信区间           | VARCHAR2(2000) |             | 
+| 15       | commtimeefficiency           | 通信时率           | NUMBER(10,4)   |             | 
+| 16       | commtimeefficiencylevel      | 通信时率级别       | VARCHAR2(50)   |             | 
+| 17       | runtime                      | 运行时间           | NUMBER(8,2)    | h           | 
+| 18       | runrange                     | 运行区间           | VARCHAR2(2000) |             | 
+| 19       | runtimeefficiency            | 生产时率           | NUMBER(10,4)   |             | 
+| 20       | runtimeefficiencylevel       | 生产时率等级       | VARCHAR2(50)   |             | 
+| 21       | workingconditioncode         | 工况代码           | NUMBER(4)      |             | 
+| 22       | workingconditionname         | 工况名称           | VARCHAR2(200)  |             | 
+| 23       | optimizationsuggestion       | 优化建议           | VARCHAR2(200)  |             | 
+| 24       | workingconditionalarmlevel   | 工况报警级别       | VARCHAR2       |             | 
+| 25       | workingconditioncode_e       | 电参工况代码       | NUMBER(4)      |             | 
+| 26       | workingconditionstring_e     | 电参功率字符串     | VARCHAR2(4000) |             | 
+| 27       | workingconditionname_e       | 电参工况名称       | VARCHAR2(200)  |             | 
+| 28       | optimizationsuggestion_e     | 电参工况优化建议   | VARCHAR2(200)  |             | 
+| 29       | workingconditionalarmlevel_e | 电参工况报警级别   | NUMBER(3)      |             | 
+| 30       | rpm                          | 转速               | NUMBER(8,2)    | r/min       | 
+| 31       | torque                       | 扭矩               | NUMBER(8,2)    | kN·m        | 
+| 32       | theoreticalproduction        | 理论排量           | NUMBER(8,2)    | m^3/d      | 
+| 33       | liquidweightproduction       | 产液量             | NUMBER(8,2)    | t/d         | 
+| 34       | oilweightproduction          | 产油量             | NUMBER(8,2)    | t/d         | 
+| 35       | waterweightproduction        | 产水量             | NUMBER(8,2)    | t/d         | 
+| 36       | watercut                     | 含水率             | NUMBER(8,2)    | %           | 
+| 37       | liquidweightproductionlevel  | 产液级别           | VARCHAR2(50)   |             | 
+| 38       | productiongasoilratio        | 生产气油比         | NUMBER(8,2)    | m^3/t      | 
+| 39       | tubingpressure               | 油压               | NUMBER(8,2)    | MPa         | 
+| 40       | casingpressure               | 套压               | NUMBER(8,2)    | MPa         | 
+| 41       | wellheadfluidtemperature     | 井口油温           | NUMBER(8,2)    | ℃           | 
+| 42       | qpr                          | 公称排量           | NUMBER(8,2)    | m^3/r      | 
+| 43       | barrellength                 | 泵筒长             | NUMBER(8,2)    | m           | 
+| 44       | barrelseries                 | 泵级数             | NUMBER(8,2)    |             | 
+| 45       | rotordiameter                | 转子截面直径       | NUMBER(8,2)    | mm          | 
+| 46       | producingfluidlevel          | 动液面             | NUMBER(8,2)    | m           | 
+| 47       | pumpsettingdepth             | 泵挂               | NUMBER(8,2)    | m           | 
+| 48       | submergence                  | 沉没度             | NUMBER(8,2)    | m           | 
+| 49       | pumpborediameter             | 泵径               | NUMBER(8,2)    | mm          | 
+| 50       | crudeoildensity              | 原油密度           | NUMBER(16,2)   | g/cm^3     | 
+| 51       | netgrossratio                | 净毛比             | NUMBER(8,2)    |             | 
+| 52       | rodstring                    | 抽油杆数据         | VARCHAR2(200)  |             | 
+| 53       | motorinputactivepower        | 电机输入有功功率   | NUMBER(8,2)    | kW          | 
+| 54       | waterpower                   | 水功率             | NUMBER(8,2)    | kW          | 
+| 55       | systemefficiency             | 系统效率           | NUMBER(12,3)   | 小数        | 
+| 56       | systemefficiencylevel        | 系统效率级别       | VARCHAR2(50)   |             | 
+| 57       | powerconsumptionperthm       | 吨液百米耗电量     | NUMBER(8,2)    | kW·h/100m·t | 
+| 58       | pumpeff1                     | 容积效率           | NUMBER(12,3)   | 小数        | 
+| 59       | pumpeff2                     | 液体收缩系数       | NUMBER(12,3)   | 小数        | 
+| 60       | pumpeff                      | 泵效               | NUMBER(12,3)   | 小数        | 
+| 61       | pumpintakep                  | 泵入口压力         | NUMBER(8,2)    | MPa         | 
+| 62       | pumpintaket                  | 泵入口温度         | NUMBER(8,2)    | ℃           | 
+| 63       | pumpintakegol                | 泵入口就地气液比   | NUMBER(8,2)    | m^3/m^3   | 
+| 64       | pumpinletvisl                | 泵入口粘度         | NUMBER(8,2)    | mPa·s       | 
+| 65       | pumpinletbo                  | 泵入口原油体积系数 | NUMBER(8,2)    | 小数        | 
+| 66       | pumpoutletp                  | 泵出口压力         | NUMBER(8,2)    | MPa         | 
+| 67       | pumpoutlett                  | 泵出口温度         | NUMBER(8,2)    | ℃           | 
+| 68       | pumpoutletgol                | 泵出口就地气液比   | NUMBER(8,2)    | m^3/m^3   | 
+| 69       | pumpoutletvisl               | 泵出口粘度         | NUMBER(8,2)    | mPa·s       | 
+| 70       | pumpoutletbo                 | 泵出口原油体积系数 | NUMBER(8,2)    | 小数        | 
+| 71       | todaywattenergy              | 日有功功耗         | NUMBER(8,2)    | kW·h        | 
+| 72       | todaywattenergylevel         | 日耗电量等级       | VARCHAR2(50)   |             | 
+| 73       | todaypwattenergy             | 日正向有功功耗     | NUMBER(8,2)    | kW·h        | 
+| 74       | todaynwattenergy             | 日反向有功功耗     | NUMBER(8,2)    | kW·h        | 
+| 75       | todayvarenergy               | 日无功功耗         | NUMBER(8,2)    | kVar·h      | 
+| 76       | todaypvarenergy              | 日正向无功功耗     | NUMBER(8,2)    | kVar·h      | 
+| 77       | todaynvarenergy              | 日反向无功功耗     | NUMBER(8,2)    | kVar·h      | 
+| 78       | todayvaenergy                | 日视在功耗         | NUMBER(8,2)    | kVA·h       | 
+| 79       | ia                           | A相电流            | NUMBER(8,2)    | A           | 
+| 80       | ib                           | B相电流            | NUMBER(8,2)    | A           | 
+| 81       | ic                           | C相电流            | NUMBER(8,2)    | A           | 
+| 82       | iavg                         | 三相平均电流       | NUMBER(8,2)    | A           | 
+| 83       | istr                         | 电流字符串         | VARCHAR2       |             | 
+| 84       | iauplimit                    | A相电流上限        | NUMBER(8,2)    | A           | 
+| 85       | iadownlimit                  | A相电流下限        | NUMBER(8,2)    | A           | 
+| 86       | iazero                       | A相电流零值        | NUMBER(8,2)    | A           | 
+| 87       | ibuplimit                    | B相电流上限        | NUMBER(8,2)    | A           | 
+| 88       | ibdownlimit                  | B相电流下限        | NUMBER(8,2)    | A           | 
+| 89       | ibzero                       | B相电流零值        | NUMBER(8,2)    | A           | 
+| 90       | icuplimit                    | C相电流上限        | NUMBER(8,2)    | A           | 
+| 91       | icdownlimit                  | C相电流下限        | NUMBER(8,2)    | A           | 
+| 92       | iczero                       | C相电流零值        | NUMBER(8,2)    | A           | 
+| 93       | va                           | A相电压            | NUMBER(8,2)    | V           | 
+| 94       | vb                           | B相电压            | NUMBER(8,2)    | V           | 
+| 95       | vc                           | C相电压            | NUMBER(8,2)    | V           | 
+| 96       | vavg                         | 三相平均电压       | NUMBER(8,2)    | V           | 
+| 97       | vstr                         | 电压字符串         | VARCHAR2       |             | 
+| 98       | vauplimit                    | A相电压上限        | NUMBER(8,2)    | V           | 
+| 99       | vadownlimit                  | A相电压下限        | NUMBER(8,2)    | V           | 
+| 100      | vazero                       | A相电压零值        | NUMBER(8,2)    | V           | 
+| 101      | vbuplimit                    | B相电压上限        | NUMBER(8,2)    | V           | 
+| 102      | vbdownlimit                  | B相电压下限        | NUMBER(8,2)    | V           | 
+| 103      | vbzero                       | B相电压零值        | NUMBER(8,2)    | V           | 
+| 104      | vcuplimit                    | C相电压上限        | NUMBER(8,2)    | V           | 
+| 105      | vcdownlimit                  | C相电压下限        | NUMBER(8,2)    | V           | 
+| 106      | vczero                       | C相电压零值        | NUMBER(8,2)    | V           | 
+| 107      | totalwattenergy              | 累计有功功耗       | NUMBER(8,2)    | kW·h        | 
+| 108      | totalpwattenergy             | 累计正向有功功耗   | NUMBER(8,2)    | kW·h        | 
+| 109      | totalnwattenergy             | 累计反向有功功耗   | NUMBER(8,2)    | kW·h        | 
+| 110      | totalvarenergy               | 累计无功功耗       | NUMBER(8,2)    | kVar·h      | 
+| 111      | totalpvarenergy              | 累计正向无功功耗   | NUMBER(8,2)    | kVar·h      | 
+| 112      | totalnvarenergy              | 累计反向无功功耗   | NUMBER(8,2)    | kVar·h      | 
+| 113      | totalvaenergy                | 累计视在功耗       | NUMBER(8,2)    | kVA·h       | 
+| 114      | watta                        | A相有功功率        | NUMBER(8,2)    | kW          | 
+| 115      | wattb                        | B相有功功率        | NUMBER(8,2)    | kW          | 
+| 116      | wattc                        | C相有功功率        | NUMBER(8,2)    | kW          | 
+| 117      | wattsum                      | 三相总有功功率     | NUMBER(8,2)    | kW          | 
+| 118      | wattstr                      | 有功功率字符串     | VARCHAR2       |             | 
+| 119      | vara                         | A相无功功率        | NUMBER(8,2)    | kVar        | 
+| 120      | varb                         | B相无功功率        | NUMBER(8,2)    | kVar        | 
+| 121      | varc                         | C相无功功率        | NUMBER(8,2)    | kVar        | 
+| 122      | varsum                       | 三相总无功功率     | NUMBER(8,2)    | kVar        | 
+| 123      | varstr                       | 无功功率字符串     | VARCHAR2       |             | 
+| 124      | reversepower                 | 反向功率           | NUMBER(8,2)    |             | 
+| 125      | pfa                          | A相功率因数        | NUMBER(8,2)    |             | 
+| 126      | pfb                          | B相功率因数        | NUMBER(8,2)    |             | 
+| 127      | pfc                          | C相功率因数        | NUMBER(8,2)    |             | 
+| 128      | pfsum                        | 三相综合功率因数   | NUMBER(8,2)    |             | 
+| 129      | pfstr                        | 功率因数字符串     | VARCHAR2       |             | 
+| 130      | frequencysetvalue            | 设置频率           | NUMBER(8,2)    | HZ          | 
+| 131      | frequencyrunvalue            | 运行频率           | NUMBER(8,2)    | HZ          | 
+| 132      | signal                       | 信号强度           | NUMBER(8,2)    |             | 
+| 133      | interval                     | 传输间隔           | NUMBER(10)     |             | 
+| 134      | devicever                    | 设备版本           | VARCHAR2(50)   |             | 
+| 135      | videourl                     | 视频路径           | VARCHAR2(400)  |             | 
+| 136      | org_id                       | 组织编号           | NUMBER(10)     |             | 
+| 137      | org_code                     | 组织代码           | VARCHAR2(20)   |             | 
+| 138      | sortnum                      | 井排序编号         | NUMBER(10)     |             | 
+
+### 2.1.22 viw_pcp_comprehensive_hist 螺杆泵综合数据历史视图
+
+同viw_pcp_comprehensive_latest
+
+### 2.1.23 viw_pcp_total_day 螺杆泵日累计数据视图
+
+| **序号** | **名称**                    | **代码**         | **类型**       | **单位**    | 
+|----------|-----------------------------|------------------|----------------|-------------|
+| 1        | id                          | 记录编号         | NUMBER(10)     |             | 
+| 2        | wellname                    | 井名             | VARCHAR2(200)  |             | 
+| 3        | liftingtype                 | 举升类型         | NUMBER(10)     |             | 
+| 4        | liftingtypename             | 举升类型名称     | VARCHAR2(200)  |             | 
+| 5        | wellid                      | 井编号           | NUMBER(10)     |             | 
+| 6        | calculatedate               | 日期             | DATE           |             | 
+| 7        | commstatus                  | 通信状态         |                |             | 
+| 8        | commstatusname              | 通信名称         |                |             | 
+| 9        | commalarmlevel              | 通信报警级别     |                |             | 
+| 10       | runstatus                   | 运行状态         | NUMBER(2)      |             | 
+| 11       | runstatusname               | 运行状态名称     |                |             | 
+| 12       | runalarmlevel               | 运行状态报警级别 |                |             | 
+| 13       | commtime                    | 通信时间         | NUMBER(8,2)    | h           | 
+| 14       | commrange                   | 通信区间         | VARCHAR2(4000) |             | 
+| 15       | commtimeefficiency          | 通信时率         | NUMBER(12,3)   |             | 
+| 16       | commtimeefficiencylevel     | 通信时率级别     | VARCHAR2(50)   |             | 
+| 17       | runtime                     | 运行时间         | NUMBER(8,2)    | h           | 
+| 18       | runrange                    | 运行区间         | VARCHAR2(4000) |             | 
+| 19       | runtimeefficiency           | 运行时率         | NUMBER(12,3)   |             | 
+| 20       | runtimeefficiencylevel      | 运行时率级别     | VARCHAR2(50)   |             | 
+| 21       | workingconditioncode        | 工况代码         | NUMBER(4)      |             | 
+| 22       | workingconditionname        | 工况名称         | VARCHAR2(200)  |             | 
+| 23       | workingconditionstring      | 工况累计字符串   | VARCHAR2(4000) |             | 
+| 24       | optimizationsuggestion      | 优化建议         | VARCHAR2(200)  |             | 
+| 25       | workingconditionalarmlevel  | 工况报警级别     | NUMBER(3)      |             | 
+| 26       | liquidweightproduction      | 产液量           | NUMBER(8,2)    | t/d         | 
+| 27       | liquidweightproductionlevel | 产液量统计级别   | VARCHAR2(50)   |             | 
+| 28       | oilweightproduction         | 产油量           | NUMBER(8,2)    | t/d         | 
+| 29       | waterweightproduction       | 产水量           | NUMBER(8,2)    | t/d         | 
+| 30       | watercut                    | 含水率           | NUMBER(10,4)   | %           | 
+| 31       | productiongasoilratio       | 生产气油比       | NUMBER(8,2)    | m^3/t      | 
+| 32       | tubingpressure              | 油压             | NUMBER(8,2)    | MPa         | 
+| 33       | casingpressure              | 套压             | NUMBER(8,2)    | MPa         | 
+| 34       | wellheadfluidtemperature    | 井口油温         | NUMBER(8,2)    | ℃           | 
+| 35       | pumpeff                     | 总泵效           | NUMBER(10,4)   | 小数        | 
+| 36       | pumpborediameter            | 泵径             | NUMBER(8,2)    | mm          | 
+| 37       | pumpsettingdepth            | 泵挂             | NUMBER(8,2)    | m           | 
+| 38       | producingfluidlevel         | 动液面           | NUMBER(8,2)    | m           | 
+| 39       | submergence                 | 沉没度           | NUMBER(8,2)    | m           | 
+| 40       | rpm                         | 转速             | NUMBER(8,2)    | r/min       | 
+| 41       | rpmmax                      | 转速最大值       | NUMBER(8,2)    | r/min       | 
+| 42       | rpmmin                      | 转速最小值       | NUMBER(8,2)    | r/min       | 
+| 43       | systemefficiency            | 系统效率         | NUMBER(10,4)   | 小数        | 
+| 44       | systemefficiencylevel       | 系统效率统计等级 | VARCHAR2(50)   |             | 
+| 45       | powerconsumptionperthm      | 吨液百米耗电量   | NUMBER(8,2)    | kW·h/100m·t | 
+| 46       | todaywattenergy             | 日有功功耗       | NUMBER(8,2)    | kW·h        | 
+| 47       | todaywattenergylevel        | 日耗电量统计级别 | VARCHAR2(50)   |             | 
+| 48       | todaypwattenergy            | 日正向有功功耗   | NUMBER(8,2)    | kW·h        | 
+| 49       | todaynwattenergy            | 日反向有功功耗   | NUMBER(8,2)    | kW·h        | 
+| 50       | todayvarenergy              | 日无功功耗       | NUMBER(8,2)    | kVar·h      | 
+| 51       | todaypvarenergy             | 日正向无功功耗   | NUMBER(8,2)    | kVar·h      | 
+| 52       | todaynvarenergy             | 日反向无功功耗   | NUMBER(8,2)    | kVar·h      | 
+| 53       | todayvaenergy               | 日视在功耗       | NUMBER(8,2)    | kVA·h       | 
+| 54       | ia                          | A相电流          | NUMBER(8,2)    | A           | 
+| 55       | iamax                       | A相电流最大值    | NUMBER(8,2)    | A           | 
+| 56       | iamin                       | A相电流最小值    | NUMBER(8,2)    | A           | 
+| 57       | iastr                       | A相电流字符串    | NUMBER(8,2)    |             | 
+| 58       | ib                          | B相电流          | NUMBER(8,2)    | A           | 
+| 59       | ibmax                       | B相电流最大值    | NUMBER(8,2)    | A           | 
+| 60       | ibmin                       | B相电流最小值    | NUMBER(8,2)    | A           | 
+| 61       | ibstr                       | B相电流字符串    | VARCHAR2       |             | 
+| 62       | ic                          | C相电流          | NUMBER(8,2)    | A           | 
+| 63       | icmax                       | C相电流最大值    | NUMBER(8,2)    | A           | 
+| 64       | icmin                       | C相电流最小值    | NUMBER(8,2)    | A           | 
+| 65       | icstr                       | C相电流字符串    | VARCHAR2       |             | 
+| 66       | va                          | A相电压          | NUMBER(8,2)    | V           | 
+| 67       | vamax                       | A相电压最大值    | NUMBER(8,2)    | V           | 
+| 68       | vamin                       | A相电压最小值    | NUMBER(8,2)    | V           | 
+| 69       | vastr                       | A相电压字符串    | VARCHAR2       |             | 
+| 70       | vb                          | B相电压          | NUMBER(8,2)    | V           | 
+| 71       | vbmax                       | B相电压最大值    | NUMBER(8,2)    | V           | 
+| 72       | vbmin                       | B相电压最小值    | NUMBER(8,2)    | V           | 
+| 73       | vbstr                       | B相电压字符串    | VARCHAR2       |             | 
+| 74       | vc                          | C相电压          | NUMBER(8,2)    | V           | 
+| 75       | vcmax                       | C相电压最大值    | NUMBER(8,2)    | V           | 
+| 76       | vcmin                       | C相电压最小值    | NUMBER(8,2)    | V           | 
+| 77       | vcstr                       | C相电压字符串    | VARCHAR2       |             | 
+| 78       | signal                      | 信号强度         | NUMBER(8,2)    |             | 
+| 79       | signalmax                   | 信号强度最大值   | NUMBER(8,2)    |             | 
+| 80       | signalmin                   | 信号强度最小值   | NUMBER(8,2)    |             | 
+| 81       | signalstr                   | 信号强度字符串   | VARCHAR2       |             | 
+| 82       | videourl                    | 视频路径         | VARCHAR2(400)  |             | 
+| 83       | sortnum                     | 井排序编号       | NUMBER(10)     |             | 
+| 84       | org_code                    | 组织代码         | VARCHAR2(20)   |             | 
+| 85       | org_id                      | 组织编号         | NUMBER(10)     |             | 
+| 86       | remark                      | 备注             | VARCHAR2       |             |
+
 # 三、存储过程
 
 | **序号** | **名称**                      | **描述**                 | **备注**               |
@@ -1490,6 +2308,10 @@
 | 16       | prd_save_rpcinformation       | 保存反演抽油机数据       |                        |
 | 17       | prd_save_rpc_inver_opt        | 保存反演优化参数         |                        |
 | 18       | prd_save_alarmcolor           | 保存报警级别颜色         |                        |
+| 19       | prd_save_pcp_productiondata   | 保存生产数据_螺杆泵           |                      |
+| 20       | prd_save_pcp_discretedaily    | 保存离散数据日汇总结果_螺杆泵 |                      |
+| 21       | prd_save_pcp_rpm              | 保存曲线采集和计算数据_螺杆泵 |                      |
+| 22       | prd_save_pcp_rpmdaily         | 保存曲线日汇总数据_螺杆泵     |                      |
 
 # 四、触发器
 
@@ -1522,13 +2344,19 @@
 | 25       | trg_b_rpcinformation_i        | 抽油机设备表插入数据前触发               |
 | 26       | trg_b_rpc_motor_i             | 抽油机电机数据表插入数据前触发           |
 | 27       | trg_b_rpc_inver_opt_i         | 抽油机电参反演参数优化表插入数据前触发   |
+| 28       | trg_b_pcp_discrete_latest_i   | 螺杆泵离散数据实时表插入数据前触发       |
+| 29       | trg_b_pcp_discrete_hist_i     | 螺杆泵离散数据历史表插入数据前触发       |
+| 30       | trg_b_pcp_proddata_latest_i   | 螺杆泵生产数据实时表插入数据前触发       |
+| 31       | trg_b_pcp_proddata_hist_i     | 螺杆泵生产数据历史表插入数据前触发       |
+| 32       | trg_b_pcp_rpm_latest_i        | 螺杆泵曲线数据实时表插入数据前触发       |
+| 33       | trg_b_pcp_rpm_hist_i          | 螺杆泵曲线数据历史表插入数据前触发       |
+| 34       | trg_a_pcp_rpm_hist_i_u        | 螺杆泵曲线数据历史表插入、更新数据后触发 |
+| 35       | trg_b_pcp_total_day_i         | 螺杆泵日累计数据表插入数据前触发         |
+| 36       | trg_b_wellboretrajectory_i    | 井身轨迹表插入数据前出发                 |
 
-# 五、序列  
+# 五、数据库创建
 
-
-# 六、数据库创建
-
-## 6.1 自建用户
+## 5.1 自建用户
 
 需要自建用户及表空间，并给用户授权。
 
@@ -1565,7 +2393,7 @@ orcl：系统管理员密码，安装Oracle时输入的管理口令，根据实�
 
 **步骤4、**执行完成后，查看log.txt（日志文件）是否有报错。
 
-## 6.2 已有用户
+## 5.2 已有用户
 
 部署方提供了用户名、密码，创建表空间，并为用户授权。授权有两种形式：
 
