@@ -307,7 +307,7 @@
 ### 1.3.14 tbl_rpc_productiondata_latest 抽油机生产数据实时表
 
 | **序号** | **代码**                   | **名称**       | **单位** | **类型**      | **为空**     | **键** |
-|----------|----------------------------|----------------|----------|---------------|--------------|--------|----------|
+|----------|----------------------------|----------------|----------|---------------|--------------|--------|
 | 1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | id             | 记录编号 |          | NUMBER(10)    | N&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;            | 主键   |
 | 2        | wellid                     | 井编号         |          | NUMBER(10)    | N            | 外键   |  
 | 3        | acquisitiontime            | 采集时间       |          | DATE          | Y            |        |  
@@ -354,7 +354,7 @@
 
 | **序号** | **代码**                  | **名称**                     | **单位** | **类型**       | **为空**     | **键** |
 |----------|---------------------------|------------------------------|----------|----------------|--------------|--------|
-| 1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| id    | 记录编号     |          | NUMBER(10)     | N&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  | 主键&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    |
+| 1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| id    | 记录编号     |          | NUMBER(10)     | N&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  | 主键&nbsp;&nbsp;    |
 | 2        | wellid                    | 井编号                       |          | NUMBER(10)     | N            | 外键   | 
 | 3        | acquisitiontime           | 采集时间                     |          | DATE           | Y            |        | 
 | 4        | commstatus                | 通信状态                     |          | NUMBER(2)      | Y            |        | 
@@ -492,18 +492,18 @@
 | 28       | lowerloadline                | 理论下载荷           | kN          | NUMBER(8,2)   | Y            |        | 
 | 29       | pumpfsdiagram                | 泵功图               |             | CLOB          | Y            |        | 
 | 30       | theoreticalproduction        | 理论排量             | m^3/d       | NUMBER(8,2)   | Y            |        | 
-| 31       | liquidvolumetricproduction   | 计算单井日产液量方   | m^3/d       | NUMBER(8,2)   | Y            |        | 
-| 32       | oilvolumetricproduction      | 计算单井日产油量方   | m^3/d       | NUMBER(8,2)   | Y            |        | 
-| 33       | watervolumetricproduction    | 计算单井日产水量方   | m^3/d       | NUMBER(8,2)   | Y            |        | 
-| 34       | availableplungerstrokeprod_v | 泵有效冲程计算产量方 | m^3/d       | NUMBER(8,2)   | Y            |        | 
+| 31       | liquidvolumetricproduction   | 日产液量方   | m^3/d       | NUMBER(8,2)   | Y            |        | 
+| 32       | oilvolumetricproduction      | 日产油量方   | m^3/d       | NUMBER(8,2)   | Y            |        | 
+| 33       | watervolumetricproduction    | 日产水量方   | m^3/d       | NUMBER(8,2)   | Y            |        | 
+| 34       | availableplungerstrokeprod_v | 泵有效冲程产量方 | m^3/d       | NUMBER(8,2)   | Y            |        | 
 | 35       | pumpclearanceleakprod_v      | 泵间隙漏失量方       | m^3/d       | NUMBER(8,2)   | Y            |        | 
 | 36       | tvleakvolumetricproduction   | 游动凡尔漏失量方     | m^3/d       | NUMBER(8,2)   | Y            |        | 
 | 37       | svleakvolumetricproduction   | 固定凡尔漏失量方     | m^3/d       | NUMBER(8,2)   | Y            |        | 
 | 38       | gasinfluenceprod_v           | 气影响方             | m^3/d       | NUMBER(8,2)   | Y            |        | 
-| 39       | liquidweightproduction       | 计算单井日产液量吨   | t/d         | NUMBER(8,2)   | Y            |        | 
-| 40       | oilweightproduction          | 计算单井日产油量吨   | t/d         | NUMBER(8,2)   | Y            |        | 
-| 41       | waterweightproduction        | 计算单井日产水量吨   | t/d         | NUMBER(8,2)   | Y            |        | 
-| 42       | availableplungerstrokeprod_w | 泵有效冲程计算产量吨 | t/d         | NUMBER(8,2)   | Y            |        | 
+| 39       | liquidweightproduction       | 日产液量吨   | t/d         | NUMBER(8,2)   | Y            |        | 
+| 40       | oilweightproduction          | 日产油量吨   | t/d         | NUMBER(8,2)   | Y            |        | 
+| 41       | waterweightproduction        | 日产水量吨   | t/d         | NUMBER(8,2)   | Y            |        | 
+| 42       | availableplungerstrokeprod_w | 泵有效冲程产量吨 | t/d         | NUMBER(8,2)   | Y            |        | 
 | 43       | pumpclearanceleakprod_w      | 泵间隙漏失量吨       | t/d         | NUMBER(8,2)   | Y            |        | 
 | 44       | tvleakweightproduction       | 游动凡尔漏失量吨     | t/d         | NUMBER(8,2)   | Y            |        | 
 | 45       | svleakweightproduction       | 固定凡尔漏失量吨     | t/d         | NUMBER(8,2)   | Y            |        | 
@@ -581,7 +581,7 @@
 
 | **序号** | **代码**                      | **名称**                 | **单位**    | **类型**       | **为空**     | **键** |
 |----------|-------------------------------|--------------------------|-------------|----------------|--------------|--------|
-| 1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    | id    | 记录编号         |             | NUMBER(10)     | N&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | 主键   |
+| 1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    | id    | 记录编号         |             | NUMBER(10)     | N&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | 主键&nbsp;&nbsp;&nbsp;&nbsp; |
 | 2        | wellid                        | 井编号                   |             | NUMBER(10)     | Y            | 外键   | 
 | 3        | calculatedate                 | 计算时间                 |             | DATE           | Y            |        | 
 | 4        | commstatus                    | 通信状态                 |             | NUMBER(2)      | Y            |        | 
@@ -605,24 +605,24 @@
 | 22       | spm                           | 冲次                     | 次/min      | NUMBER(8,2)    | Y            |        | 
 | 23       | spmmax                        | 冲次最大值               | 次/min      | NUMBER(8,2)    | Y            |        | 
 | 24       | spmmin                        | 冲次最小值               | 次/min      | NUMBER(8,2)    | Y            |        | 
-| 25       | liquidvolumetricproduction    | 计算单井日产液量方       | m^3/d       | NUMBER(8,2)    | Y            |        | 
-| 26       | oilvolumetricproduction       | 计算单井日产油量方       | m^3/d       | NUMBER(8,2)    | Y            |        | 
-| 27       | watervolumetricproduction     | 计算单井日产水量方       | m^3/d       | NUMBER(8,2)    | Y            |        | 
-| 28       | liquidweightproduction        | 计算单井日产液量吨       | t/d         | NUMBER(8,2)    | Y            |        | 
-| 29       | oilweightproduction           | 计算单井日产油量吨       | t/d         | NUMBER(8,2)    | Y            |        | 
-| 30       | waterweightproduction         | 计算单井日产水量吨       | t/d         | NUMBER(8,2)    | Y            |        | 
-| 31       | liquidvolumetricproductionmax | 计算单井日产液量最大值方 | m^3/d      | NUMBER(8,2)    | Y            |        | 
-| 32       | liquidvolumetricproductionmin | 计算单井日产液量最小值方 | m^3/d      | NUMBER(8,2)    | Y            |        | 
-| 33       | oilvolumetricproductionmax    | 计算单井日产油量最大值方 | m^3/d      | NUMBER(8,2)    | Y            |        | 
-| 34       | oilvolumetricproductionmin    | 计算单井日产油量最小值方 | m^3/d      | NUMBER(8,2)    | Y            |        | 
-| 35       | watervolumetricproductionmax  | 计算单井日产水量最大值方 | m^3/d      | NUMBER(8,2)    | Y            |        | 
-| 36       | watervolumetricproductionmin  | 计算单井日产水量最小值方 | m^3/d      | NUMBER(8,2)    | Y            |        | 
-| 37       | liquidweightproductionmax     | 计算单井日产液量最大值吨 | t/d         | NUMBER(8,2)    | Y            |        | 
-| 38       | liquidweightproductionmin     | 计算单井日产液量最小值吨 | t/d         | NUMBER(8,2)    | Y            |        | 
-| 39       | oilweightproductionmax        | 计算单井日产油量最大值吨 | t/d         | NUMBER(8,2)    | Y            |        | 
-| 40       | oilweightproductionmin        | 计算单井日产油量最小值吨 | t/d         | NUMBER(8,2)    | Y            |        | 
-| 41       | waterweightproductionmax      | 计算单井日产水量最大值吨 | t/d         | NUMBER(8,2)    | Y            |        | 
-| 42       | waterweightproductionmin      | 计算单井日产水量最小值吨 | t/d         | NUMBER(8,2)    | Y            |        | 
+| 25       | liquidvolumetricproduction    | 日产液量方       | m^3/d       | NUMBER(8,2)    | Y            |        | 
+| 26       | oilvolumetricproduction       | 日产油量方       | m^3/d       | NUMBER(8,2)    | Y            |        | 
+| 27       | watervolumetricproduction     | 日产水量方       | m^3/d       | NUMBER(8,2)    | Y            |        | 
+| 28       | liquidweightproduction        | 日产液量吨       | t/d         | NUMBER(8,2)    | Y            |        | 
+| 29       | oilweightproduction           | 日产油量吨       | t/d         | NUMBER(8,2)    | Y            |        | 
+| 30       | waterweightproduction         | 日产水量吨       | t/d         | NUMBER(8,2)    | Y            |        | 
+| 31       | liquidvolumetricproductionmax | 日产液量最大值方 | m^3/d      | NUMBER(8,2)    | Y            |        | 
+| 32       | liquidvolumetricproductionmin | 日产液量最小值方 | m^3/d      | NUMBER(8,2)    | Y            |        | 
+| 33       | oilvolumetricproductionmax    | 日产油量最大值方 | m^3/d      | NUMBER(8,2)    | Y            |        | 
+| 34       | oilvolumetricproductionmin    | 日产油量最小值方 | m^3/d      | NUMBER(8,2)    | Y            |        | 
+| 35       | watervolumetricproductionmax  | 日产水量最大值方 | m^3/d      | NUMBER(8,2)    | Y            |        | 
+| 36       | watervolumetricproductionmin  | 日产水量最小值方 | m^3/d      | NUMBER(8,2)    | Y            |        | 
+| 37       | liquidweightproductionmax     | 日产液量最大值吨 | t/d         | NUMBER(8,2)    | Y            |        | 
+| 38       | liquidweightproductionmin     | 日产液量最小值吨 | t/d         | NUMBER(8,2)    | Y            |        | 
+| 39       | oilweightproductionmax        | 日产油量最大值吨 | t/d         | NUMBER(8,2)    | Y            |        | 
+| 40       | oilweightproductionmin        | 日产油量最小值吨 | t/d         | NUMBER(8,2)    | Y            |        | 
+| 41       | waterweightproductionmax      | 日产水量最大值吨 | t/d         | NUMBER(8,2)    | Y            |        | 
+| 42       | waterweightproductionmin      | 日产水量最小值吨 | t/d         | NUMBER(8,2)    | Y            |        | 
 | 43       | wattdegreebalance             | 功率平衡度               | %           | NUMBER(8,2)    | Y            |        | 
 | 44       | idegreebalance                | 电流平衡度               | %           | NUMBER(8,2)    | Y            |        | 
 | 45       | wattdegreebalancemax          | 功率平衡度最大值         | %           | NUMBER(8,2)    | Y            |        | 
@@ -945,12 +945,12 @@
 | 4        | rpm                        | 转速               | r/min       | NUMBER(8,2)   | Y        |        | 
 | 5        | torque                     | 扭矩               | kN·m        | NUMBER(8,2)   | Y        |        | 
 | 6        | theoreticalproduction      | 理论排量           | m^3/d      | NUMBER(8,2)   | Y        |        | 
-| 7        | liquidvolumetricproduction | 计算单井日产液量   | m^3/d      | NUMBER(8,2)   | Y        |        | 
-| 8        | oilvolumetricproduction    | 计算单井日产油量   | m^3/d      | NUMBER(8,2)   | Y        |        | 
-| 9        | watervolumetricproduction  | 计算单井日产水量   | m^3/d      | NUMBER(8,2)   | Y        |        | 
-| 10       | liquidweightproduction     | 计算单井日产液量   | t/d         | NUMBER(8,2)   | Y        |        | 
-| 11       | oilweightproduction        | 计算单井日产油量   | t/d         | NUMBER(8,2)   | Y        |        | 
-| 12       | waterweightproduction      | 计算单井日产水量   | t/d         | NUMBER(8,2)   | Y        |        | 
+| 7        | liquidvolumetricproduction | 日产液量方   | m^3/d      | NUMBER(8,2)   | Y        |        | 
+| 8        | oilvolumetricproduction    | 日产油量方   | m^3/d      | NUMBER(8,2)   | Y        |        | 
+| 9        | watervolumetricproduction  | 日产水量方   | m^3/d      | NUMBER(8,2)   | Y        |        | 
+| 10       | liquidweightproduction     | 日产液量吨   | t/d         | NUMBER(8,2)   | Y        |        | 
+| 11       | oilweightproduction        | 日产油量吨   | t/d         | NUMBER(8,2)   | Y        |        | 
+| 12       | waterweightproduction      | 日产水量吨   | t/d         | NUMBER(8,2)   | Y        |        | 
 | 13       | motorinputactivepower      | 电机输入有功功率   | kW          | NUMBER(8,2)   | Y        |        | 
 | 14       | waterpower                 | 水功率             | kW          | NUMBER(8,2)   | Y        |        | 
 | 15       | systemefficiency           | 系统效率           | 小数        | NUMBER(12,3)  | Y        |        | 
@@ -1003,30 +1003,30 @@
 | 17       | torque                        | 扭矩                     | kN·m        | NUMBER(10,4)   | Y        |        | 
 | 18       | torquemax                     | 扭矩最大值               | kN·m        | NUMBER(10,4)   | Y        |        | 
 | 19       | torquemin                     | 扭矩最小值               | kN·m        | NUMBER(8,2)    | Y        |        | 
-| 20       | liquidvolumetricproduction    | 计算单井日产液量         | m^3/d      | NUMBER(8,2)    | Y        |        | 
-| 21       | oilvolumetricproduction       | 计算单井日产油量         | m^3/d      | NUMBER(8,2)    | Y        |        | 
-| 22       | watervolumetricproduction     | 计算单井日产水量         | m^3/d      | NUMBER(8,2)    | Y        |        | 
-| 23       | liquidweightproduction        | 计算单井日产液量吨       | t/d         | NUMBER(8,2)    | Y        |        | 
-| 24       | oilweightproduction           | 计算单井日产油量吨       | t/d         | NUMBER(8,2)    | Y        |        | 
-| 25       | waterweightproduction         | 计算单井日产水量吨       | t/d         | NUMBER(8,2)    | Y        |        | 
-| 26       | liquidvolumetricproductionmax | 计算单井日产液量最大值   | m^3/d      | NUMBER(8,2)    | Y        |        | 
-| 27       | liquidvolumetricproductionmin | 计算单井日产液量最小值   | m^3/d      | NUMBER(8,2)    | Y        |        | 
-| 28       | oilvolumetricproductionmax    | 计算单井日产油量最大值   | m^3/d      | NUMBER(8,2)    | Y        |        | 
-| 29       | oilvolumetricproductionmin    | 计算单井日产油量最小值   | m^3/d      | NUMBER(8,2)    | Y        |        | 
-| 30       | watervolumetricproductionmax  | 计算单井日产水量最大值   | m^3/d      | NUMBER(8,2)    | Y        |        | 
-| 31       | watervolumetricproductionmin  | 计算单井日产水量最小值   | m^3/d      | NUMBER(8,2)    | Y        |        | 
-| 32       | liquidweightproductionmax     | 计算单井日产液量最大值吨 | t/d         | NUMBER(8,2)    | Y        |        | 
-| 33       | liquidweightproductionmin     | 计算单井日产液量最小值吨 | t/d         | NUMBER(8,2)    | Y        |        | 
-| 34       | oilweightproductionmax        | 计算单井日产油量最大值吨 | t/d         | NUMBER(8,2)    | Y        |        | 
-| 35       | oilweightproductionmin        | 计算单井日产油量最小值吨 | t/d         | NUMBER(8,2)    | Y        |        | 
-| 36       | waterweightproductionmax      | 计算单井日产水量最大值吨 | t/d         | NUMBER(8,2)    | Y        |        | 
-| 37       | waterweightproductionmin      | 计算单井日产水量最小值吨 | t/d         | NUMBER(8,2)    | Y        |        | 
-| 38       | watercut                      | 含水率                   | %           | NUMBER(8,2)    | Y        |        | 
-| 39       | watercut_w                    | 含水率吨                 | %           | NUMBER(8,2)    | Y        |        | 
-| 40       | watercutmax                   | 含水率最大值             | %           | NUMBER(8,2)    | Y        |        | 
-| 41       | watercutmin                   | 含水率最小值             | %           | NUMBER(8,2)    | Y        |        | 
-| 42       | watercutmax_w                 | 含水率吨最大值           | %           | NUMBER(8,2)    | Y        |        | 
-| 43       | watercutmin_w                 | 含水率吨最小值           | %           | NUMBER(8,2)    | Y        |        | 
+| 20       | liquidvolumetricproduction    | 日产液量方        | m^3/d      | NUMBER(8,2)    | Y        |        | 
+| 21       | oilvolumetricproduction       | 日产油量方         | m^3/d      | NUMBER(8,2)    | Y        |        | 
+| 22       | watervolumetricproduction     | 日产水量方         | m^3/d      | NUMBER(8,2)    | Y        |        | 
+| 23       | liquidweightproduction        | 日产液量吨       | t/d         | NUMBER(8,2)    | Y        |        | 
+| 24       | oilweightproduction           | 日产油量吨       | t/d         | NUMBER(8,2)    | Y        |        | 
+| 25       | waterweightproduction         | 日产水量吨       | t/d         | NUMBER(8,2)    | Y        |        | 
+| 26       | liquidvolumetricproductionmax | 日产液量最大值方   | m^3/d      | NUMBER(8,2)    | Y        |        | 
+| 27       | liquidvolumetricproductionmin | 日产液量最小值方   | m^3/d      | NUMBER(8,2)    | Y        |        | 
+| 28       | oilvolumetricproductionmax    | 日产油量最大值方   | m^3/d      | NUMBER(8,2)    | Y        |        | 
+| 29       | oilvolumetricproductionmin    | 日产油量最小值方   | m^3/d      | NUMBER(8,2)    | Y        |        | 
+| 30       | watervolumetricproductionmax  | 日产水量最大值方   | m^3/d      | NUMBER(8,2)    | Y        |        | 
+| 31       | watervolumetricproductionmin  | 日产水量最小值方   | m^3/d      | NUMBER(8,2)    | Y        |        | 
+| 32       | liquidweightproductionmax     | 日产液量最大值吨 | t/d         | NUMBER(8,2)    | Y        |        | 
+| 33       | liquidweightproductionmin     | 日产液量最小值吨 | t/d         | NUMBER(8,2)    | Y        |        | 
+| 34       | oilweightproductionmax        | 日产油量最大值吨 | t/d         | NUMBER(8,2)    | Y        |        | 
+| 35       | oilweightproductionmin        | 日产油量最小值吨 | t/d         | NUMBER(8,2)    | Y        |        | 
+| 36       | waterweightproductionmax      | 日产水量最大值吨 | t/d         | NUMBER(8,2)    | Y        |        | 
+| 37       | waterweightproductionmin      | 日产水量最小值吨 | t/d         | NUMBER(8,2)    | Y        |        | 
+| 38       | watercut                      | 体积含水率                   | %           | NUMBER(8,2)    | Y        |        | 
+| 39       | watercut_w                    | 重量含水率                 | %           | NUMBER(8,2)    | Y        |        | 
+| 40       | watercutmax                   | 体积含水率最大值             | %           | NUMBER(8,2)    | Y        |        | 
+| 41       | watercutmin                   | 体积含水率最小值             | %           | NUMBER(8,2)    | Y        |        | 
+| 42       | watercutmax_w                 | 重量含水率最大值           | %           | NUMBER(8,2)    | Y        |        | 
+| 43       | watercutmin_w                 | 重量含水率最小值           | %           | NUMBER(8,2)    | Y        |        | 
 | 44       | tubingpressure                | 油压                     | MPa         | NUMBER(8,2)    | Y        |        | 
 | 45       | tubingpressuremax             | 油压最大值               | MPa         | NUMBER(8,2)    | Y        |        | 
 | 46       | tubingpressuremin             | 油压最小值               | MPa         | NUMBER(8,2)    | Y        |        | 
@@ -1249,10 +1249,10 @@
 | 11       | optimizationsuggestion        | 优化建议             | VARCHAR2(200) |             | 
 | 12       | workingconditionrunalarmlevel | 工况报警级别         | NUMBER(3)     |             | 
 | 13       | theoreticalproduction         | 理论排量             | NUMBER(8,2)   | m^3/d      | 
-| 14       | liquidweightproduction        | 产液量               | NUMBER(8,2)   | t/d         | 
-| 15       | oilweightproduction           | 产油量               | NUMBER(8,2)   | t/d         | 
-| 16       | waterweightproduction         | 产水量               | NUMBER(8,2)   | t/d         | 
-| 17       | watercut_w                    | 含水率               | NUMBER(8,2)   | %           | 
+| 14       | liquidweightproduction        | 产液量吨               | NUMBER(8,2)   | t/d         | 
+| 15       | oilweightproduction           | 产油量吨               | NUMBER(8,2)   | t/d         | 
+| 16       | waterweightproduction         | 产水量吨               | NUMBER(8,2)   | t/d         | 
+| 17       | watercut_w                    | 重量含水率               | NUMBER(8,2)   | %           | 
 | 18       | liquidweightproductionlevel   | 产液级别             | VARCHAR2(50)  |             | 
 | 19       | productiongasoilratio         | 生产气油比           | NUMBER(8,2)   | m^3/t      | 
 | 20       | tubingpressure                | 油压                 | NUMBER(8,2)   | MPa         | 
@@ -1264,11 +1264,11 @@
 | 26       | pumpborediameter              | 泵径                 | NUMBER(8,2)   | mm          | 
 | 27       | crudeoildensity               | 原油密度             | NUMBER(16,2)  | g/cm^3     | 
 | 28       | netgrossratio                 | 净毛比               | NUMBER(8,2)   |             | 
-| 29       | availableplungerstrokeprod    | 柱塞有效冲程计算产量 | NUMBER(8,2)   | t/d         | 
-| 30       | pumpclearanceleakprod         | 泵间隙漏失量         | NUMBER(8,2)   | t/d         | 
-| 31       | tvleakweightproduction        | 游动凡尔漏失量       | NUMBER(8,2)   | t/d         | 
-| 32       | svleakweightproduction        | 固定凡尔漏失量       | NUMBER(8,2)   | t/d         | 
-| 33       | gasinfluenceprod              | 气影响               | NUMBER(8,2)   | t/d         | 
+| 29       | availableplungerstrokeprod    | 柱塞有效冲程产量吨 | NUMBER(8,2)   | t/d         | 
+| 30       | pumpclearanceleakprod         | 泵间隙漏失量吨         | NUMBER(8,2)   | t/d         | 
+| 31       | tvleakweightproduction        | 游动凡尔漏失量吨       | NUMBER(8,2)   | t/d         | 
+| 32       | svleakweightproduction        | 固定凡尔漏失量吨       | NUMBER(8,2)   | t/d         | 
+| 33       | gasinfluenceprod              | 气影响吨               | NUMBER(8,2)   | t/d         | 
 | 34       | rodstring                     | 抽油杆数据           | VARCHAR2(200) |             | 
 | 35       | stroke                        | 冲程                 | NUMBER(8,2)   | m           | 
 | 36       | spm                           | 冲次                 | NUMBER(8,2)   | 次/min      | 
@@ -1468,10 +1468,10 @@
 | 28       | optimizationsuggestion_e      | 电参工况优化建议             | VARCHAR2(200)  |             | 
 | 29       | workingconditionalarmlevel_e  | 电参工况报警级别             | NUMBER(3)      |             | 
 | 30       | theoreticalproduction         | 理论排量                     | NUMBER(8,2)    | m^3/d      | 
-| 31       | liquidweightproduction        | 产液量                       | NUMBER(8,2)    | t/d         | 
-| 32       | oilweightproduction           | 产油量                       | NUMBER(8,2)    | t/d         | 
-| 33       | waterweightproduction         | 产水量                       | NUMBER(8,2)    | t/d         | 
-| 34       | watercut                      | 含水率                       | NUMBER(8,2)    | %           | 
+| 31       | liquidweightproduction        | 产液量吨                       | NUMBER(8,2)    | t/d         | 
+| 32       | oilweightproduction           | 产油量吨                       | NUMBER(8,2)    | t/d         | 
+| 33       | waterweightproduction         | 产水量吨                       | NUMBER(8,2)    | t/d         | 
+| 34       | watercut                      | 重量含水率                       | NUMBER(8,2)    | %           | 
 | 35       | liquidweightproductionlevel   | 产液级别                     | VARCHAR2(50)   |             | 
 | 36       | productiongasoilratio         | 生产气油比                   | NUMBER(8,2)    | m^3/t      | 
 | 37       | tubingpressure                | 油压                         | NUMBER(8,2)    | MPa         | 
@@ -1483,10 +1483,10 @@
 | 43       | pumpborediameter              | 泵径                         | NUMBER(8,2)    | mm          | 
 | 44       | crudeoildensity               | 原油密度                     | NUMBER(16,2)   | g/cm^3     | 
 | 45       | netgrossratio                 | 净毛比                       | NUMBER(8,2)    |             | 
-| 46       | availableplungerstrokeprod    | 柱塞有效冲程计算产量         | NUMBER(8,2)    | t/d         | 
-| 47       | pumpclearanceleakprod         | 泵间隙漏失量                 | NUMBER(8,2)    | t/d         | 
-| 48       | tvleakweightproduction        | 游动凡尔漏失量               | NUMBER(8,2)    | t/d         | 
-| 49       | svleakweightproduction        | 固定凡尔漏失量               | NUMBER(8,2)    | t/d         | 
+| 46       | availableplungerstrokeprod    | 柱塞有效冲程产量吨         | NUMBER(8,2)    | t/d         | 
+| 47       | pumpclearanceleakprod         | 泵间隙漏失量吨                 | NUMBER(8,2)    | t/d         | 
+| 48       | tvleakweightproduction        | 游动凡尔漏失量吨               | NUMBER(8,2)    | t/d         | 
+| 49       | svleakweightproduction        | 固定凡尔漏失量吨               | NUMBER(8,2)    | t/d         | 
 | 50       | gasinfluenceprod              | 气影响                       | NUMBER(8,2)    | t/d         | 
 | 51       | rodstring                     | 抽油杆数据                   | VARCHAR2(200)  |             | 
 | 52       | stroke                        | 冲程                         | NUMBER(8,2)    | m           | 
@@ -1703,11 +1703,11 @@
 | 27       | workingconditionname_e        | 电参工况名称       | VARCHAR2(200)  |             |
 | 28       | workingconditionstring_e      | 累计电参工况字符串 | VARCHAR2(4000) |             |
 | 29       | workingconditionalarmlevel_e  | 电参工况报警级别   | NUMBER(3)      |             |
-| 30       | liquidweightproduction        | 产液量             | NUMBER(8,2)    | t/d         |
+| 30       | liquidweightproduction        | 产液量吨             | NUMBER(8,2)    | t/d         |
 | 31       | liquidweightproductionlevel   | 产液量统计级别     | VARCHAR2(50)   |             |
-| 32       | oilweightproduction           | 产油量             | NUMBER(8,2)    | t/d         |
-| 33       | waterweightproduction         | 产水量             | NUMBER(8,2)    | t/d         |
-| 34       | watercut                      | 含水率             | NUMBER(10,4)   | %           |
+| 32       | oilweightproduction           | 产油量吨             | NUMBER(8,2)    | t/d         |
+| 33       | waterweightproduction         | 产水量吨             | NUMBER(8,2)    | t/d         |
+| 34       | watercut                      | 重量含水率             | NUMBER(10,4)   | %           |
 | 35       | productiongasoilratio         | 生产气油比         | NUMBER(8,2)    | m^3/t      |
 | 36       | tubingpressure                | 油压               | NUMBER(8,2)    | MPa         |
 | 37       | casingpressure                | 套压               | NUMBER(8,2)    | MPa         |
@@ -1804,8 +1804,8 @@
 | 3        | liftingtype                | 举升方式       | NUMBER(10)    |          |
 | 4        | acquisitiontime            | 采集时间       | DATE          |          |
 | 5        | workingconditionname       | 工况名称       | VARCHAR2(200) |          |
-| 6        | liquidproduction           | 产液量         | NUMBER(8,2)   | t/d      |
-| 7        | oilproduction              | 产油量         | NUMBER(8,2)   | t/d      |
+| 6        | liquidproduction           | 产液量吨         | NUMBER(8,2)   | t/d      |
+| 7        | oilproduction              | 产油量吨         | NUMBER(8,2)   | t/d      |
 | 8        | crudeoildensity            | 原油密度       | NUMBER(16,2)  | g/cm^3  |
 | 9        | waterdensity               | 水密度         | NUMBER(16,2)  | g/cm^3  |
 | 10       | naturalgasrelativedensity  | 天然气相对密度 | NUMBER(16,2)  |          |
@@ -1815,7 +1815,7 @@
 | 14       | tubingpressure             | 油压           | NUMBER(8,2)   | MPa      |
 | 15       | casingpressure             | 套压           | NUMBER(8,2)   | MPa      |
 | 16       | wellheadfluidtemperature   | 井口温油       | NUMBER(8,2)   | ℃        |
-| 17       | watercut                   | 含水率         | NUMBER(8,2)   | %        |
+| 17       | watercut                   | 重量含水率         | NUMBER(8,2)   | %        |
 | 18       | productiongasoilratio      | 生产气油比     | NUMBER(8,2)   | m^3/t   |
 | 19       | producingfluidlevel        | 动液面         | NUMBER(8,2)   | m        |
 | 20       | pumpsettingdepth           | 泵挂           | NUMBER(8,2)   | m        |
@@ -1894,17 +1894,17 @@
 | 9        | workingconditionname          | 工况名称           | VARCHAR2(200) |             | 
 | 10       | optimizationsuggestion        | 优化建议           | VARCHAR2(200) |             | 
 | 11       | workingconditionrunalarmlevel | 工况报警级别       | NUMBER(3)     |             | 
-| 12       | theoreticalproduction         | 理论排量           | NUMBER(8,2)   | m\^3/d      | 
-| 13       | liquidweightproduction        | 产液量             | NUMBER(8,2)   | t/d         | 
-| 14       | oilweightproduction           | 产油量             | NUMBER(8,2)   | t/d         | 
-| 15       | waterweightproduction         | 产水量             | NUMBER(8,2)   | t/d         | 
-| 16       | watercut                      | 含水率             | NUMBER(8,2)   | %           | 
+| 12       | theoreticalproduction         | 理论排量           | NUMBER(8,2)   | m^3/d      | 
+| 13       | liquidweightproduction        | 产液量吨             | NUMBER(8,2)   | t/d         | 
+| 14       | oilweightproduction           | 产油量吨             | NUMBER(8,2)   | t/d         | 
+| 15       | waterweightproduction         | 产水量吨             | NUMBER(8,2)   | t/d         | 
+| 16       | watercut                      | 重量含水率             | NUMBER(8,2)   | %           | 
 | 17       | liquidweightproductionlevel   | 产液级别           | VARCHAR2(50)  |             | 
-| 18       | productiongasoilratio         | 生产气油比         | NUMBER(8,2)   | m\^3/t      | 
+| 18       | productiongasoilratio         | 生产气油比         | NUMBER(8,2)   | m^3/t      | 
 | 19       | tubingpressure                | 油压               | NUMBER(8,2)   | MPa         | 
 | 20       | casingpressure                | 套压               | NUMBER(8,2)   | MPa         | 
 | 21       | wellheadfluidtemperature      | 井口油温           | NUMBER(8,2)   | ℃           | 
-| 22       | qpr                           | 公称排量           | NUMBER(8,2)   | m\^3/r      | 
+| 22       | qpr                           | 公称排量           | NUMBER(8,2)   | m^3/r      | 
 | 23       | barrellength                  | 泵筒长             | NUMBER(8,2)   | m           | 
 | 24       | barrelseries                  | 泵级数             | NUMBER(8,2)   |             | 
 | 25       | rotordiameter                 | 转子截面直径       | NUMBER(8,2)   | mm          | 
@@ -1912,7 +1912,7 @@
 | 27       | pumpsettingdepth              | 泵挂               | NUMBER(8,2)   | m           | 
 | 28       | submergence                   | 沉没度             | NUMBER(8,2)   | m           | 
 | 29       | pumpborediameter              | 泵径               | NUMBER(8,2)   | mm          | 
-| 30       | crudeoildensity               | 原油密度           | NUMBER(16,2)  | g/cm\^3     | 
+| 30       | crudeoildensity               | 原油密度           | NUMBER(16,2)  | g/cm^3     | 
 | 31       | netgrossratio                 | 净毛比             | NUMBER(8,2)   |             | 
 | 32       | rodstring                     | 抽油杆柱分析数据   | VARCHAR2(200) |             | 
 | 33       | motorinputactivepower         | 电机输入有功功率   | NUMBER(8,2)   | kW          | 
@@ -1925,12 +1925,12 @@
 | 40       | pumpeff                       | 泵效               | NUMBER(12,3)  | 小数        | 
 | 41       | pumpintakep                   | 泵入口压力         | NUMBER(8,2)   | MPa         | 
 | 42       | pumpintaket                   | 泵入口温度         | NUMBER(8,2)   | ℃           | 
-| 43       | pumpintakegol                 | 泵入口就地气液比   | NUMBER(8,2)   | m\^3/m\^3   | 
+| 43       | pumpintakegol                 | 泵入口就地气液比   | NUMBER(8,2)   | m^3/m^3   | 
 | 44       | pumpinletvisl                 | 泵入口粘度         | NUMBER(8,2)   | mPa·s       | 
 | 45       | pumpinletbo                   | 泵入口原油体积系数 | NUMBER(8,2)   | 小数        | 
 | 46       | pumpoutletp                   | 泵出口压力         | NUMBER(8,2)   | MPa         | 
 | 47       | pumpoutlett                   | 泵出口温度         | NUMBER(8,2)   | ℃           | 
-| 48       | pumpoutletgol                 | 泵出口就地气液比   | NUMBER(8,2)   | m\^3/m\^3   | 
+| 48       | pumpoutletgol                 | 泵出口就地气液比   | NUMBER(8,2)   | m^3/m^3   | 
 | 49       | pumpoutletvisl                | 泵出口粘度         | NUMBER(8,2)   | mPa·s       | 
 | 50       | pumpoutletbo                  | 泵出口原油体积系数 | NUMBER(8,2)   | 小数        | 
 | 51       | videourl                      | 视频路径           | VARCHAR2(400) |             | 
@@ -2084,10 +2084,10 @@
 | 30       | rpm                          | 转速               | NUMBER(8,2)    | r/min       | 
 | 31       | torque                       | 扭矩               | NUMBER(8,2)    | kN·m        | 
 | 32       | theoreticalproduction        | 理论排量           | NUMBER(8,2)    | m^3/d      | 
-| 33       | liquidweightproduction       | 产液量             | NUMBER(8,2)    | t/d         | 
-| 34       | oilweightproduction          | 产油量             | NUMBER(8,2)    | t/d         | 
-| 35       | waterweightproduction        | 产水量             | NUMBER(8,2)    | t/d         | 
-| 36       | watercut                     | 含水率             | NUMBER(8,2)    | %           | 
+| 33       | liquidweightproduction       | 产液量吨             | NUMBER(8,2)    | t/d         | 
+| 34       | oilweightproduction          | 产油量吨             | NUMBER(8,2)    | t/d         | 
+| 35       | waterweightproduction        | 产水量吨             | NUMBER(8,2)    | t/d         | 
+| 36       | watercut                     | 重量含水率             | NUMBER(8,2)    | %           | 
 | 37       | liquidweightproductionlevel  | 产液级别           | VARCHAR2(50)   |             | 
 | 38       | productiongasoilratio        | 生产气油比         | NUMBER(8,2)    | m^3/t      | 
 | 39       | tubingpressure               | 油压               | NUMBER(8,2)    | MPa         | 
@@ -2224,11 +2224,11 @@
 | 23       | workingconditionstring      | 工况累计字符串   | VARCHAR2(4000) |             | 
 | 24       | optimizationsuggestion      | 优化建议         | VARCHAR2(200)  |             | 
 | 25       | workingconditionalarmlevel  | 工况报警级别     | NUMBER(3)      |             | 
-| 26       | liquidweightproduction      | 产液量           | NUMBER(8,2)    | t/d         | 
+| 26       | liquidweightproduction      | 产液量吨           | NUMBER(8,2)    | t/d         | 
 | 27       | liquidweightproductionlevel | 产液量统计级别   | VARCHAR2(50)   |             | 
-| 28       | oilweightproduction         | 产油量           | NUMBER(8,2)    | t/d         | 
-| 29       | waterweightproduction       | 产水量           | NUMBER(8,2)    | t/d         | 
-| 30       | watercut                    | 含水率           | NUMBER(10,4)   | %           | 
+| 28       | oilweightproduction         | 产油量吨           | NUMBER(8,2)    | t/d         | 
+| 29       | waterweightproduction       | 产水量吨           | NUMBER(8,2)    | t/d         | 
+| 30       | watercut                    | 重量含水率           | NUMBER(10,4)   | %           | 
 | 31       | productiongasoilratio       | 生产气油比       | NUMBER(8,2)    | m^3/t      | 
 | 32       | tubingpressure              | 油压             | NUMBER(8,2)    | MPa         | 
 | 33       | casingpressure              | 套压             | NUMBER(8,2)    | MPa         | 
