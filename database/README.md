@@ -1234,7 +1234,7 @@
 
 ### 2.2.5 viw_rpc_diagram_latest 抽油机曲线数据实时视图
 
-| **序号** | **名称**                      | **代码**             | **类型**      | **单位**    | 
+| **序号** | **代码**                      | **名称**             | **类型**      | **单位**    | 
 |----------|-------------------------------|----------------------|---------------|-------------|
 | 1        | id                            | 记录编号             | NUMBER(10)    |             | 
 | 2        | wellname                      | 井名                 | VARCHAR2(200) |             | 
@@ -1436,7 +1436,7 @@
 
 ### 2.2.9 viw_rpc_comprehensive_latest 抽油机综合数据实时视图
 
-| **序号** | **名称**                      | **代码**                     | **类型**       | **单位**    | 
+| **序号** | **代码**                      | **名称**                     | **类型**       | **单位**    | 
 |----------|-------------------------------|------------------------------|----------------|-------------|
 | 1        | id                            | 记录编号                     | NUMBER(10)     |             | 
 | 2        | wellname                      | 井名                         | VARCHAR2(200)  |             | 
@@ -1471,7 +1471,7 @@
 | 31       | liquidweightproduction        | 产液量吨                       | NUMBER(8,2)    | t/d         | 
 | 32       | oilweightproduction           | 产油量吨                       | NUMBER(8,2)    | t/d         | 
 | 33       | waterweightproduction         | 产水量吨                       | NUMBER(8,2)    | t/d         | 
-| 34       | watercut                      | 重量含水率                       | NUMBER(8,2)    | %           | 
+| 34       | watercut                      | 体积含水率                       | NUMBER(8,2)    | %           | 
 | 35       | liquidweightproductionlevel   | 产液级别                     | VARCHAR2(50)   |             | 
 | 36       | productiongasoilratio         | 生产气油比                   | NUMBER(8,2)    | m^3/t      | 
 | 37       | tubingpressure                | 油压                         | NUMBER(8,2)    | MPa         | 
@@ -1707,7 +1707,7 @@
 | 31       | liquidweightproductionlevel   | 产液量统计级别     | VARCHAR2(50)   |             |
 | 32       | oilweightproduction           | 产油量吨             | NUMBER(8,2)    | t/d         |
 | 33       | waterweightproduction         | 产水量吨             | NUMBER(8,2)    | t/d         |
-| 34       | watercut                      | 重量含水率             | NUMBER(10,4)   | %           |
+| 34       | watercut                      | 体积含水率             | NUMBER(10,4)   | %           |
 | 35       | productiongasoilratio         | 生产气油比         | NUMBER(8,2)    | m^3/t      |
 | 36       | tubingpressure                | 油压               | NUMBER(8,2)    | MPa         |
 | 37       | casingpressure                | 套压               | NUMBER(8,2)    | MPa         |
@@ -1815,7 +1815,7 @@
 | 14       | tubingpressure             | 油压           | NUMBER(8,2)   | MPa      |
 | 15       | casingpressure             | 套压           | NUMBER(8,2)   | MPa      |
 | 16       | wellheadfluidtemperature   | 井口温油       | NUMBER(8,2)   | ℃        |
-| 17       | watercut                   | 重量含水率         | NUMBER(8,2)   | %        |
+| 17       | watercut                   | 体积含水率         | NUMBER(8,2)   | %        |
 | 18       | productiongasoilratio      | 生产气油比     | NUMBER(8,2)   | m^3/t   |
 | 19       | producingfluidlevel        | 动液面         | NUMBER(8,2)   | m        |
 | 20       | pumpsettingdepth           | 泵挂           | NUMBER(8,2)   | m        |
@@ -1832,7 +1832,7 @@
 
 ### 2.1.15 viw_pcp_productiondata_latest 螺杆泵生产数据实时视图 
 
-| **序号** | **名称**                   | **代码**       | **类型**      | **单位** | 
+| **序号** | **代码**                   | **名称**       | **类型**      | **单位** | 
 |----------|----------------------------|----------------|---------------|----------|
 | 1        | id                         | 记录编号       | NUMBER(10)    |          | 
 | 2        | wellname                   | 井名           | VARCHAR2(200) |          | 
@@ -1881,7 +1881,7 @@
 
 ### 2.1.17 viw_pcp_rpm_latest 螺杆泵曲线数据实时视图 
 
-| **序号** | **名称**                      | **代码**           | **类型**      | **单位**    | 
+| **序号** | **代码**                      | **名称**           | **类型**      | **单位**    | 
 |----------|-------------------------------|--------------------|---------------|-------------|
 | 1        | id                            | 记录编号           | NUMBER(10)    |             | 
 | 2        | wellname                      | 井名               | VARCHAR2(200) |             | 
@@ -1898,7 +1898,7 @@
 | 13       | liquidweightproduction        | 产液量吨             | NUMBER(8,2)   | t/d         | 
 | 14       | oilweightproduction           | 产油量吨             | NUMBER(8,2)   | t/d         | 
 | 15       | waterweightproduction         | 产水量吨             | NUMBER(8,2)   | t/d         | 
-| 16       | watercut                      | 重量含水率             | NUMBER(8,2)   | %           | 
+| 16       | watercut                      | 体积含水率             | NUMBER(8,2)   | %           | 
 | 17       | liquidweightproductionlevel   | 产液级别           | VARCHAR2(50)  |             | 
 | 18       | productiongasoilratio         | 生产气油比         | NUMBER(8,2)   | m^3/t      | 
 | 19       | tubingpressure                | 油压               | NUMBER(8,2)   | MPa         | 
@@ -1944,7 +1944,7 @@
 
 ### 2.1.19 viw_pcp_discrete_latest 螺杆泵离散数据实时视图
 
-| **序号** | **名称**                    | **代码**         | **类型**       | **单位** | 
+| **序号** | **代码**                    | **名称**         | **类型**       | **单位** | 
 |----------|-----------------------------|------------------|----------------|----------|
 | 1        | id                          | 记录编号         | NUMBER(10)     |          | 
 | 2        | wellname                    | 井名             | VARCHAR2(200)  |          | 
@@ -2050,7 +2050,7 @@
 
 ### 2.1.21 viw_pcp_comprehensive_latest 螺杆泵综合数据实时视图 
 
-| **序号** | **名称**                     | **代码**           | **类型**       | **单位**    | 
+| **序号** | **代码**                     | **名称**           | **类型**       | **单位**    | 
 |----------|------------------------------|--------------------|----------------|-------------|
 | 1        | id                           | 记录编号           | NUMBER(10)     |             | 
 | 2        | wellname                     | 井名               | VARCHAR2(200)  |             | 
@@ -2087,7 +2087,7 @@
 | 33       | liquidweightproduction       | 产液量吨             | NUMBER(8,2)    | t/d         | 
 | 34       | oilweightproduction          | 产油量吨             | NUMBER(8,2)    | t/d         | 
 | 35       | waterweightproduction        | 产水量吨             | NUMBER(8,2)    | t/d         | 
-| 36       | watercut                     | 重量含水率             | NUMBER(8,2)    | %           | 
+| 36       | watercut                     | 体积含水率             | NUMBER(8,2)    | %           | 
 | 37       | liquidweightproductionlevel  | 产液级别           | VARCHAR2(50)   |             | 
 | 38       | productiongasoilratio        | 生产气油比         | NUMBER(8,2)    | m^3/t      | 
 | 39       | tubingpressure               | 油压               | NUMBER(8,2)    | MPa         | 
@@ -2197,7 +2197,7 @@
 
 ### 2.1.23 viw_pcp_total_day 螺杆泵日累计数据视图
 
-| **序号** | **名称**                    | **代码**         | **类型**       | **单位**    | 
+| **序号** | **代码**                    | **名称**         | **类型**       | **单位**    | 
 |----------|-----------------------------|------------------|----------------|-------------|
 | 1        | id                          | 记录编号         | NUMBER(10)     |             | 
 | 2        | wellname                    | 井名             | VARCHAR2(200)  |             | 
@@ -2228,7 +2228,7 @@
 | 27       | liquidweightproductionlevel | 产液量统计级别   | VARCHAR2(50)   |             | 
 | 28       | oilweightproduction         | 产油量吨           | NUMBER(8,2)    | t/d         | 
 | 29       | waterweightproduction       | 产水量吨           | NUMBER(8,2)    | t/d         | 
-| 30       | watercut                    | 重量含水率           | NUMBER(10,4)   | %           | 
+| 30       | watercut                    | 体积含水率           | NUMBER(10,4)   | %           | 
 | 31       | productiongasoilratio       | 生产气油比       | NUMBER(8,2)    | m^3/t      | 
 | 32       | tubingpressure              | 油压             | NUMBER(8,2)    | MPa         | 
 | 33       | casingpressure              | 套压             | NUMBER(8,2)    | MPa         | 
