@@ -1856,25 +1856,23 @@
 | 20       | pumpsettingdepth           | 泵挂           | NUMBER(8,2)   | m        | 
 | 21       | productiongasoilratio      | 生产气油比     | NUMBER(8,2)   | m^3/t   | 
 | 22       | pumpborediameter           | 泵径           | NUMBER(8,2)   | mm       | 
-| 23       | pumptype                   | 泵类型         | VARCHAR2(20)  |          | 
-| 24       | pumptypename               | 泵类型名称     | VARCHAR2(200) |          | 
-| 25       | pumpgrade                  | 泵级别         | NUMBER(1)     |          | 
-| 26       | plungerlength              | 柱塞长         | NUMBER(8,2)   | m        | 
-| 27       | barreltype                 | 泵筒类型       | VARCHAR2(20)  |          | 
-| 28       | barreltypename             | 泵筒类型名称   | VARCHAR2(200) |          | 
-| 29       | barrellength               | 泵筒长         | NUMBER(8,2)   | m        | 
-| 30       | barrelseries               | 泵级数         | NUMBER(8,2)   |          | 
-| 31       | rotordiameter              | 转子截面直径   | NUMBER(8,2)   | mm       | 
-| 32       | qpr                        | 转速           | NUMBER(8,2)   | r/min    | 
-| 33       | tubingstringinsidediameter | 油管内径       | NUMBER(8,2)   | mm       | 
-| 34       | casingstringinsidediameter | 套管内径       | NUMBER(8,2)   | mm       | 
-| 35       | rodstring                  | 杆数据         | VARCHAR2(200) |          | 
-| 36       | anchoringstate             | 锚定状态       | NUMBER(1)     |          | 
-| 37       | anchoringstatename         | 锚定状态名称   | VARCHAR2(200) |          | 
-| 38       | netgrossratio              | 净毛比         | NUMBER(8,2)   |          | 
-| 39       | manualintervention         | 人工干预代码   | NUMBER(4)     |          | 
-| 40       | sortnum                    | 井排序编号     | NUMBER(10)    |          | 
-| 41       | org_id                     | 组织编号       | NUMBER(10)    |          | 
+| 23       | pumptype                   | 泵类型         | VARCHAR2(20)  |          |
+| 24       | pumpgrade                  | 泵级别         | NUMBER(1)     |          | 
+| 25       | plungerlength              | 柱塞长         | NUMBER(8,2)   | m        | 
+| 26       | barreltype                 | 泵筒类型       | VARCHAR2(20)  |          |
+| 27       | barrellength               | 泵筒长         | NUMBER(8,2)   | m        | 
+| 28       | barrelseries               | 泵级数         | NUMBER(8,2)   |          | 
+| 29       | rotordiameter              | 转子截面直径   | NUMBER(8,2)   | mm       | 
+| 30       | qpr                        | 转速           | NUMBER(8,2)   | r/min    | 
+| 31       | tubingstringinsidediameter | 油管内径       | NUMBER(8,2)   | mm       | 
+| 32       | casingstringinsidediameter | 套管内径       | NUMBER(8,2)   | mm       | 
+| 33       | rodstring                  | 杆数据         | VARCHAR2(200) |          | 
+| 34       | anchoringstate             | 锚定状态       | NUMBER(1)     |          | 
+| 35       | anchoringstatename         | 锚定状态名称   | VARCHAR2(200) |          | 
+| 36       | netgrossratio              | 净毛比         | NUMBER(8,2)   |          | 
+| 37       | manualintervention         | 人工干预代码   | NUMBER(4)     |          | 
+| 38       | sortnum                    | 井排序编号     | NUMBER(10)    |          | 
+| 39       | org_id                     | 组织编号       | NUMBER(10)    |          | 
 ### 2.1.16 viw_pcp_productiondata_hist 螺杆泵生产数据历史视图
 
 同viw_pcp_productiondata_latest
