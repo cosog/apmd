@@ -1,4 +1,4 @@
-:link:[**转至功图软件用户手册**](.././README.md):link:[**转至电参反演软件用户手册**](.././Interval/README.md):link:  
+:link:[**功图软件用户手册**](.././README.md):link:[**电参反演软件用户手册**](.././Interval/README.md):link:  
 
 # 《敏捷生产V7.1》数据库手册  
 
