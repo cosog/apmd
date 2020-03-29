@@ -74,7 +74,7 @@
 
 &emsp;&emsp;**浏览器要求：建议谷歌浏览器、360浏览器极速模式、IE9以上版本**
 
-![登录首页](.././images/helpdoc/PNG/002.png?raw=true)
+![登录首页](.././Image/PNG/002.png?raw=true)
 
 
 <h2><a name="2.2页面布局"></a>2.2 页面布局</h2>
