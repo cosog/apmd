@@ -1,4 +1,4 @@
-:link:[**电参反演软件用户手册**](./Interval/):link:[**数据库文档**](./database/):link:
+:link:[**电参反演软件用户手册**](./Inversion/):link:[**数据库文档**](./database/):link:
 
 # 《敏捷生产V7.1—功图软件》用户手册
 
