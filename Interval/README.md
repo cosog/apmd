@@ -1,8 +1,10 @@
+:link:[**转至功图软件用户手册**](./Interval/):link:[**转至数据库文档**](./database/):link:
+
 <a href="../download/AP.pdf" download="《电参反演软件V7.1》用户手册-北京科斯奇石油科技有限公司.pdf" style="display: block;text-align:right;">
 <img border="0" src="../images/helpdoc/SVG/downloadpdf.svg" alt="下载pdf">
 </a>
 
-# 《油气生产敏捷计算分析系统V7.1》用户手册
+# 《油气生产敏捷计算分析系统V7.1—电参反演软件》用户手册
 
 - [第一章 系统介绍](#第一章系统介绍)
     - [1.1 系统概述](#1.1系统概述)
@@ -72,7 +74,7 @@
 
 &emsp;&emsp;**浏览器要求：建议谷歌浏览器、360浏览器极速模式、IE9以上版本**
 
-![登录首页](../images/helpdoc/PNG/002.png?raw=true)
+![登录首页](.././images/helpdoc/PNG/002.png?raw=true)
 
 
 <h2><a name="2.2页面布局"></a>2.2 页面布局</h2>
