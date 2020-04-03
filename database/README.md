@@ -67,9 +67,6 @@
 	 - [2.1.23 viw_pcp_total_day 螺杆泵日累计数据视图](README.md#2123-viw_pcp_total_day-螺杆泵日累计数据视图)
 - [三、存储过程](README.md#三存储过程)
 - [四、触发器](README.md#四触发器)  
-- [五、数据库创建](README.md#五数据库创建)
-   - [5.1 自建用户](README.md#51-自建用户)
-   - [5.2 已有用户](README.md#52-已有用户)
 
 # 一、表
 
@@ -2354,65 +2351,3 @@
 | 34       | trg_a_pcp_rpm_hist_i_u        | 螺杆泵曲线数据历史表插入、更新数据后触发 |
 | 35       | trg_b_pcp_total_day_i         | 螺杆泵日累计数据表插入数据前触发         |
 | 36       | trg_b_wellboretrajectory_i    | 井身轨迹表插入数据前出发                 |
-
-# 五、数据库创建
-
-## 5.1 自建用户
-
-需要自建用户及表空间，并给用户授权。
-
-**步骤1、**修改“1创建表空间和用户.sql”中的oracle数据库路径；文件在“创建数据库sql”文件夹中。
-
-（1）找到部署服务器中的oracle数据库实例路径，如：F:\app\Administrator\oradata\orcl
-
-（2）将“1创建表空间和用户.sql”文件中的路径修改为实际路径，修改位置包括：
-
-TEMPFILE
-'D:\app\Oracle11g\oradata\orcl\agile_temp.dbf'中的D:\app\Oracle11g\oradata\orcl
-
-DATAFILE
-'D:\app\Oracle11g\oradata\orcl\agile_data.dbf'中的D:\app\Oracle11g\oradata\orcl
-
-保存。
-
-**步骤2、**修改autorun.bat中内容，主要是修改密码和全局数据库名。
-
-（1）右键编辑autorun.bat（不要双击打开，会执行该文件）
-
-（2）修改该句内容 sqlplus sys/orcl\@orcl as sysdba
-\@1创建表空间和用户.sql\>log.txt
-
-其中：
-
-sys：系统管理员，不用修改
-
-orcl：系统管理员密码，安装Oracle时输入的管理口令，根据实际修改
-
-\@orcl：全局数据库名，若安装时没有修改，默认是orcl
-
-**步骤3、**执行autorun.bat文件，等待执行完成
-
-**步骤4、**执行完成后，查看log.txt（日志文件）是否有报错。
-
-## 5.2 已有用户
-
-部署方提供了用户名、密码，创建表空间，并为用户授权。授权有两种形式：
-
-（1）grant connect,resource,dba to agile; //agile为用户名
-
-（2）grant connect,resource,create view,debug any procedure, debug connect
-session to agile
-
-**步骤1、**修改creatAndInitDB.bat中内容，主要是修改用户名、密码和全局数据库名。
-
-sqlplus agile/agile\@orcl \@createAndInitDB.sql\>log.txt
-
-sys：用户名，部署方提供
-
-orcl：密码，部署方提供
-
-orcl：全局数据库名，部署方提供
-
-**步骤2、**修改完成后，执行该文件。
-
-**步骤3、**执行完成后，查看log.txt（日志文件）是否有报错信息。
