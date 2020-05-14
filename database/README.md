@@ -110,7 +110,7 @@
 
 ## 1.2 逻辑结构
 
-![逻辑结构](.././Image/PNG/035.png?raw=true)
+![逻辑结构](.././Image/PNG/050.png?raw=true)
 
 ## 1.3 详述  
 
@@ -1831,8 +1831,8 @@
 | 3        | liftingtype                | 举升方式       | NUMBER(10)    |          |
 | 4        | acquisitiontime            | 采集时间       | DATE          |          |
 | 5        | workingconditionname       | 工况名称       | VARCHAR2(200) |          |
-| 6        | liquidproduction           | 产液量吨         | NUMBER(8,2)   | t/d      |
-| 7        | oilproduction              | 产油量吨         | NUMBER(8,2)   | t/d      |
+| 6        | liquidweightproduction     | 产液量吨         | NUMBER(8,2)   | t/d      |
+| 7        | oilweightproduction        | 产油量吨         | NUMBER(8,2)   | t/d      |
 | 8        | liquidvolumetricproduction | 产液量方         | NUMBER(8,2)   | m^3/d      |
 | 9        | oilvolumetricproduction    | 产油量方         | NUMBER(8,2)   | m^3/d      |
 | 10       | crudeoildensity            | 原油密度       | NUMBER(16,2)  | g/cm^3  |
