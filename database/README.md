@@ -1753,7 +1753,7 @@
 | 30       | upperloadline               | 理论上载荷线     | NUMBER(8,2)   | kN       |
 | 31       | lowerloadline               | 理论下载荷线     | NUMBER(8,2)   | kN       |
 | 32       | liquidweightproduction      | 产液量吨         | NUMBER(8,2)   | t/d      |
-| 33       | liquidvolumetricproduction  | 产液量方         | NUMBER(8,2)   | m\^3/d   |
+| 33       | liquidvolumetricproduction  | 产液量方         | NUMBER(8,2)   | m^3/d   |
 | 34       | signal                      | 信号强度         | NUMBER(8,2)   |          |
 | 35       | devicever                   | 设备版本         | VARCHAR2(50)  |          |
 | 36       | interval                    | 传输间隔         | NUMBER(10)    |          |
@@ -1843,7 +1843,7 @@
 | 73       | welldownsystemefficiencylevel | 井下效率级别       | VARCHAR2(50)   |             |
 | 74       | powerconsumptionperthm        | 吨液百米耗电量     | NUMBER(8,2)    | kW·h/100m·t |
 | 75       | todaywattenergy               | 日有功功耗         | NUMBER(8,2)    | kW·h        |
-| 76       | todaywattenergylevel          | 日有功功耗级别   | VARCHAR2(50)   |             |
+| 76       | todaywattenergylevel          | 日有功功耗级别     | VARCHAR2(50)   |             |
 | 77       | todaypwattenergy              | 日正向有功功耗     | NUMBER(8,2)    | kW·h        |
 | 78       | todaynwattenergy              | 日反向有功功耗     | NUMBER(8,2)    | kW·h        |
 | 79       | todayvarenergy                | 日无功功耗         | NUMBER(8,2)    | kVar·h      |
@@ -1863,39 +1863,41 @@
 | 93       | wattdegreebalancelevel        | 功率平衡统计级别   | VARCHAR2(200)  |             |
 | 94       | wattdegreebalancealarmlevel   | 功率平衡报警级别   | NUMBER(3)      |             |
 | 95       | deltaradius                   | 曲柄平衡移动距离   | NUMBER(8,2)    | m           |
-| 96       | ia                            | A相电流            | NUMBER(8,2)    | A           |
-| 97       | iamax                         | A相电流最大值      | NUMBER(8,2)    | A           |
-| 98       | iamin                         | A相电流最小值      | NUMBER(8,2)    | A           |
-| 99       | iastr                         | A相电流字符串      | NUMBER(8,2)    |             |
-| 100      | ib                            | B相电流            | NUMBER(8,2)    | A           |
-| 101      | ibmax                         | B相电流最大值      | NUMBER(8,2)    | A           |
-| 102      | ibmin                         | B相电流最小值      | NUMBER(8,2)    | A           |
-| 103      | ibstr                         | B相电流字符串      | VARCHAR2       |             |
-| 104      | ic                            | C相电流            | NUMBER(8,2)    | A           |
-| 105      | icmax                         | C相电流最大值      | NUMBER(8,2)    | A           |
-| 106      | icmin                         | C相电流最小值      | NUMBER(8,2)    | A           |
-| 107      | icstr                         | C相电流字符串      | VARCHAR2       |             |
-| 108      | va                            | A相电压            | NUMBER(8,2)    | V           |
-| 109      | vamax                         | A相电压最大值      | NUMBER(8,2)    | V           |
-| 110      | vamin                         | A相电压最小值      | NUMBER(8,2)    | V           |
-| 111      | vastr                         | A相电压字符串      | VARCHAR2       |             |
-| 112      | vb                            | B相电压            | NUMBER(8,2)    | V           |
-| 113      | vbmax                         | B相电压最大值      | NUMBER(8,2)    | V           |
-| 114      | vbmin                         | B相电压最小值      | NUMBER(8,2)    | V           |
-| 115      | vbstr                         | B相电压字符串      | VARCHAR2       |             |
-| 116      | vc                            | C相电压            | NUMBER(8,2)    | V           |
-| 117      | vcmax                         | C相电压最大值      | NUMBER(8,2)    | V           |
-| 118      | vcmin                         | C相电压最小值      | NUMBER(8,2)    | V           |
-| 119      | vcstr                         | C相电压字符串      | VARCHAR2       |             |
-| 120      | signal                        | 信号强度           | NUMBER(8,2)    |             |
-| 121      | signalmax                     | 信号强度最大值     | NUMBER(8,2)    |             |
-| 122      | signalmin                     | 信号强度最小值     | NUMBER(8,2)    |             |
-| 123      | signalstr                     | 信号强度字符串     | VARCHAR2       |             |
-| 124      | videourl                      | 视频路径           | VARCHAR2(400)  |             |
-| 125      | sortnum                       | 排序编号         | NUMBER(10)     |             |
-| 126      | org_code                      | 组织代码           | VARCHAR2(20)   |             |
-| 127      | org_id                        | 组织编号           | NUMBER(10)     |             |
-| 128      | remark                        | 备注               | VARCHAR2       |             |
+| 96       | deltaradiusmax                | 移动距离最大值     | NUMBER(8,2)    | m           |
+| 97       | deltaradiusmin                | 移动距离最小值     | NUMBER(8,2)    | m           |
+| 98       | ia                            | A相电流            | NUMBER(8,2)    | A           |
+| 99       | iamax                         | A相电流最大值      | NUMBER(8,2)    | A           |
+| 100      | iamin                         | A相电流最小值      | NUMBER(8,2)    | A           |
+| 101      | iastr                         | A相电流字符串      | NUMBER(8,2)    |             |
+| 102      | ib                            | B相电流            | NUMBER(8,2)    | A           |
+| 103      | ibmax                         | B相电流最大值      | NUMBER(8,2)    | A           |
+| 104      | ibmin                         | B相电流最小值      | NUMBER(8,2)    | A           |
+| 105      | ibstr                         | B相电流字符串      | VARCHAR2       |             |
+| 106      | ic                            | C相电流            | NUMBER(8,2)    | A           |
+| 107      | icmax                         | C相电流最大值      | NUMBER(8,2)    | A           |
+| 108      | icmin                         | C相电流最小值      | NUMBER(8,2)    | A           |
+| 109      | icstr                         | C相电流字符串      | VARCHAR2       |             |
+| 110      | va                            | A相电压            | NUMBER(8,2)    | V           |
+| 111      | vamax                         | A相电压最大值      | NUMBER(8,2)    | V           |
+| 112      | vamin                         | A相电压最小值      | NUMBER(8,2)    | V           |
+| 113      | vastr                         | A相电压字符串      | VARCHAR2       |             |
+| 114      | vb                            | B相电压            | NUMBER(8,2)    | V           |
+| 115      | vbmax                         | B相电压最大值      | NUMBER(8,2)    | V           |
+| 116      | vbmin                         | B相电压最小值      | NUMBER(8,2)    | V           |
+| 117      | vbstr                         | B相电压字符串      | VARCHAR2       |             |
+| 118      | vc                            | C相电压            | NUMBER(8,2)    | V           |
+| 119      | vcmax                         | C相电压最大值      | NUMBER(8,2)    | V           |
+| 120      | vcmin                         | C相电压最小值      | NUMBER(8,2)    | V           |
+| 121      | vcstr                         | C相电压字符串      | VARCHAR2       |             |
+| 122      | signal                        | 信号强度           | NUMBER(8,2)    |             |
+| 123      | signalmax                     | 信号强度最大值     | NUMBER(8,2)    |             |
+| 124      | signalmin                     | 信号强度最小值     | NUMBER(8,2)    |             |
+| 125      | signalstr                     | 信号强度字符串     | VARCHAR2       |             |
+| 126      | videourl                      | 视频路径           | VARCHAR2(400)  |             |
+| 127      | sortnum                       | 排序编号           | NUMBER(10)     |             |
+| 128      | org_code                      | 组织代码           | VARCHAR2(20)   |             |
+| 129      | org_id                        | 组织编号           | NUMBER(10)     |             |
+| 130      | remark                        | 备注               | VARCHAR2       |             |
 
 ### 2.1.15 viw_rpc_calculatemain 抽油机计算结果管理视图
 
@@ -2002,9 +2004,9 @@
 | 15       | waterweightproduction         | 产水量吨           | NUMBER(8,2)   | t/d         |
 | 16       | watercut_w                    | 重量含水率         | NUMBER(8,2)   | %           |
 | 17       | liquidweightproductionlevel   | 产液级别吨         | VARCHAR2(50)  |             |
-| 18       | liquidvolumetricproduction    | 产液量方           | NUMBER(8,2)   | m\^3/d      |
-| 19       | oilvolumetricproduction       | 产油量方           | NUMBER(8,2)   | m\^3/d      |
-| 20       | watervolumetricproduction     | 产水量方           | NUMBER(8,2)   | m\^3/d      |
+| 18       | liquidvolumetricproduction    | 产液量方           | NUMBER(8,2)   | m^3/d      |
+| 19       | oilvolumetricproduction       | 产油量方           | NUMBER(8,2)   | m^3/d      |
+| 20       | watervolumetricproduction     | 产水量方           | NUMBER(8,2)   | m^3/d      |
 | 21       | watercut                      | 体积含水率         | NUMBER(8,2)   | %           |
 | 22       | liquidvolumeproductionlevel   | 产液级别方         | VARCHAR2(50)  |             | 
 | 23       | productiongasoilratio         | 生产气油比         | NUMBER(8,2)   | m^3/t      | 
@@ -2196,9 +2198,9 @@
 | 35       | waterweightproduction        | 产水量吨           | NUMBER(8,2)    | t/d         |
 | 36       | watercut_w                   | 重量含水率         | NUMBER(8,2)    | %           |
 | 37       | liquidweightproductionlevel  | 产液级别吨         | VARCHAR2(50)   |             |
-| 38       | liquidvolumetricproduction   | 产液量方           | NUMBER(8,2)    | m\^3/d      |
-| 39       | oilvolumetricproduction      | 产油量方           | NUMBER(8,2)    | m\^3/d      |
-| 40       | watervolumetricproduction    | 产水量方           | NUMBER(8,2)    | m\^3/d      |
+| 38       | liquidvolumetricproduction   | 产液量方           | NUMBER(8,2)    | m^3/d      |
+| 39       | oilvolumetricproduction      | 产油量方           | NUMBER(8,2)    | m^3/d      |
+| 40       | watervolumetricproduction    | 产水量方           | NUMBER(8,2)    | m^3/d      |
 | 41       | watercut                     | 体积含水率         | NUMBER(8,2)    | %           |
 | 42       | liquidvolumeproductionlevel  | 产液级别方         | VARCHAR2(50)   |             | 
 | 43       | productiongasoilratio        | 生产气油比         | NUMBER(8,2)    | m^3/t      | 
@@ -2341,9 +2343,9 @@
 | 28       | waterweightproduction       | 产水量吨         | NUMBER(8,2)    | t/d         |
 | 29       | watercut_w                  | 重量含水率       | NUMBER(8,2)    | %           |
 | 30       | liquidweightproductionlevel | 产液级别吨       | VARCHAR2(50)   |             |
-| 31       | liquidvolumetricproduction  | 产液量方         | NUMBER(8,2)    | m\^3/d      |
-| 32       | oilvolumetricproduction     | 产油量方         | NUMBER(8,2)    | m\^3/d      |
-| 33       | watervolumetricproduction   | 产水量方         | NUMBER(8,2)    | m\^3/d      |
+| 31       | liquidvolumetricproduction  | 产液量方         | NUMBER(8,2)    | m^3/d      |
+| 32       | oilvolumetricproduction     | 产油量方         | NUMBER(8,2)    | m^3/d      |
+| 33       | watervolumetricproduction   | 产水量方         | NUMBER(8,2)    | m^3/d      |
 | 34       | watercut                    | 体积含水率       | NUMBER(8,2)    | %           |
 | 35       | liquidvolumeproductionlevel | 产液级别方       | VARCHAR2(50)   |             | 
 | 36       | productiongasoilratio       | 生产气油比       | NUMBER(8,2)    | m^3/t      | 
