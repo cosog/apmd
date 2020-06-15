@@ -1,6 +1,6 @@
 :link:[**功图软件用户手册**](.././README.md):link:[**电参反演软件用户手册**](.././Inversion/README.md):link:  
 
-# 《敏捷生产V7.2》数据库手册  
+# 《敏捷生产V7.3》数据库手册  
 
 - [一、表](README.md#一表)
    - [1.1 表概览](README.md#11-表概览)
@@ -43,28 +43,29 @@
    - [2.1 视图概览](README.md#21-视图概览)
    - [2.2 详述](README.md#22-详述)
      - [2.2.1 viw_wellinformation 井名信息视图](README.md#221-viw_wellinformation-井名信息视图)
-     - [2.2.2 viw_rpc_productiondata_latest 抽油机生产数据实时视图](README.md#222-viw_rpc_productiondata_latest-抽油机生产数据实时视图)  
-     - [2.2.3 viw_rpc_productiondata_hist 抽油机生产数据历史视图](README.md#223-viw_rpc_productiondata_hist-抽油机生产数据历史视图)
-     - [2.2.4 viw_commstatus 通信状态视图](README.md#224-viw_commstatus-通信状态视图)
-     - [2.2.5 viw_rpc_diagram_latest 抽油机曲线数据实时视图](README.md#225-viw_rpc_diagram_latest-抽油机曲线数据实时视图)
-     - [2.2.6 viw_rpc_diagram_hist 抽油机曲线数据历史视图](README.md#226-viw_rpc_diagram_hist-抽油机曲线数据历史视图)
-     - [2.2.7 viw_rpc_discrete_latest 抽油机电参数据实时视图](README.md#227-viw_rpc_discrete_latest-抽油机电参数据实时视图)
-     - [2.2.8 viw_rpc_discrete_hist 抽油机电参数据历史视图](README.md#228-viw_rpc_discrete_hist-抽油机电参数据历史视图)
-     - [2.2.9 viw_rpc_comprehensive_latest 抽油机综合数据实时视图](README.md#229-viw_rpc_comprehensive_latest-抽油机综合数据实时视图)
-     - [2.2.10 viw_rpc_comprehensive_hist 抽油机综合数据历史视图](README.md#2210-viw_rpc_comprehensive_hist-抽油机综合数据历史视图)
-     - [2.2.11 viw_rpc_diagramquery_latest 抽油机图形查询实时视图](README.md#2211-viw_rpc_diagramquery_latest-抽油机图形查询实时视图)
-     - [2.2.12 viw_rpc_diagramquery_hist 抽油机图形查询历史视图](README.md#2212-viw_rpc_diagramquery_hist-抽油机图形查询历史视图)
-     - [2.2.13 viw_rpc_total_day 抽油机日累计数据视图](README.md#2213-viw_rpc_total_day-抽油机日累计数据视图)
-     - [2.1.14 viw_rpc_calculatemain 抽油机计算结果管理视图](README.md#2114-viw_rpc_calculatemain-抽油机计算结果管理视图)
-	 - [2.1.15 viw_pcp_productiondata_latest 螺杆泵生产数据实时视图](README.md#2115-viw_pcp_productiondata_latest-螺杆泵生产数据实时视图)
-	 - [2.1.16 viw_pcp_productiondata_hist 螺杆泵生产数据历史视图](README.md#2116-viw_pcp_productiondata_hist-螺杆泵生产数据历史视图)
-	 - [2.1.17 viw_pcp_rpm_latest 螺杆泵曲线数据实时视图](README.md#2117-viw_pcp_rpm_latest-螺杆泵曲线数据实时视图)
-	 - [2.1.18 viw_pcp_rpm_hist 螺杆泵曲线数据历史视图](README.md#2118-viw_pcp_rpm_hist-螺杆泵曲线数据历史视图)
-	 - [2.1.19 viw_pcp_discrete_latest 螺杆泵离散数据实时视图](README.md#2119-viw_pcp_discrete_latest-螺杆泵离散数据实时视图)
-	 - [2.1.20 viw_pcp_discrete_hist 螺杆泵离散数据历史视图](README.md#2120-viw_pcp_discrete_hist-螺杆泵离散数据历史视图)
-	 - [2.1.21 viw_pcp_comprehensive_latest 螺杆泵综合数据实时视图](README.md#2121-viw_pcp_comprehensive_latest-螺杆泵综合数据实时视图)
-	 - [2.1.22 viw_pcp_comprehensive_hist 螺杆泵综合数据历史视图](README.md#2122-viw_pcp_comprehensive_hist-螺杆泵综合数据历史视图)
-	 - [2.1.23 viw_pcp_total_day 螺杆泵日累计数据视图](README.md#2123-viw_pcp_total_day-螺杆泵日累计数据视图)
+	 - [2.2.2 viw_wellboretrajectory 井身轨迹视图](README.md#222-viw_wellboretrajectory-井身轨迹视图)
+     - [2.2.3 viw_rpc_productiondata_latest 抽油机生产数据实时视图](README.md#223-viw_rpc_productiondata_latest-抽油机生产数据实时视图)  
+     - [2.2.4 viw_rpc_productiondata_hist 抽油机生产数据历史视图](README.md#224-viw_rpc_productiondata_hist-抽油机生产数据历史视图)
+     - [2.2.5 viw_commstatus 通信状态视图](README.md#225-viw_commstatus-通信状态视图)
+     - [2.2.6 viw_rpc_diagram_latest 抽油机曲线数据实时视图](README.md#226-viw_rpc_diagram_latest-抽油机曲线数据实时视图)
+     - [2.2.7 viw_rpc_diagram_hist 抽油机曲线数据历史视图](README.md#227-viw_rpc_diagram_hist-抽油机曲线数据历史视图)
+     - [2.2.8 viw_rpc_discrete_latest 抽油机电参数据实时视图](README.md#228-viw_rpc_discrete_latest-抽油机电参数据实时视图)
+     - [2.2.9 viw_rpc_discrete_hist 抽油机电参数据历史视图](README.md#229-viw_rpc_discrete_hist-抽油机电参数据历史视图)
+     - [2.2.10 viw_rpc_comprehensive_latest 抽油机综合数据实时视图](README.md#2210-viw_rpc_comprehensive_latest-抽油机综合数据实时视图)
+     - [2.2.11 viw_rpc_comprehensive_hist 抽油机综合数据历史视图](README.md#2211-viw_rpc_comprehensive_hist-抽油机综合数据历史视图)
+     - [2.2.12 viw_rpc_diagramquery_latest 抽油机图形查询实时视图](README.md#2212-viw_rpc_diagramquery_latest-抽油机图形查询实时视图)
+     - [2.2.13 viw_rpc_diagramquery_hist 抽油机图形查询历史视图](README.md#2213-viw_rpc_diagramquery_hist-抽油机图形查询历史视图)
+     - [2.2.14 viw_rpc_total_day 抽油机日累计数据视图](README.md#2214-viw_rpc_total_day-抽油机日累计数据视图)
+     - [2.1.15 viw_rpc_calculatemain 抽油机计算结果管理视图](README.md#2115-viw_rpc_calculatemain-抽油机计算结果管理视图)
+	 - [2.1.16 viw_pcp_productiondata_latest 螺杆泵生产数据实时视图](README.md#2116-viw_pcp_productiondata_latest-螺杆泵生产数据实时视图)
+	 - [2.1.17 viw_pcp_productiondata_hist 螺杆泵生产数据历史视图](README.md#2117-viw_pcp_productiondata_hist-螺杆泵生产数据历史视图)
+	 - [2.1.18 viw_pcp_rpm_latest 螺杆泵曲线数据实时视图](README.md#2118-viw_pcp_rpm_latest-螺杆泵曲线数据实时视图)
+	 - [2.1.19 viw_pcp_rpm_hist 螺杆泵曲线数据历史视图](README.md#2119-viw_pcp_rpm_hist-螺杆泵曲线数据历史视图)
+	 - [2.1.20 viw_pcp_discrete_latest 螺杆泵离散数据实时视图](README.md#2120-viw_pcp_discrete_latest-螺杆泵离散数据实时视图)
+	 - [2.1.21 viw_pcp_discrete_hist 螺杆泵离散数据历史视图](README.md#2121-viw_pcp_discrete_hist-螺杆泵离散数据历史视图)
+	 - [2.1.22 viw_pcp_comprehensive_latest 螺杆泵综合数据实时视图](README.md#2122-viw_pcp_comprehensive_latest-螺杆泵综合数据实时视图)
+	 - [2.1.23 viw_pcp_comprehensive_hist 螺杆泵综合数据历史视图](README.md#2123-viw_pcp_comprehensive_hist-螺杆泵综合数据历史视图)
+	 - [2.1.24 viw_pcp_total_day 螺杆泵日累计数据视图](README.md#2124-viw_pcp_total_day-螺杆泵日累计数据视图)
 - [三、存储过程](README.md#三存储过程)
 - [四、触发器](README.md#四触发器)  
 
@@ -278,16 +279,16 @@
 | 5        | liftingtype                | 举升类型         |          | NUMBER(10)    | Y            |        |
 | 6        | driveraddr                 | 设备地址         |          | VARCHAR2(200) | Y            |        |
 | 7        | driverid                   | 设备编号         |          | VARCHAR2(200) | Y            |        |
-| 8        | acqcycle_diagram           | 曲线采集周期     | min      | NUMBER(10)    | Y            |        |
-| 9        | acqcycle_discrete          | 离散读取周期 | min      | NUMBER(10)    | Y            |        |
-| 10       | savecycle_discrete         | 离散保存周期 | min      | NUMBER(10)    | Y            |        |
+| 8        | acqcycle_diagram           | 曲线采集间隔     | min      | NUMBER(10)    | Y            |        |
+| 9        | acqcycle_discrete          | 离散读取间隔 | min      | NUMBER(10)    | Y            |        |
+| 10       | savecycle_discrete         | 离散保存间隔 | min      | NUMBER(10)    | Y            |        |
 | 11       | drivercode                 | 驱动编码         |          | VARCHAR2(50)  | Y            |        |
 | 12       | unitcode                   | 采集单元编码     |          | VARCHAR2(50)  | Y            |        |
 | 13       | runtimeefficiencysource    | 时率来源         |          | NUMBER(2)     | Y            |        |
 | 14       | videourl                   | 视频url          |          | VARCHAR2(400) | Y            |        |
 | 15       | sortnum                    | 排序编号         |          | NUMBER(10)    | Y            |        |
-| 16       | acqcyclesetstatus_diagram  | 曲线采集周期设置状态 |          | NUMBER(2)     | Y            |        |
-| 17       | acqcyclesetstatus_discrete | 离散采集周期设置状态 |          | NUMBER(2)     | Y            |        |
+| 16       | acqcyclesetstatus_diagram  | 曲线采集间隔设置状态 |          | NUMBER(2)     | Y            |        |
+| 17       | acqcyclesetstatus_discrete | 离散采集间隔设置状态 |          | NUMBER(2)     | Y            |        |
 | 18       | groupid                    | 采控组编号       |          | NUMBER(10)    | Y            | 外键   |
 
 ### 1.3.13 tbl_trajectory 井身轨迹表
@@ -300,6 +301,12 @@
 | 4        | verticaldepth   | 垂直深度   | m        | CLOB         | Y            |        |
 | 5        | deviationangle  | 井斜角     | 度       | CLOB         | Y            |        |
 | 6        | azimuthangle    | 方位角     | 度       | CLOB         | Y            |        |
+| 7        | x               | 直角坐标X  | m        | CLOB         | Y            |        |
+| 8        | y               | 直角坐标Y  | m        | CLOB         | Y            |        |
+| 9        | z               | 直角坐标Z  | m        | CLOB         | Y            |        |
+| 10       | savetime        | 入库时间   |          | DATE          | Y            |        |
+| 11       | resultstatus    | 计算标志   |          | NUMBER(4)     | Y            |        |
+
 
 ### 1.3.14 tbl_rpc_productiondata_latest 抽油机生产数据实时表
 
@@ -374,7 +381,7 @@
 | 21       | varsum                    | 三相总无功功率               | kVar     | NUMBER(8,2)    | Y            |        | 
 | 22       | reversepower              | 反向功率                     |          | NUMBER(8,2)    | Y            |        | 
 | 23       | pfsum                     | 三相综合功率因数             |          | NUMBER(8,2)    | Y            |        | 
-| 24       | acqcycle_diagram          | 功图采集周期                 | min      | NUMBER(6)      | Y            |        | 
+| 24       | acqcycle_diagram          | 功图采集间隔                 | min      | NUMBER(6)      | Y            |        | 
 | 25       | frequencysetvalue         | 变频设置频率                 | HZ       | NUMBER(8,2)    | Y            |        | 
 | 26       | frequencyrunvalue         | 变频运行频率                 | HZ       | NUMBER(8,2)    | Y            |        | 
 | 27       | tubingpressure            | 油压                         | MPa      | NUMBER(8,2)    | Y            |        | 
@@ -559,6 +566,18 @@
 | 89       | ib_curve                     | b相电流曲线          |             | CLOB          | Y            |        |
 | 90       | ic_curve                     | c相电流曲线          |             | CLOB          | Y            |        |
 | 91       | deltaradius                  | 曲柄平衡移动距离     | cm          | NUMBER(8,2)   | Y            |        |
+| 92       | crankangle                   | 曲柄转角曲线       |             | CLOB          | Y        |        |
+| 93       | polishrodv                   | 速度曲线           |             | CLOB          | Y        |        |
+| 94       | polishroda                   | 加速度曲线         |             | CLOB          | Y        |        |
+| 95       | pr                           | 位置因数曲线       |             | CLOB          | Y        |        |
+| 96       | tf                           | 扭矩因数曲线       |             | CLOB          | Y        |        |
+| 97       | loadtorque                   | 载荷扭矩曲线       |             | CLOB          | Y        |        |
+| 98       | cranktorque                  | 曲柄扭矩曲线       |             | CLOB          | Y        |        |
+| 99       | currentbalancetorque         | 目前平衡块扭矩曲线 |             | CLOB          | Y        |        |
+| 100      | currentnettorque             | 目前净扭矩曲线     |             | CLOB          | Y        |        |
+| 101      | expectedbalancetorque        | 预期平衡块扭矩曲线 |             | CLOB          | Y        |        |
+| 102      | expectednettorque            | 预期净扭矩曲线     |             | CLOB          | Y        |        |
+| 103      | wellboreslice                | 井身切片曲线       |             | CLOB          | Y        |        |
 
 ### 1.3.19 tbl_rpc_diagram_hist 抽油机曲线数据历史表
 
@@ -602,9 +621,9 @@
 | 9        | runtime                       | 运行时间                 | h            | NUMBER(8,2)    | Y            |        | 
 | 10       | runrange                      | 运行区间                 |             | VARCHAR2(4000) | Y            |        | 
 | 11       | runtimeefficiency             | 生产时率                 | 小数        | NUMBER(12,3)   | Y            |        | 
-| 12       | workingconditioncode          | 工况类型                 |             | NUMBER(4)      | Y            |        | 
-| 13       | workingconditionstring        | 功图工况字符串           |             | VARCHAR2(4000) | Y            |        | 
-| 14       | workingconditioncode_e        | 电参工况类型             |             | NUMBER(4)      | Y            |        | 
+| 12       | workingconditioncode          | 工况代码                 |             | NUMBER(4)      | Y            |        | 
+| 13       | workingconditionstring        | 工况字符串           |             | VARCHAR2(4000) | Y            |        | 
+| 14       | workingconditioncode_e        | 电参工况代码             |             | NUMBER(4)      | Y            |        | 
 | 15       | workingconditionstring_e      | 电参工况字符串           |             | VARCHAR2(4000) | Y            |        | 
 | 16       | fullnesscoefficient           | 功图充满系数             | 小数        | NUMBER(10,4)   | Y            |        | 
 | 17       | fullnesscoefficientmax        | 功图充满系数最大值       | 小数        | NUMBER(10,4)   | Y            |        | 
@@ -639,7 +658,7 @@
 | 46       | wattdegreebalancemin          | 功率平衡度最小值         | %           | NUMBER(8,2)    | Y            |        | 
 | 47       | idegreebalancemax             | 电流平衡度最大值         | %           | NUMBER(8,2)    | Y            |        | 
 | 48       | idegreebalancemin             | 电流平衡度最小值         | %           | NUMBER(8,2)    | Y            |        | 
-| 49       | deltaradius                   | 移动距离                 | m           | NUMBER(8,2)    | Y            |        | 
+| 49       | deltaradius                   | 曲柄平衡移动距离         | m           | NUMBER(8,2)    | Y            |        | 
 | 50       | deltaradiusmax                | 移动距离最大值           | m           | NUMBER(8,2)    | Y            |        | 
 | 51       | deltaradiusmin                | 移动距离最小值           | m           | NUMBER(8,2)    | Y            |        | 
 | 52       | watercut                      | 体积含水率               | %           | NUMBER(10,4)   | Y            |        | 
@@ -865,7 +884,7 @@
 | 8        | runstatus                | 运行状态       |          | NUMBER(2)      | Y        |        | 
 | 9        | runtimeefficiency        | 运行时率       |          | NUMBER(10,4)   | Y        |        | 
 | 10       | runtime                  | 运行时间       | h        | NUMBER(8,2)    | Y        |        | 
-| 11       | runrange                 | 运行时间段     |          | VARCHAR2(2000) | Y        |        | 
+| 11       | runrange                 | 运行区间       |          | VARCHAR2(2000) | Y        |        | 
 | 12       | ia                       | A相电流        | A        | NUMBER(8,2)    | Y        |        | 
 | 13       | ib                       | B相电流        | A        | NUMBER(8,2)    | Y        |        | 
 | 14       | ic                       | C相电流        | A        | NUMBER(8,2)    | Y        |        | 
@@ -880,10 +899,10 @@
 | 23       | pfsum                    | 功率因数       |          | NUMBER(8,2)    | Y        |        | 
 | 24       | frequencysetvalue        | 变频设置频率   | HZ       | NUMBER(8,2)    | Y        |        | 
 | 25       | frequencyrunvalue        | 变频运行频率   | HZ       | NUMBER(8,2)    | Y        |        | 
-| 26       | tubingpressure           | 采集的油压     | MPa      | NUMBER(8,2)    | Y        |        | 
-| 27       | casingpressure           | 采集的套压     | MPa      | NUMBER(8,2)    | Y        |        | 
-| 28       | backpressure             | 采集的回压     | MPa      | NUMBER(8,2)    | Y        |        | 
-| 29       | wellheadfluidtemperature | 采集的井口油温 | ℃        | NUMBER(8,2)    | Y        |        |
+| 26       | tubingpressure           | 油压          | MPa      | NUMBER(8,2)    | Y        |        | 
+| 27       | casingpressure           | 套压          | MPa      | NUMBER(8,2)    | Y        |        | 
+| 28       | backpressure             | 回压          | MPa      | NUMBER(8,2)    | Y        |        | 
+| 29       | wellheadfluidtemperature | 井口油温       | ℃        | NUMBER(8,2)    | Y        |        |
 | 30       | todaywattenergy          | 日有功功耗     | kW·h     | NUMBER(8,2)    | Y        |        | 
 | 31       | workingconditioncode     | 电参工况类型   |          | NUMBER(4)      | Y        |        | 
 | 32       | iaalarm                  | A相电流报警项  |          | VARCHAR2(20)   | Y        |        | 
@@ -1005,7 +1024,7 @@
 | 9        | runtime                       | 运行时间                 | h           | NUMBER(8,2)    | Y        |        | 
 | 10       | runrange                      | 运行区间                 |             | VARCHAR2(4000) | Y        |        | 
 | 11       | runtimeefficiency             | 生产时率                 | 小数        | NUMBER(12,3)   | Y        |        | 
-| 12       | workingconditioncode          | 工况类型                 |             | NUMBER(4)      | Y        |        | 
+| 12       | workingconditioncode          | 工况代码                 |             | NUMBER(4)      | Y        |        | 
 | 13       | workingconditionstring        | 工况字符串               |             | VARCHAR2(4000) | Y        |        | 
 | 14       | rpm                           | 转速                     | r/min       | NUMBER(4)      | Y        |        | 
 | 15       | rpmmax                        | 转速最大值               | r/min       | VARCHAR2(4000) | Y        |        | 
@@ -1135,28 +1154,29 @@
 | **序号** | **名称**                      | **描述**               |
 |----------|-------------------------------|------------------------|
 | 1        | viw_wellinformation           | 井名信息视图           |
-| 2        | viw_rpc_productiondata_latest | 抽油机生产数据实时视图 |
-| 3        | viw_rpc_productiondata_hist   | 抽油机生产数据历史视图 |
-| 4        | viw_commstatus                | 通信状态视图           |
-| 5        | viw_rpc_diagram_latest        | 抽油机曲线数据实时视图 |
-| 6        | viw_rpc_diagram_hist          | 抽油机曲线数据历史视图 |
-| 7        | viw_rpc_discrete_latest       | 抽油机离散数据实时视图 |
-| 8        | viw_rpc_discrete_hist         | 抽油机离散数据历史视图 |
-| 9        | viw_rpc_comprehensive_latest  | 抽油机综合数据实时视图 |
-| 10       | viw_rpc_comprehensive_hist    | 抽油机综合数据历史视图 |
-| 11       | viw_rpc_diagramquery_latest   | 抽油机图形查询实时视图 |
-| 12       | viw_rpc_diagramquery_hist     | 抽油机图形查询历史视图 |
-| 13       | viw_rpc_total_day             | 抽油机日累计数据视图   |
-| 14       | viw_rpc_calculatemain         | 抽油机计算结果管理视图 |
-| 15       | viw_pcp_productiondata_latest | 螺杆泵生产数据实时视图 |
-| 16       | viw_pcp_productiondata_hist   | 螺杆泵生产数据历史视图 |
-| 17       | viw_pcp_rpm_latest            | 螺杆泵曲线数据实时视图 |
-| 18       | viw_pcp_rpm_hist              | 螺杆泵曲线数据历史视图 |
-| 19       | viw_pcp_discrete_latest       | 螺杆泵离散数据实时视图 |
-| 20       | viw_pcp_discrete_hist         | 螺杆泵离散数据历史视图 |
-| 21       | viw_pcp_comprehensive_latest  | 螺杆泵综合数据实时视图 |
-| 22       | viw_pcp_comprehensive_hist    | 螺杆泵综合数据历史视图 |
-| 23       | viw_pcp_total_day             | 螺杆泵日累计数据视图   |
+| 2        | viw_wellboretrajectory        | 井身轨迹视图           |
+| 3        | viw_rpc_productiondata_latest | 抽油机生产数据实时视图 |
+| 4        | viw_rpc_productiondata_hist   | 抽油机生产数据历史视图 |
+| 5        | viw_commstatus                | 通信状态视图           |
+| 6        | viw_rpc_diagram_latest        | 抽油机曲线数据实时视图 |
+| 7        | viw_rpc_diagram_hist          | 抽油机曲线数据历史视图 |
+| 8        | viw_rpc_discrete_latest       | 抽油机离散数据实时视图 |
+| 9        | viw_rpc_discrete_hist         | 抽油机离散数据历史视图 |
+| 10       | viw_rpc_comprehensive_latest  | 抽油机综合数据实时视图 |
+| 11       | viw_rpc_comprehensive_hist    | 抽油机综合数据历史视图 |
+| 12       | viw_rpc_diagramquery_latest   | 抽油机图形查询实时视图 |
+| 13       | viw_rpc_diagramquery_hist     | 抽油机图形查询历史视图 |
+| 14       | viw_rpc_total_day             | 抽油机日累计数据视图   |
+| 15       | viw_rpc_calculatemain         | 抽油机计算结果管理视图 |
+| 16       | viw_pcp_productiondata_latest | 螺杆泵生产数据实时视图 |
+| 17       | viw_pcp_productiondata_hist   | 螺杆泵生产数据历史视图 |
+| 18       | viw_pcp_rpm_latest            | 螺杆泵曲线数据实时视图 |
+| 19       | viw_pcp_rpm_hist              | 螺杆泵曲线数据历史视图 |
+| 20       | viw_pcp_discrete_latest       | 螺杆泵离散数据实时视图 |
+| 21       | viw_pcp_discrete_hist         | 螺杆泵离散数据历史视图 |
+| 22       | viw_pcp_comprehensive_latest  | 螺杆泵综合数据实时视图 |
+| 23       | viw_pcp_comprehensive_hist    | 螺杆泵综合数据历史视图 |
+| 24       | viw_pcp_total_day             | 螺杆泵日累计数据视图   |
 
 ## 2.2 详述
 
@@ -1172,11 +1192,11 @@
 | 6        | liftingtype                | 举升方式             | NUMBER(10)    |          |
 | 7        | driveraddr                 | 设备地址             | VARCHAR2(200) |          |
 | 8        | driverid                   | 设备编号             | VARCHAR2(200) |          |
-| 9        | acqcycle_diagram           | 曲线采集周期         | NUMBER(10)    | min      |
-| 10       | acqcyclesetstatus_diagram  | 曲线采集周期设置状态 | NUMBER(2)     |          |
-| 11       | acqcycle_discrete          | 离散采集周期         | NUMBER(10)    | min      |
-| 12       | acqcyclesetstatus_discrete | 离散采集周期设置状态 | NUMBER(2)     |          |
-| 13       | savecycle_discrete         | 离散保存周期         | NUMBER(10)    | min      |
+| 9        | acqcycle_diagram           | 曲线采集间隔         | NUMBER(10)    | min      |
+| 10       | acqcyclesetstatus_diagram  | 曲线采集间隔设置状态 | NUMBER(2)     |          |
+| 11       | acqcycle_discrete          | 离散采集间隔         | NUMBER(10)    | min      |
+| 12       | acqcyclesetstatus_discrete | 离散采集间隔设置状态 | NUMBER(2)     |          |
+| 13       | savecycle_discrete         | 离散保存间隔         | NUMBER(10)    | min      |
 | 14       | runtimeefficiencysource    | 时率来源             | VARCHAR2(200) |          |
 | 15       | videourl                   | 视频路径             | VARCHAR2(400) |          |
 | 16       | liftingtypename            | 举升方式名称         | VARCHAR2(200) |          |
@@ -1184,7 +1204,26 @@
 | 18       | acquisitionunit            | 采集组编码           | VARCHAR2(50)  |          |
 | 19       | sortnum                    | 排序编号             | NUMBER(10)    |          |
 
-### 2.2.2 viw_rpc_productiondata_latest 抽油机生产数据实时视图
+### 2.2.2 viw_wellboretrajectory 井身轨迹视图
+
+| **序号** | **代码**       | **名称**  | **类型**      | **单位** |
+|----------|----------------|-----------|---------------|----------|
+| 1        | id             | 记录编号  | NUMBER(10)    |          |
+| 2        | orgname        | 单位名称  | VARCHAR2(100) |          |
+| 3        | orgid          | 单位序号  | NUMBER(10)    |          |
+| 4        | wellname       | 井名      | VARCHAR2(200) |          |
+| 5        | measuringdepth | 测量深度  | CLOB          | m        |
+| 6        | verticaldepth  | 垂直深度  | CLOB          | m        |
+| 7        | deviationangle | 井斜角    | CLOB          | 度       |
+| 8        | azimuthangle   | 方位角    | CLOB          | 度       |
+| 9        | x              | 直角坐标x | CLOB          |          |
+| 10       | y              | 直角坐标y | CLOB          |          |
+| 11       | z              | 直角坐标z | CLOB          |          |
+| 12       | savetime       | 入库时间  | DATE          |          |
+| 13       | resultstatus   | 计算标志  | NUMBER(4)     |          |
+| 14       | sortnum        | 排序编号  | NUMBER(10)    |          |
+
+### 2.2.3 viw_rpc_productiondata_latest 抽油机生产数据实时视图
 
 | **序号** | **代码**                   | **名称**       | **类型**      | **单位** |
 |----------|----------------------------|----------------|---------------|----------|
@@ -1230,11 +1269,11 @@
 | 40       | sortnum                    | 井排序编号     | NUMBER(10)    |          |
 | 41       | org_id                     | 组织编号       | NUMBER(10)    |          |
 
-### 2.2.3 viw_rpc_productiondata_hist 抽油机生产数据历史视图
+### 2.2.4 viw_rpc_productiondata_hist 抽油机生产数据历史视图
 
 同viw_rpc_productiondata_latest
 
-### 2.2.4 viw_commstatus 通信状态视图 
+### 2.2.5 viw_commstatus 通信状态视图 
 
 | **序号** | **代码**   | **名称** | **类型**      | **单位** |
 |----------|------------|----------|---------------|----------|
@@ -1242,7 +1281,7 @@
 | 2        | wellname   | 井名     | VARCHAR2(200) |          |
 | 3        | commstatus | 通信状态 | NUMBER(1)     |          |
 
-### 2.2.5 viw_rpc_diagram_latest 抽油机曲线数据实时视图
+### 2.2.6 viw_rpc_diagram_latest 抽油机曲线数据实时视图
 
 | **序号** | **代码**                      | **名称**             | **类型**      | **单位**    | 
 |----------|-------------------------------|----------------------|---------------|-------------|
@@ -1254,7 +1293,7 @@
 | 6        | acquisitiontime               | 采集时间             | DATE          |             | 
 | 7        | commstatus                    | 通信状态             | NUMBER(1)     |             | 
 | 8        | commstatusname                | 通信状态名称         | VARCHAR2      |             | 
-| 9        | commalarmlevel                | 通信报警级别         | NUMBER(3)     |             | 
+| 9        | commalarmlevel                | 通信状态报警级别         | NUMBER(3)     |             | 
 | 10       | workingconditioncode          | 工况代码             | NUMBER(4)     |             | 
 | 11       | workingconditionname          | 工况名称             | VARCHAR2(200) |             | 
 | 12       | optimizationsuggestion        | 优化建议             | VARCHAR2(200) |             | 
@@ -1345,11 +1384,11 @@
 | 98       | org_code                      | 组织代码             | VARCHAR2(20)  |             | 
 | 99       | sortnum                       | 井排序编号           | NUMBER(10)    |             | 
 
-### 2.2.6 viw_rpc_diagram_hist 抽油机曲线数据历史视图
+### 2.2.7 viw_rpc_diagram_hist 抽油机曲线数据历史视图
 
 同viw_rpc_diagram_latest
 
-### 2.2.7 viw_rpc_discrete_latest 抽油机离散数据实时视图
+### 2.2.8 viw_rpc_discrete_latest 抽油机离散数据实时视图
 
 | **序号** | **代码**                    | **名称**         | **类型**       | **单位** |
 |----------|-----------------------------|------------------|----------------|----------|
@@ -1361,7 +1400,7 @@
 | 6        | driveraddr                  | 设备地址         | VARCHAR2(200)  |          |
 | 7        | commstatus                  | 通信状态         | NUMBER(1)      |          |
 | 8        | commstatusname              | 通信状态名称     | VARCHAR2       |          |
-| 9        | commalarmlevel              | 通信报警级别     | NUMBER(4)      |          |
+| 9        | commalarmlevel              | 通信状态报警级别     | NUMBER(4)      |          |
 | 10       | runstatus                   | 运行状态         | NUMBER(1)      |          |
 | 11       | runstatusname               | 运行状态名称     | VARCHAR2       |          |
 | 12       | runalarmlevel               | 运行状态报警级别 | NUMBER(3)      |          |
@@ -1382,7 +1421,7 @@
 | 27       | optimizationsuggestion_elec | 电参工况优化建议         | VARCHAR2(200)  |          |
 | 28       | workingconditionalarmlevel  | 电参工况报警级别     | NUMBER(3)      |          |
 | 29       | todaywattenergy             | 日有功功耗       | NUMBER(8,2)    | kW·h     |
-| 30       | todaywattenergylevel        | 日耗电量级别     | VARCHAR2(50)   |          |
+| 30       | todaywattenergylevel        | 日有功功耗级别     | VARCHAR2(50)   |          |
 | 31       | todaypwattenergy            | 日正向有功功耗   | NUMBER(8,2)    | kW·h     |
 | 32       | todaynwattenergy            | 日反向有功功耗   | NUMBER(8,2)    | kW·h     |
 | 33       | todayvarenergy              | 日无功功耗       | NUMBER(8,2)    | kVar·h   |
@@ -1458,15 +1497,15 @@
 | 103      | interval                    | 传输间隔         | NUMBER(10)     |          |
 | 104      | devicever                   | 设备版本         | VARCHAR2(50)   |          |
 | 105      | videourl                    | 视频路径         | VARCHAR2(400)  |          |
-| 106      | sortnum                     | 井排序编号       | NUMBER(10)     |          |
+| 106      | sortnum                     | 排序编号       | NUMBER(10)     |          |
 | 107      | org_code                    | 组织代码         | VARCHAR2(20)   |          |
 | 108      | org_id                      | 组织编号         | NUMBER(10)     |          |
 
-### 2.2.8 viw_rpc_discrete_hist 抽油机离散数据历史视图
+### 2.2.9 viw_rpc_discrete_hist 抽油机离散数据历史视图
 
 同 viw_rpc_discrete_latest
 
-### 2.2.9 viw_rpc_comprehensive_latest 抽油机综合数据实时视图
+### 2.2.10 viw_rpc_comprehensive_latest 抽油机综合数据实时视图
 
 | **序号** | **代码**                      | **名称**                     | **类型**       | **单位**    | 
 |----------|-------------------------------|------------------------------|----------------|-------------|
@@ -1478,7 +1517,7 @@
 | 6        | acquisitiontime_d             | 离散数据采集时间             | DATE           |             | 
 | 7        | commstatus                    | 通信状态                     | NUMBER(2)      |             | 
 | 8        | commstatusname                | 通信状态名称                 | VARCHAR2       |             | 
-| 9        | commalarmlevel                | 通信报警级别                 | NUMBER(3)      |             | 
+| 9        | commalarmlevel                | 通信状态报警级别                 | NUMBER(3)      |             | 
 | 10       | runstatus                     | 运行状态                     | NUMBER(1)      |             | 
 | 11       | runstatusname                 | 运行状态名称                 | VARCHAR2       |             | 
 | 12       | runalarmlevel                 | 运行状态报警级别             | NUMBER(3)      |             | 
@@ -1582,10 +1621,10 @@
 | 110      | pumpoutletgol                 | 泵出口就地气液比             | NUMBER(8,2)    | m^3/m^3   | 
 | 111      | pumpoutletvisl                | 泵出口粘度                   | NUMBER(8,2)    | mPa·s       | 
 | 112      | pumpoutletbo                  | 泵出口原油体积系数           | NUMBER(8,2)    | 小数        | 
-| 113      | acqcycle_diagram               | 功图采集周期                   | NUMBER(6)    | min        | 
-| 114      | acqcycle_discrete          | 离散数据采集间隔                 | NUMBER(10)   | min            | 
+| 113      | acqcycle_diagram              | 功图采集间隔                   | NUMBER(6)    | min        | 
+| 114      | acqcycle_discrete             | 离散数据采集间隔                 | NUMBER(10)   | min            | 
 | 115      | todaywattenergy               | 日有功功耗                   | NUMBER(8,2)    | kW·h        | 
-| 116      | todaywattenergylevel          | 日耗电量级别                 | VARCHAR2(50)   |             | 
+| 116      | todaywattenergylevel          | 日有功功耗级别                 | VARCHAR2(50)   |             | 
 | 117      | todaypwattenergy              | 日正向有功功耗               | NUMBER(8,2)    | kW·h        | 
 | 118      | todaynwattenergy              | 日反向有功功耗               | NUMBER(8,2)    | kW·h        | 
 | 119      | todayvarenergy                | 日无功功耗                   | NUMBER(8,2)    | kVar·h      | 
@@ -1672,58 +1711,60 @@
 | 200      | videourl                      | 视频路径                     | VARCHAR2(400)  |             | 
 | 201      | org_id                        | 组织编号                     | NUMBER(10)     |             | 
 | 202      | org_code                      | 组织代码                     | VARCHAR2(20)   |             | 
-| 203      | sortnum                       | 井排序编号                   | NUMBER(10)     |             |
+| 203      | sortnum                       | 排序编号                   | NUMBER(10)     |             |
 
-### 2.2.10 viw_rpc_comprehensive_hist 抽油机综合数据历史视图
+### 2.2.11 viw_rpc_comprehensive_hist 抽油机综合数据历史视图
 
 同 viw_rpc_comprehensive_latest
 
-### 2.2.11 viw_rpc_diagramquery_latest 抽油机图形查询实时视图
+### 2.2.12 viw_rpc_diagramquery_latest 抽油机图形查询实时视图
 
-| **序号** | **代码**                    | **名称**           | **类型**      | **单位** |
-|----------|-----------------------------|--------------------|---------------|----------|
-| 1        | id                          | 记录编号               | NUMBER(10)    |          |
-| 2        | wellname                    | 井名               | VARCHAR2(200) |          |
-| 3        | acquisitiontime             | 采集时间           | DATE          |          |
-| 4        | stroke                      | 冲程               | NUMBER(8,2)   | m        |
-| 5        | spm                         | 冲次               | NUMBER(8,2)   | 次/min   |
-| 6        | fmax                        | 最大载荷           | NUMBER(8,2)   | kN       |
-| 7        | fmin                        | 最小载荷           | NUMBER(8,2)   | kN       |
-| 8        | position_curve              | 位移曲线           | CLOB          |          |
-| 9        | load_curve                  | 载荷曲线           | CLOB          |          |
-| 10       | power_curve                 | 功率曲线           | CLOB          |          |
-| 11       | current_curve               | 电流曲线           | CLOB          |          |
-| 12       | rpm_curve                   | 电机转速曲线       | CLOB          |          |
-| 13       | rawpower_curve              | 过滤前功率曲线     | CLOB          |          |
-| 14       | rawcurrent_curve            | 过滤前电流曲线     | CLOB          |          |
-| 15       | rawrpm_curve                | 过滤前电机转速曲线 | CLOB          |          |
-| 16       | upstrokeimax                | 上冲程最大电流     | VARCHAR2(200) | A        |
-| 17       | downstrokeimax              | 下冲程最大电流     | NUMBER(8,2)   | A        |
-| 18       | idegreebalance              | 电流平衡度         | NUMBER(8,2)   | %        |
-| 19       | idegreebalancelevel         | 电流平衡级别       | NUMBER(8,2)   |          |
-| 20       | idegreebalancealarmlevel    | 电流平衡报警级别   | VARCHAR2(200) |          |
-| 21       | upstrokewattmax             | 上冲程最大功率     | NUMBER(8,2)   | kW       |
-| 22       | downstrokewattmax           | 下冲程最大功率     | NUMBER(8,2)   | kW       |
-| 23       | wattdegreebalance           | 功率平衡度         | NUMBER(8,2)   | %        |
-| 24       | wattdegreebalancelevel      | 功率平衡级别       | NUMBER(8,2)   |          |
-| 25       | wattdegreebalancealarmlevel | 功率平衡报警级别   | VARCHAR2(200) |          |
-| 26       | datasource                  | 数据来源           | NUMBER(1)     |          |
-| 27       | workingconditionname        | 工况名称           | VARCHAR2      |          |
-| 28       | upperloadline               | 理论上载荷线       | NUMBER(8,2)   | kN       |
-| 29       | lowerloadline               | 理论下载荷线       | NUMBER(8,2)   | kN       |
-| 30       | liquidweightproduction      | 产液量吨            | NUMBER(8,2)   | t/d      |
-| 31       | liquidvolumetricproduction  | 产液量方           | NUMBER(8,2)   | m^3/d   |
-| 32       | signal                      | 信号强度           | NUMBER(8,2)   |          |
-| 33       | devicever                   | 设备版本           | VARCHAR2(50)  |          |
-| 34       | interval                    | 传输间隔           | NUMBER(10)    |          |
-| 35       | orgid                       | 组织编号           | NUMBER(10)    |          |
-| 36       | sortnum                     | 排序编号           | NUMBER(10)    |          |
+| **序号** | **代码**                    | **名称**         | **类型**      | **单位** |
+|----------|-----------------------------|------------------|---------------|----------|
+| 1        | id                          | 记录编号         | NUMBER(10)    |          |
+| 2        | wellname                    | 井名             | VARCHAR2(200) |          |
+| 3        | acquisitiontime             | 采集时间         | DATE          |          |
+| 4        | stroke                      | 冲程             | NUMBER(8,2)   | m        |
+| 5        | spm                         | 冲次             | NUMBER(8,2)   | 次/min   |
+| 6        | fmax                        | 最大载荷         | NUMBER(8,2)   | kN       |
+| 7        | fmin                        | 最小载荷         | NUMBER(8,2)   | kN       |
+| 8        | position_curve              | 位移曲线         | CLOB          |          |
+| 9        | load_curve                  | 载荷曲线         | CLOB          |          |
+| 10       | power_curve                 | 功率曲线         | CLOB          |          |
+| 11       | current_curve               | 电流曲线         | CLOB          |          |
+| 12       | rpm_curve                   | 电机转速曲线     | CLOB          |          |
+| 13       | rawpower_curve              | 功率原始曲线     | CLOB          |          |
+| 14       | rawcurrent_curve            | 电流原始曲线     | CLOB          |          |
+| 15       | rawrpm_curve                | 电机转速原始曲线 | CLOB          |          |
+| 16       | workingconditioncode        | 工况代码         | NUMBER(4)     |          |
+| 17       | workingconditionname        | 工况名称         | VARCHAR2(200) |          |
+| 18       | workingconditionalarmlevel  | 工况报警级别     |               |          |
+| 19       | upstrokeimax                | 上冲程最大电流   | VARCHAR2(200) | A        |
+| 20       | downstrokeimax              | 下冲程最大电流   | NUMBER(8,2)   | A        |
+| 21       | idegreebalance              | 电流平衡度       | NUMBER(8,2)   | %        |
+| 22       | idegreebalancelevel         | 电流平衡级别     | NUMBER(8,2)   |          |
+| 23       | idegreebalancealarmlevel    | 电流平衡报警级别 | VARCHAR2(200) |          |
+| 24       | upstrokewattmax             | 上冲程最大功率   | NUMBER(8,2)   | kW       |
+| 25       | downstrokewattmax           | 下冲程最大功率   | NUMBER(8,2)   | kW       |
+| 26       | wattdegreebalance           | 功率平衡度       | NUMBER(8,2)   | %        |
+| 27       | wattdegreebalancelevel      | 功率平衡级别     | NUMBER(8,2)   |          |
+| 28       | wattdegreebalancealarmlevel | 功率平衡报警级别 | VARCHAR2(200) |          |
+| 29       | datasource                  | 数据来源         | NUMBER(1)     |          |
+| 30       | upperloadline               | 理论上载荷线     | NUMBER(8,2)   | kN       |
+| 31       | lowerloadline               | 理论下载荷线     | NUMBER(8,2)   | kN       |
+| 32       | liquidweightproduction      | 产液量吨         | NUMBER(8,2)   | t/d      |
+| 33       | liquidvolumetricproduction  | 产液量方         | NUMBER(8,2)   | m\^3/d   |
+| 34       | signal                      | 信号强度         | NUMBER(8,2)   |          |
+| 35       | devicever                   | 设备版本         | VARCHAR2(50)  |          |
+| 36       | interval                    | 传输间隔         | NUMBER(10)    |          |
+| 37       | orgid                       | 组织编号         | NUMBER(10)    |          |
+| 38       | sortnum                     | 排序编号         | NUMBER(10)    |          |
 
-### 2.2.12 viw_rpc_diagramquery_hist 抽油机图形查询历史视图
+### 2.2.13 viw_rpc_diagramquery_hist 抽油机图形查询历史视图
 
 同 viw_rpc_diagramquery_latest
 
-### 2.2.13 viw_rpc_total_day 抽油机日累计数据视图
+### 2.2.14 viw_rpc_total_day 抽油机日累计数据视图
 
 | **序号** | **代码**                      | **名称**           | **类型**       | **单位**    |
 |----------|-------------------------------|--------------------|----------------|-------------|
@@ -1737,7 +1778,7 @@
 | 8        | acquisitiondate               | 采集日期              | DATE           |             |
 | 9        | commstatus                    | 通信状态           |                |             |
 | 10       | commstatusname                | 通信名称           |                |             |
-| 11       | commalarmlevel                | 通信报警级别       |                |             |
+| 11       | commalarmlevel                | 通信状态报警级别       |                |             |
 | 12       | runstatus                     | 运行状态           | NUMBER(2)      |             |
 | 13       | runstatusname                 | 运行状态名称       |                |             |
 | 14       | runalarmlevel                 | 运行状态报警级别   |                |             |
@@ -1756,7 +1797,7 @@
 | 27       | workingconditionalarmlevel    | 工况报警级别       | NUMBER(3)      |             |
 | 28       | workingconditioncode_e        | 电参工况代码       | NUMBER(4)      |             |
 | 29       | workingconditionname_e        | 电参工况名称       | VARCHAR2(200)  |             |
-| 30       | workingconditionstring_e      | 电参工况字符串 | VARCHAR2(4000) |             |
+| 30       | workingconditionstring_e      | 电参工况字符串     | VARCHAR2(4000) |             |
 | 31       | workingconditionalarmlevel_e  | 电参工况报警级别   | NUMBER(3)      |             |
 | 32       | liquidweightproduction        | 产液量吨         | NUMBER(8,2)    | t/d         |
 | 33       | oilweightproduction           | 产油量吨         | NUMBER(8,2)    | t/d         |
@@ -1802,7 +1843,7 @@
 | 73       | welldownsystemefficiencylevel | 井下效率级别       | VARCHAR2(50)   |             |
 | 74       | powerconsumptionperthm        | 吨液百米耗电量     | NUMBER(8,2)    | kW·h/100m·t |
 | 75       | todaywattenergy               | 日有功功耗         | NUMBER(8,2)    | kW·h        |
-| 76       | todaywattenergylevel          | 日耗电量统计级别   | VARCHAR2(50)   |             |
+| 76       | todaywattenergylevel          | 日有功功耗级别   | VARCHAR2(50)   |             |
 | 77       | todaypwattenergy              | 日正向有功功耗     | NUMBER(8,2)    | kW·h        |
 | 78       | todaynwattenergy              | 日反向有功功耗     | NUMBER(8,2)    | kW·h        |
 | 79       | todayvarenergy                | 日无功功耗         | NUMBER(8,2)    | kVar·h      |
@@ -1851,12 +1892,12 @@
 | 122      | signalmin                     | 信号强度最小值     | NUMBER(8,2)    |             |
 | 123      | signalstr                     | 信号强度字符串     | VARCHAR2       |             |
 | 124      | videourl                      | 视频路径           | VARCHAR2(400)  |             |
-| 125      | sortnum                       | 井排序编号         | NUMBER(10)     |             |
+| 125      | sortnum                       | 排序编号         | NUMBER(10)     |             |
 | 126      | org_code                      | 组织代码           | VARCHAR2(20)   |             |
 | 127      | org_id                        | 组织编号           | NUMBER(10)     |             |
 | 128      | remark                        | 备注               | VARCHAR2       |             |
 
-### 2.1.14 viw_rpc_calculatemain 抽油机计算结果管理视图
+### 2.1.15 viw_rpc_calculatemain 抽油机计算结果管理视图
 
 | **序号** | **代码**                   | **名称**       | **类型**      | **单位** |
 |----------|----------------------------|----------------|---------------|----------|
@@ -1893,7 +1934,7 @@
 | 31       | resultstatus               | 计算结果       | NUMBER(2)     |          |
 | 32       | orgid                      | 组织编号       | NUMBER(10)    |          |
 
-### 2.1.15 viw_pcp_productiondata_latest 螺杆泵生产数据实时视图 
+### 2.1.16 viw_pcp_productiondata_latest 螺杆泵生产数据实时视图 
 
 | **序号** | **代码**                   | **名称**       | **类型**      | **单位** | 
 |----------|----------------------------|----------------|---------------|----------|
@@ -1934,13 +1975,13 @@
 | 35       | anchoringstatename         | 锚定状态名称   | VARCHAR2(200) |          | 
 | 36       | netgrossratio              | 净毛比         | NUMBER(8,2)   |          | 
 | 37       | manualintervention         | 人工干预代码   | NUMBER(4)     |          | 
-| 38       | sortnum                    | 井排序编号     | NUMBER(10)    |          | 
+| 38       | sortnum                    | 排序编号     | NUMBER(10)    |          | 
 | 39       | org_id                     | 组织编号       | NUMBER(10)    |          | 
-### 2.1.16 viw_pcp_productiondata_hist 螺杆泵生产数据历史视图
+### 2.1.17 viw_pcp_productiondata_hist 螺杆泵生产数据历史视图
 
 同viw_pcp_productiondata_latest
 
-### 2.1.17 viw_pcp_rpm_latest 螺杆泵曲线数据实时视图 
+### 2.1.18 viw_pcp_rpm_latest 螺杆泵曲线数据实时视图 
 
 | **序号** | **代码**                      | **名称**           | **类型**      | **单位**    | 
 |----------|-------------------------------|--------------------|---------------|-------------|
@@ -2002,13 +2043,13 @@
 | 56       | videourl                      | 视频路径           | VARCHAR2(400) |             | 
 | 57       | org_id                        | 组织标号           | NUMBER(10)    |             | 
 | 58       | org_code                      | 组织代码           | VARCHAR2(20)  |             | 
-| 59       | sortnum                       | 井排序编号         | NUMBER(10)    |             | 
+| 59       | sortnum                       | 排序编号         | NUMBER(10)    |             | 
 
-### 2.1.18 viw_pcp_rpm_hist 螺杆泵曲线数据历史视图
+### 2.1.19 viw_pcp_rpm_hist 螺杆泵曲线数据历史视图
 
 同viw_pcp_rpm_latest
 
-### 2.1.19 viw_pcp_discrete_latest 螺杆泵离散数据实时视图
+### 2.1.20 viw_pcp_discrete_latest 螺杆泵离散数据实时视图
 
 | **序号** | **代码**                    | **名称**         | **类型**       | **单位** | 
 |----------|-----------------------------|------------------|----------------|----------|
@@ -2019,7 +2060,7 @@
 | 5        | wellid                      | 井编号           | NUMBER(10)     |          | 
 | 6        | commstatus                  | 通信状态         | NUMBER(1)      |          | 
 | 7        | commstatusname              | 通信状态名称     | VARCHAR2       |          | 
-| 8        | commalarmlevel              | 通信报警级别     | NUMBER(4)      |          | 
+| 8        | commalarmlevel              | 通信状态报警级别     | NUMBER(4)      |          | 
 | 9        | runstatus                   | 运行状态         | NUMBER(1)      |          | 
 | 10       | runstatusname               | 运行状态名称     | VARCHAR2       |          | 
 | 11       | runalarmlevel               | 运行状态报警级别 | NUMBER(3)      |          | 
@@ -2032,11 +2073,11 @@
 | 18       | runtimeefficiency           | 生产时率         | NUMBER(10,4)   |          | 
 | 19       | runtimeefficiencylevel      | 生产时率级别     | VARCHAR2(50)   |          | 
 | 20       | acquisitiontime             | 采集时间         | DATE           |          | 
-| 21       | workingconditioncode_elec   | 工况代码         | NUMBER(4)      |          | 
-| 22       | workingconditionstring_elec | 工况累计字符串   | VARCHAR2(4000) |          | 
-| 23       | workingconditionname_elec   | 工况名称         | VARCHAR2(200)  |          | 
-| 24       | optimizationsuggestion_elec | 优化建议         | VARCHAR2(200)  |          | 
-| 25       | workingconditionalarmlevel  | 工况报警级别     | NUMBER(3)      |          | 
+| 21       | workingconditioncode_elec   | 电参工况代码         | NUMBER(4)      |          | 
+| 22       | workingconditionstring_elec | 电参工况累计字符串   | VARCHAR2(4000) |          | 
+| 23       | workingconditionname_elec   | 电参工况名称         | VARCHAR2(200)  |          | 
+| 24       | optimizationsuggestion_elec | 电参工况优化建议         | VARCHAR2(200)  |          | 
+| 25       | workingconditionalarmlevel  | 电参工况报警级别     | NUMBER(3)      |          | 
 | 26       | todaywattenergy             | 日有功功耗       | NUMBER(8,2)    | kW·h     | 
 | 27       | todaywattenergylevel        | 日耗电量级别     | VARCHAR2(50)   |          | 
 | 28       | todaypwattenergy            | 日正向有功功耗   | NUMBER(8,2)    | kW·h     | 
@@ -2106,15 +2147,15 @@
 | 92       | interval                    | 传输间隔         | NUMBER(10)     |          | 
 | 93       | devicever                   | 设备版本         | VARCHAR2(50)   |          | 
 | 94       | videourl                    | 视频路径         | VARCHAR2(400)  |          | 
-| 95       | sortnum                     | 井排序编号       | NUMBER(10)     |          | 
+| 95       | sortnum                     | 排序编号       | NUMBER(10)     |          | 
 | 96       | org_code                    | 组织代码         | VARCHAR2(20)   |          | 
 | 97       | org_id                      | 组织编号         | NUMBER(10)     |          | 
 
-### 2.1.20 viw_pcp_discrete_hist 螺杆泵离散数据历史视图
+### 2.1.21 viw_pcp_discrete_hist 螺杆泵离散数据历史视图
 
 同viw_pcp_discrete_latest
 
-### 2.1.21 viw_pcp_comprehensive_latest 螺杆泵综合数据实时视图 
+### 2.1.22 viw_pcp_comprehensive_latest 螺杆泵综合数据实时视图 
 
 | **序号** | **代码**                     | **名称**           | **类型**       | **单位**    | 
 |----------|------------------------------|--------------------|----------------|-------------|
@@ -2126,7 +2167,7 @@
 | 6        | acquisitiontime_d            | 离散数据采集时间   | DATE           |             | 
 | 7        | commstatus                   | 通信状态           | NUMBER(2)      |             | 
 | 8        | commstatusname               | 通信状态名称       | VARCHAR2       |             | 
-| 9        | commalarmlevel               | 通信报警级别       | NUMBER(3)      |             | 
+| 9        | commalarmlevel               | 通信状态报警级别       | NUMBER(3)      |             | 
 | 10       | runstatus                    | 运行状态           | NUMBER(1)      |             | 
 | 11       | runstatusname                | 运行状态名称       | VARCHAR2       |             | 
 | 12       | runalarmlevel                | 运行状态报警级别   | NUMBER(3)      |             | 
@@ -2194,7 +2235,7 @@
 | 74       | pumpoutletvisl               | 泵出口粘度         | NUMBER(8,2)    | mPa·s       | 
 | 75       | pumpoutletbo                 | 泵出口原油体积系数 | NUMBER(8,2)    | 小数        | 
 | 76       | todaywattenergy              | 日有功功耗         | NUMBER(8,2)    | kW·h        | 
-| 77       | todaywattenergylevel         | 日耗电量级别       | VARCHAR2(50)   |             | 
+| 77       | todaywattenergylevel         | 日有功功耗级别       | VARCHAR2(50)   |             | 
 | 78       | todaypwattenergy             | 日正向有功功耗     | NUMBER(8,2)    | kW·h        | 
 | 79       | todaynwattenergy             | 日反向有功功耗     | NUMBER(8,2)    | kW·h        | 
 | 80       | todayvarenergy               | 日无功功耗         | NUMBER(8,2)    | kVar·h      | 
@@ -2260,13 +2301,13 @@
 | 140      | videourl                     | 视频路径           | VARCHAR2(400)  |             | 
 | 141      | org_id                       | 组织编号           | NUMBER(10)     |             | 
 | 142      | org_code                     | 组织代码           | VARCHAR2(20)   |             | 
-| 143      | sortnum                      | 井排序编号         | NUMBER(10)     |             | 
+| 143      | sortnum                      | 排序编号           | NUMBER(10)     |             | 
 
-### 2.1.22 viw_pcp_comprehensive_hist 螺杆泵综合数据历史视图
+### 2.1.23 viw_pcp_comprehensive_hist 螺杆泵综合数据历史视图
 
 同viw_pcp_comprehensive_latest
 
-### 2.1.23 viw_pcp_total_day 螺杆泵日累计数据视图
+### 2.1.24 viw_pcp_total_day 螺杆泵日累计数据视图
 
 | **序号** | **代码**                    | **名称**         | **类型**       | **单位**    | 
 |----------|-----------------------------|------------------|----------------|-------------|
@@ -2277,8 +2318,8 @@
 | 5        | wellid                      | 井编号           | NUMBER(10)     |             | 
 | 6        | calculatedate               | 日期             | DATE           |             | 
 | 7        | commstatus                  | 通信状态         |                |             | 
-| 8        | commstatusname              | 通信名称         |                |             | 
-| 9        | commalarmlevel              | 通信报警级别     |                |             | 
+| 8        | commstatusname              | 通信状态名称         |                |             | 
+| 9        | commalarmlevel              | 通信状态报警级别     |                |             | 
 | 10       | runstatus                   | 运行状态         | NUMBER(2)      |             | 
 | 11       | runstatusname               | 运行状态名称     |                |             | 
 | 12       | runalarmlevel               | 运行状态报警级别 |                |             | 
@@ -2318,10 +2359,10 @@
 | 46       | rpmmax                      | 转速最大值       | NUMBER(8,2)    | r/min       | 
 | 47       | rpmmin                      | 转速最小值       | NUMBER(8,2)    | r/min       | 
 | 48       | systemefficiency            | 系统效率         | NUMBER(10,4)   | 小数        | 
-| 49       | systemefficiencylevel       | 系统效率统计级别 | VARCHAR2(50)   |             | 
+| 49       | systemefficiencylevel       | 系统效率级别     | VARCHAR2(50)   |             | 
 | 50       | powerconsumptionperthm      | 吨液百米耗电量   | NUMBER(8,2)    | kW·h/100m·t | 
 | 51       | todaywattenergy             | 日有功功耗       | NUMBER(8,2)    | kW·h        | 
-| 52       | todaywattenergylevel        | 日耗电量统计级别 | VARCHAR2(50)   |             | 
+| 52       | todaywattenergylevel        | 日有功功耗级别 | VARCHAR2(50)   |             | 
 | 53       | todaypwattenergy            | 日正向有功功耗   | NUMBER(8,2)    | kW·h        | 
 | 54       | todaynwattenergy            | 日反向有功功耗   | NUMBER(8,2)    | kW·h        | 
 | 55       | todayvarenergy              | 日无功功耗       | NUMBER(8,2)    | kVar·h      | 
@@ -2357,37 +2398,38 @@
 | 85       | signalmin                   | 信号强度最小值   | NUMBER(8,2)    |             | 
 | 86       | signalstr                   | 信号强度字符串   | VARCHAR2       |             | 
 | 87       | videourl                    | 视频路径         | VARCHAR2(400)  |             | 
-| 88       | sortnum                     | 井排序编号       | NUMBER(10)     |             | 
+| 88       | sortnum                     | 排序编号        | NUMBER(10)     |             | 
 | 89       | org_code                    | 组织代码         | VARCHAR2(20)   |             | 
 | 90       | org_id                      | 组织编号         | NUMBER(10)     |             | 
 | 91       | remark                      | 备注             | VARCHAR2       |             |
 
 # 三、存储过程
 
-| **序号** | **名称**                      | **描述**                 | **备注**               |
-|----------|-------------------------------|--------------------------|------------------------|
-| 1        | prd_clear_data                | 清理数据并重置序列       |                        |
-| 2        | prd_reset_sequence            | 重置序列                 |                        |
-| 3        | prd_save_wellinformation      | 保存井信息数据           |                        |
-| 4        | prd_change_wellname           | 修改井名                 |                        |
-| 5        | prd_save_rpc_productiondata   | 保存生产数据             |                        |
-| 6        | prd_save_rpc_diagram          | 保存功图采集和计算数据   |                        |
-| 7        | prd_save_rpc_uploaddiagram    | 保存上传的功图数据       |                        |
-| 8        | prd_save_rpc_diagramresult    | 保存功图计算结果         |                        |
-| 9        | prd_save_rpc_recalculateparam | 保存功图重新计算参数     |                        |
-| 10       | prd_save_rpc_reinverdiagram   | 保存重新反演曲线数据     |                        |
-| 11       | prd_init_rpc_daily            | 初始化日汇总数据         | 每天凌晨一点钟定时执行 |
-| 12       | prd_save_rpc_diagramdaily     | 保存功图日汇总数据       |                        |
-| 13       | prd_save_rpc_discretedaily    | 保存离散数据日汇总结果   |                        |
-| 14       | prd_save_rpc_inver_daily      | 保存反演上传的日汇总数据 |                        |
-| 15       | prd_save_rpc_motor            | 保存反演电机数据         |                        |
-| 16       | prd_save_rpcinformation       | 保存反演抽油机数据       |                        |
-| 17       | prd_save_rpc_inver_opt        | 保存反演优化参数         |                        |
-| 18       | prd_save_alarmcolor           | 保存报警级别颜色         |                        |
-| 19       | prd_save_pcp_productiondata   | 保存生产数据_螺杆泵           |                      |
-| 20       | prd_save_pcp_discretedaily    | 保存离散数据日汇总结果_螺杆泵 |                      |
-| 21       | prd_save_pcp_rpm              | 保存曲线采集和计算数据_螺杆泵 |                      |
-| 22       | prd_save_pcp_rpmdaily         | 保存曲线日汇总数据_螺杆泵     |                      |
+| **序号** | **名称**                      | **描述**                      | **备注**             |
+|----------|-------------------------------|-------------------------------|----------------------|
+| 1        | prd_clear_data                | 清理数据并重置序列            |                      |
+| 2        | prd_reset_sequence            | 重置序列                      |                      |
+| 3        | prd_save_wellinformation      | 保存井信息数据                |                      |
+| 4        | prd_change_wellname           | 修改井名                      |                      |
+| 5        | prd_save_wellboretrajectory   | 保存井身轨迹数据              |                      |
+| 6        | prd_save_rpc_productiondata   | 保存生产数据                  |                      |
+| 7        | prd_save_rpc_diagram          | 保存功图采集和计算数据        |                      |
+| 8        | prd_save_rpc_uploaddiagram    | 保存上传的功图数据            |                      |
+| 9        | prd_save_rpc_diagramresult    | 保存功图计算结果              |                      |
+| 10       | prd_save_rpc_recalculateparam | 保存功图重新计算参数          |                      |
+| 11       | prd_save_rpc_reinverdiagram   | 保存重新反演曲线数据          |                      |
+| 12       | prd_init_rpc_daily            | 初始化日汇总数据              | 每天凌晨一点定时执行 |
+| 13       | prd_save_rpc_diagramdaily     | 保存功图日汇总数据            |                      |
+| 14       | prd_save_rpc_discretedaily    | 保存离散数据日汇总结果        |                      |
+| 15       | prd_save_rpc_inver_daily      | 保存反演上传的日汇总数据      |                      |
+| 16       | prd_save_rpc_motor            | 保存反演电机数据              |                      |
+| 17       | prd_save_rpcinformation       | 保存反演抽油机数据            |                      |
+| 18       | prd_save_rpc_inver_opt        | 保存反演优化参数              |                      |
+| 19       | prd_save_alarmcolor           | 保存报警级别颜色              |                      |
+| 20       | prd_save_pcp_productiondata   | 保存生产数据_螺杆泵           |                      |
+| 21       | prd_save_pcp_discretedaily    | 保存离散数据日汇总结果_螺杆泵 |                      |
+| 22       | prd_save_pcp_rpm              | 保存曲线采集和计算数据_螺杆泵 |                      |
+| 23       | prd_save_pcp_rpmdaily         | 保存曲线日汇总数据_螺杆泵     |                      |
 
 # 四、触发器
 
