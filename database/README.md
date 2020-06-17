@@ -782,16 +782,16 @@
 | 2        | wellid                        | 井编号           |          | NUMBER(10)    | Y            |
 | 3        | manufacturer                  | 抽油机厂家       |          | VARCHAR2(200) | Y            |
 | 4        | model                         | 抽油机型号       |          | VARCHAR2(200) | Y            |
-| 5        | stroke                        | 冲程             | m        | NUMBER(8,2)   | N            |
-| 6        | crankrotationdirection        | 旋转方向         |          | VARCHAR2(200) | N            |
-| 7        | offsetangleofcrank            | 曲柄偏置角       | 度       | NUMBER(8,2)   | N            |
-| 8        | crankgravityradius            | 曲柄重心半径     | m        | NUMBER(10,4)  | N            |
-| 9        | singlecrankweight             | 单块曲柄重量     | kN       | NUMBER(8,2)   | N            |
-| 10       | structuralunbalance           | 结构不平衡重     | kN       | NUMBER(8,2)   | N            |
-| 11       | gearreducerratio              | 减速箱传动比     | %        | NUMBER(10,4)  | N            |
-| 12       | gearreducerbeltpulleydiameter | 减速箱皮带轮直径 | m        | NUMBER(10,4)  | N            |
-| 13       | balanceposition               | 平衡块位置       | m        | VARCHAR2(200) | N            |
-| 14       | balanceweight                 | 平衡块重量       | kN       | VARCHAR2(200) | N            |
+| 5        | stroke                        | 冲程             | m        | NUMBER(8,2)   | Y            |
+| 6        | crankrotationdirection        | 旋转方向         |          | VARCHAR2(200) | Y            |
+| 7        | offsetangleofcrank            | 曲柄偏置角       | 度       | NUMBER(8,2)   | Y            |
+| 8        | crankgravityradius            | 曲柄重心半径     | m        | NUMBER(10,4)  | Y            |
+| 9        | singlecrankweight             | 单块曲柄重量     | kN       | NUMBER(8,2)   | Y            |
+| 10       | structuralunbalance           | 结构不平衡重     | kN       | NUMBER(8,2)   | Y            |
+| 11       | gearreducerratio              | 减速箱传动比     | %        | NUMBER(10,4)  | Y            |
+| 12       | gearreducerbeltpulleydiameter | 减速箱皮带轮直径 | m        | NUMBER(10,4)  | Y            |
+| 13       | balanceposition               | 平衡块位置       | m        | VARCHAR2(200) | Y            |
+| 14       | balanceweight                 | 平衡块重量       | kN       | VARCHAR2(200) | Y            |
 | 15       | prtf                          | 位置扭矩因数     |          | CLOB          | Y            |
 
 ### 1.3.25 tbl_rpc_motor 抽油机电机数据表
@@ -804,7 +804,7 @@
 | 4        | model              | 电机型号   |          | VARCHAR2(200) | N            |        |
 | 5        | synchrospeed       | 同步转速   | r/min    | NUMBER(8,2)   | Y            |        |
 | 6        | beltpulleydiameter | 皮带轮直径 | m        | NUMBER(10,4)  | Y            |        |
-| 7        | performancecurver  | 特性曲线   |          | CLOB          |              |        |
+| 7        | performancecurver  | 特性曲线   |          | CLOB          | Y            |        |
 
 ### 1.3.26 tbl_rpc_inver_opt 抽油机电参反演参数优化表
 
