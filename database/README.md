@@ -540,8 +540,8 @@
 | 63       | pumpintakep                  | 泵入口压力            | NUMBER(8,2)   | MPa        | Y            |        | 
 | 64       | pumpintaket                  | 泵入口温度            | NUMBER(8,2)   | ℃          | Y            |        | 
 | 65       | pumpintakegol                | 泵入口就地气液比      | NUMBER(8,2)   | m^3/m^3    | Y            |        | 
-| 66       | pumpinletvisl                | 泵入口液体粘度        | NUMBER(8,2)   | mPa·s      | Y            |        | 
-| 67       | pumpinletbo                  | 泵入口原油体积系数    | NUMBER(8,2)   | 小数       | Y            |        | 
+| 66       | pumpintakevisl               | 泵入口液体粘度        | NUMBER(8,2)   | mPa·s      | Y            |        | 
+| 67       | pumpintakebo                 | 泵入口原油体积系数    | NUMBER(8,2)   | 小数       | Y            |        | 
 | 68       | pumpoutletp                  | 泵出口压力            | NUMBER(8,2)   | MPa        | Y            |        | 
 | 69       | pumpoutlett                  | 泵出口温度            | NUMBER(8,2)   | ℃          | Y            |        | 
 | 70       | pumpoutletgol                | 泵出口就地气液比      | NUMBER(8,2)   | m^3/m^3    | Y            |        | 
@@ -1129,12 +1129,12 @@
 | 18       | pumpeff2                   | 液体收缩系数        | NUMBER(12,3)  | 小数       | Y        |        | 
 | 19       | pumpeff                    | 泵效                | NUMBER(12,3)  | 小数       | Y        |        | 
 | 20       | pumpintakep                | 泵入口压力          | NUMBER(8,2)   | MPa        | Y        |        | 
-| 21       | pumpintaket                | 泵入口温度          | NUMBER(8,2)   | ℃          | Y        |        | 
+| 21       | pumpintaket                | 泵入口温度          | NUMBER(8,2)   | ℃         | Y        |        | 
 | 22       | pumpintakegol              | 泵入口就地气液比    | NUMBER(8,2)   | m^3/m^3    | Y        |        | 
-| 23       | pumpinletvisl              | 泵入口粘度          | NUMBER(8,2)   | mPa·s      | Y        |        | 
-| 24       | pumpinletbo                | 泵入口原油体积系数  | NUMBER(8,2)   | 小数       | Y        |        | 
+| 23       | pumpintakevisl             | 泵入口粘度          | NUMBER(8,2)   | mPa·s      | Y        |        | 
+| 24       | pumpintakebo               | 泵入口原油体积系数  | NUMBER(8,2)   | 小数       | Y        |        | 
 | 25       | pumpoutletp                | 泵出口压力          | NUMBER(8,2)   | MPa        | Y        |        | 
-| 26       | pumpoutlett                | 泵出口温度          | NUMBER(8,2)   | ℃          | Y        |        | 
+| 26       | pumpoutlett                | 泵出口温度          | NUMBER(8,2)   | ℃         | Y        |        | 
 | 27       | pumpoutletgol              | 泵出口就地气液比    | NUMBER(8,2)   | m^3/m^3    | Y        |        | 
 | 28       | pumpoutletvisl             | 泵出口粘度          | NUMBER(8,2)   | mPa·s      | Y        |        | 
 | 29       | pumpoutletbo               | 泵出口原油体积系数  | NUMBER(8,2)   | 小数       | Y        |        | 
@@ -1536,8 +1536,8 @@
 | 90       | pumpintakep                   | 泵入口压力         | NUMBER(8,2)   | MPa         |
 | 91       | pumpintaket                   | 泵入口温度         | NUMBER(8,2)   | ℃           |
 | 92       | pumpintakegol                 | 泵入口就地气液比   | NUMBER(8,2)   | m^3/m^3     |
-| 93       | pumpinletvisl                 | 泵入口粘度         | NUMBER(8,2)   | mPa·s       |
-| 94       | pumpinletbo                   | 泵入口原油体积系数 | NUMBER(8,2)   | 小数        |
+| 93       | pumpintakevisl                | 泵入口粘度         | NUMBER(8,2)   | mPa·s       |
+| 94       | pumpintakebo                  | 泵入口原油体积系数 | NUMBER(8,2)   | 小数        |
 | 95       | pumpoutletp                   | 泵出口压力         | NUMBER(8,2)   | MPa         |
 | 96       | pumpoutlett                   | 泵出口温度         | NUMBER(8,2)   | ℃           |
 | 97       | pumpoutletgol                 | 泵出口就地气液比   | NUMBER(8,2)   | m^3/m^3     |
@@ -1646,24 +1646,29 @@
 | 88       | varsum                      | 三相总无功功率     | NUMBER(8,2)    | kVar     |
 | 89       | varstr                      | 无功功率字符串     | VARCHAR2       |          |
 | 90       | reversepower                | 反向功率           | NUMBER(8,2)    |          |
-| 91       | pfa                         | A相功率因数        | NUMBER(8,2)    |          |
-| 92       | pfb                         | B相功率因数        | NUMBER(8,2)    |          |
-| 93       | pfc                         | C相功率因数        | NUMBER(8,2)    |          |
-| 94       | pfsum                       | 三相综合功率因数   | NUMBER(8,2)    |          |
-| 95       | pfstr                       | 功率因数字符串     | VARCHAR2       |          |
-| 96       | frequencysetvalue           | 设置频率           | NUMBER(8,2)    | HZ       |
-| 97       | frequencyrunvalue           | 运行频率           | NUMBER(8,2)    | HZ       |
-| 98       | tubingpressure              | 油压               | NUMBER(8,2)    | MPa      |
-| 99       | casingpressure              | 套压               | NUMBER(8,2)    | MPa      |
-| 100      | backpressure                | 回压               | NUMBER(8,2)    | MPa      |
-| 101      | wellheadfluidtemperature    | 井口油温           | NUMBER(8,2)    | ℃       |
-| 102      | signal                      | 信号强度           | NUMBER(8,2)    |          |
-| 103      | interval                    | 传输间隔           | NUMBER(10)     |          |
-| 104      | devicever                   | 设备版本           | VARCHAR2(50)   |          |
-| 105      | videourl                    | 视频路径           | VARCHAR2(400)  |          |
-| 106      | sortnum                     | 排序编号           | NUMBER(10)     |          |
-| 107      | org_code                    | 组织代码           | VARCHAR2(20)   |          |
-| 108      | org_id                      | 组织编号           | NUMBER(10)     |          |
+| 91       | vaa                         | A相视在功率        | NUMBER(8,2)    | kVA      |
+| 92       | vab                         | B相视在功率        | NUMBER(8,2)    | kVA      |
+| 93       | vac                         | C相视在功率        | NUMBER(8,2)    | kVA      |
+| 94       | vasum                       | 三相总视在功率     | NUMBER(8,2)    | kVA      |
+| 95       | vastr                       | 视在功率字符串     | VARCHAR2       |          |
+| 96       | pfa                         | A相功率因数        | NUMBER(8,2)    |          |
+| 97       | pfb                         | B相功率因数        | NUMBER(8,2)    |          |
+| 98       | pfc                         | C相功率因数        | NUMBER(8,2)    |          |
+| 99       | pfsum                       | 三相综合功率因数   | NUMBER(8,2)    |          |
+| 100      | pfstr                       | 功率因数字符串     | VARCHAR2       |          |
+| 101      | frequencysetvalue           | 设置频率           | NUMBER(8,2)    | HZ       |
+| 102      | frequencyrunvalue           | 运行频率           | NUMBER(8,2)    | HZ       |
+| 103      | tubingpressure              | 油压               | NUMBER(8,2)    | MPa      |
+| 104      | casingpressure              | 套压               | NUMBER(8,2)    | MPa      |
+| 105      | backpressure                | 回压               | NUMBER(8,2)    | MPa      |
+| 106      | wellheadfluidtemperature    | 井口油温           | NUMBER(8,2)    | ℃       |
+| 107      | signal                      | 信号强度           | NUMBER(8,2)    |          |
+| 108      | interval                    | 传输间隔           | NUMBER(10)     |          |
+| 109      | devicever                   | 设备版本           | VARCHAR2(50)   |          |
+| 110      | videourl                    | 视频路径           | VARCHAR2(400)  |          |
+| 111      | sortnum                     | 排序编号           | NUMBER(10)     |          |
+| 112      | org_code                    | 组织代码           | VARCHAR2(20)   |          |
+| 113      | org_id                      | 组织编号           | NUMBER(10)     |          |
 
 ### 2.2.9 viw_rpc_discrete_hist 抽油机离散数据历史视图
 
@@ -1780,8 +1785,8 @@
 | 105      | pumpintakep                   | 泵入口压力                   | NUMBER(8,2)    | MPa         |
 | 106      | pumpintaket                   | 泵入口温度                   | NUMBER(8,2)    | ℃           |
 | 107      | pumpintakegol                 | 泵入口就地气液比             | NUMBER(8,2)    | m^3/m^3     |
-| 108      | pumpinletvisl                 | 泵入口粘度                   | NUMBER(8,2)    | mPa·s       |
-| 109      | pumpinletbo                   | 泵入口原油体积系数           | NUMBER(8,2)    | 小数        |
+| 108      | pumpintakevisl                | 泵入口粘度                   | NUMBER(8,2)    | mPa·s       |
+| 109      | pumpintakebo                  | 泵入口原油体积系数           | NUMBER(8,2)    | 小数        |
 | 110      | pumpoutletp                   | 泵出口压力                   | NUMBER(8,2)    | MPa         |
 | 111      | pumpoutlett                   | 泵出口温度                   | NUMBER(8,2)    | ℃           |
 | 112      | pumpoutletgol                 | 泵出口就地气液比             | NUMBER(8,2)    | m^3/m^3     |
@@ -1851,33 +1856,38 @@
 | 176      | varsum                        | 三相总无功功率               | NUMBER(8,2)    | kVar        |
 | 177      | varstr                        | 无功功率字符串               | VARCHAR2       |             |
 | 178      | reversepower                  | 反向功率                     | NUMBER(8,2)    |             |
-| 179      | pfa                           | A相功率因数                  | NUMBER(8,2)    |             |
-| 180      | pfb                           | B相功率因数                  | NUMBER(8,2)    |             |
-| 181      | pfc                           | C相功率因数                  | NUMBER(8,2)    |             |
-| 182      | pfsum                         | 三相综合功率因数             | NUMBER(8,2)    |             |
-| 183      | pfstr                         | 功率因数字符串               | VARCHAR2       |             |
-| 184      | frequencysetvalue             | 设置频率                     | NUMBER(8,2)    | HZ          |
-| 185      | frequencyrunvalue             | 运行频率                     | NUMBER(8,2)    | HZ          |
-| 186      | signal                        | 信号强度                     | NUMBER(8,2)    |             |
-| 187      | interval                      | 传输间隔                     | NUMBER(10)     |             |
-| 188      | devicever                     | 设备版本                     | VARCHAR2(50)   |             |
-| 189      | balancecontrolmode            | 平衡远程调节远程触发控制     | NUMBER(10)     |             |
-| 190      | balancecalculatemode          | 平衡计算方式                 | NUMBER(10)     |             |
-| 191      | balanceawaytime               | 重心远离支点调节时间         | NUMBER(10)     | ms          |
-| 192      | balanceclosetime              | 重心接近支点调节时间         | NUMBER(10)     | ms          |
-| 193      | balanceawaytimeperbeat        | 重心远离支点每拍调节时间     | NUMBER(10)     | ms          |
-| 194      | balanceclosetimeperbeat       | 重心接近支点每拍调节时间     | NUMBER(10)     | ms          |
-| 195      | balancestrokecount            | 参与平衡度计算的冲程测量次数 | NUMBER(10)     |             |
-| 196      | balanceoperationuplimit       | 平衡调节上限                 | NUMBER(10)     | %           |
-| 197      | balanceoperationdownlimit     | 平衡调节下限                 | NUMBER(10)     | %           |
-| 198      | balanceautocontrol            | 平衡远程自动调节             | NUMBER(1)      |             |
-| 199      | spmautocontrol                | 冲次远程自动调节             | NUMBER(1)      |             |
-| 200      | balancefrontlimit             | 平衡前限位                   | NUMBER(1)      |             |
-| 201      | balanceafterlimit             | 平衡后限位                   | NUMBER(1)      |             |
-| 202      | videourl                      | 视频路径                     | VARCHAR2(400)  |             |
-| 203      | org_id                        | 组织编号                     | NUMBER(10)     |             |
-| 204      | org_code                      | 组织代码                     | VARCHAR2(20)   |             |
-| 205      | sortnum                       | 排序编号                     | NUMBER(10)     |             |
+| 179      | vaa                           | A相视在功率                  | NUMBER(8,2)    | kVA         |
+| 180      | vab                           | B相视在功率                  | NUMBER(8,2)    | kVA         |
+| 181      | vac                           | C相视在功率                  | NUMBER(8,2)    | kVA         |
+| 182      | vasum                         | 三相总视在功率               | NUMBER(8,2)    | kVA         |
+| 183      | vastr                         | 视在功率字符串               | VARCHAR2       |             |
+| 184      | pfa                           | A相功率因数                  | NUMBER(8,2)    |             |
+| 185      | pfb                           | B相功率因数                  | NUMBER(8,2)    |             |
+| 186      | pfc                           | C相功率因数                  | NUMBER(8,2)    |             |
+| 187      | pfsum                         | 三相综合功率因数             | NUMBER(8,2)    |             |
+| 188      | pfstr                         | 功率因数字符串               | VARCHAR2       |             |
+| 189      | frequencysetvalue             | 设置频率                     | NUMBER(8,2)    | HZ          |
+| 190      | frequencyrunvalue             | 运行频率                     | NUMBER(8,2)    | HZ          |
+| 191      | signal                        | 信号强度                     | NUMBER(8,2)    |             |
+| 192      | interval                      | 传输间隔                     | NUMBER(10)     |             |
+| 193      | devicever                     | 设备版本                     | VARCHAR2(50)   |             |
+| 194      | balancecontrolmode            | 平衡远程调节远程触发控制     | NUMBER(10)     |             |
+| 195      | balancecalculatemode          | 平衡计算方式                 | NUMBER(10)     |             |
+| 196      | balanceawaytime               | 重心远离支点调节时间         | NUMBER(10)     | ms          |
+| 197      | balanceclosetime              | 重心接近支点调节时间         | NUMBER(10)     | ms          |
+| 198      | balanceawaytimeperbeat        | 重心远离支点每拍调节时间     | NUMBER(10)     | ms          |
+| 199      | balanceclosetimeperbeat       | 重心接近支点每拍调节时间     | NUMBER(10)     | ms          |
+| 200      | balancestrokecount            | 参与平衡度计算的冲程测量次数 | NUMBER(10)     |             |
+| 201      | balanceoperationuplimit       | 平衡调节上限                 | NUMBER(10)     | %           |
+| 202      | balanceoperationdownlimit     | 平衡调节下限                 | NUMBER(10)     | %           |
+| 203      | balanceautocontrol            | 平衡远程自动调节             | NUMBER(1)      |             |
+| 204      | spmautocontrol                | 冲次远程自动调节             | NUMBER(1)      |             |
+| 205      | balancefrontlimit             | 平衡前限位                   | NUMBER(1)      |             |
+| 206      | balanceafterlimit             | 平衡后限位                   | NUMBER(1)      |             |
+| 207      | videourl                      | 视频路径                     | VARCHAR2(400)  |             |
+| 208      | org_id                        | 组织编号                     | NUMBER(10)     |             |
+| 209      | org_code                      | 组织代码                     | VARCHAR2(20)   |             |
+| 210      | sortnum                       | 排序编号                     | NUMBER(10)     |             |
 
 ### 2.2.11 viw_rpc_comprehensive_hist 抽油机综合数据历史视图
 
@@ -2201,8 +2211,8 @@
 | 46       | pumpintakep                   | 泵入口压力         | NUMBER(8,2)   | MPa         | 
 | 47       | pumpintaket                   | 泵入口温度         | NUMBER(8,2)   | ℃          | 
 | 48       | pumpintakegol                 | 泵入口就地气液比   | NUMBER(8,2)   | m^3/m^3     | 
-| 49       | pumpinletvisl                 | 泵入口粘度         | NUMBER(8,2)   | mPa·s       | 
-| 50       | pumpinletbo                   | 泵入口原油体积系数 | NUMBER(8,2)   | 小数        | 
+| 49       | pumpintakevisl                | 泵入口粘度         | NUMBER(8,2)   | mPa·s       | 
+| 50       | pumpintakebo                  | 泵入口原油体积系数 | NUMBER(8,2)   | 小数        | 
 | 51       | pumpoutletp                   | 泵出口压力         | NUMBER(8,2)   | MPa         | 
 | 52       | pumpoutlett                   | 泵出口温度         | NUMBER(8,2)   | ℃          | 
 | 53       | pumpoutletgol                 | 泵出口就地气液比   | NUMBER(8,2)   | m^3/m^3     | 
@@ -2299,25 +2309,30 @@
 | 76       | varc                        | C相无功功率        | NUMBER(8,2)    | kVar     | 
 | 77       | varsum                      | 三相总无功功率     | NUMBER(8,2)    | kVar     | 
 | 78       | varstr                      | 无功功率字符串     | VARCHAR2       |          | 
-| 79       | reversepower                | 反向功率           | NUMBER(8,2)    |          | 
-| 80       | pfa                         | A相功率因数        | NUMBER(8,2)    |          | 
-| 81       | pfb                         | B相功率因数        | NUMBER(8,2)    |          | 
-| 82       | pfc                         | C相功率因数        | NUMBER(8,2)    |          | 
-| 83       | pfsum                       | 三相综合功率因数   | NUMBER(8,2)    |          | 
-| 84       | pfstr                       | 功率因数字符串     | VARCHAR2       |          | 
-| 85       | frequencysetvalue           | 设置频率           | NUMBER(8,2)    | HZ       | 
-| 86       | frequencyrunvalue           | 运行频率           | NUMBER(8,2)    | HZ       | 
-| 87       | tubingpressure              | 油压               | NUMBER(8,2)    | MPa      | 
-| 88       | casingpressure              | 套压               | NUMBER(8,2)    | MPa      | 
-| 89       | backpressure                | 回压               | NUMBER(8,2)    | MPa      | 
-| 90       | wellheadfluidtemperature    | 井口油温           | NUMBER(8,2)    | ℃       | 
-| 91       | signal                      | 信号强度           | NUMBER(8,2)    |          | 
-| 92       | interval                    | 传输间隔           | NUMBER(10)     |          | 
-| 93       | devicever                   | 设备版本           | VARCHAR2(50)   |          | 
-| 94       | videourl                    | 视频路径           | VARCHAR2(400)  |          | 
-| 95       | sortnum                     | 排序编号           | NUMBER(10)     |          | 
-| 96       | org_code                    | 组织代码           | VARCHAR2(20)   |          | 
-| 97       | org_id                      | 组织编号           | NUMBER(10)     |          | 
+| 79       | reversepower                | 反向功率           | NUMBER(8,2)    |          |
+| 80       | vaa                         | A相视在功率        | NUMBER(8,2)    | kVA      |
+| 81       | vab                         | B相视在功率        | NUMBER(8,2)    | kVA      |
+| 82       | vac                         | C相视在功率        | NUMBER(8,2)    | kVA      |
+| 83       | vasum                       | 三相总视在功率     | NUMBER(8,2)    | kVA      |
+| 84       | vastr                       | 视在功率字符串     | VARCHAR2       |          | 
+| 85       | pfa                         | A相功率因数        | NUMBER(8,2)    |          | 
+| 86       | pfb                         | B相功率因数        | NUMBER(8,2)    |          | 
+| 87       | pfc                         | C相功率因数        | NUMBER(8,2)    |          | 
+| 88       | pfsum                       | 三相综合功率因数   | NUMBER(8,2)    |          | 
+| 89       | pfstr                       | 功率因数字符串     | VARCHAR2       |          | 
+| 90       | frequencysetvalue           | 设置频率           | NUMBER(8,2)    | HZ       | 
+| 91       | frequencyrunvalue           | 运行频率           | NUMBER(8,2)    | HZ       | 
+| 92       | tubingpressure              | 油压               | NUMBER(8,2)    | MPa      | 
+| 93       | casingpressure              | 套压               | NUMBER(8,2)    | MPa      | 
+| 94       | backpressure                | 回压               | NUMBER(8,2)    | MPa      | 
+| 95       | wellheadfluidtemperature    | 井口油温           | NUMBER(8,2)    | ℃       | 
+| 96       | signal                      | 信号强度           | NUMBER(8,2)    |          | 
+| 97       | interval                    | 传输间隔           | NUMBER(10)     |          | 
+| 98       | devicever                   | 设备版本           | VARCHAR2(50)   |          | 
+| 99       | videourl                    | 视频路径           | VARCHAR2(400)  |          | 
+| 100      | sortnum                     | 排序编号           | NUMBER(10)     |          | 
+| 101      | org_code                    | 组织代码           | VARCHAR2(20)   |          | 
+| 102      | org_id                      | 组织编号           | NUMBER(10)     |          | 
 
 ### 2.1.21 viw_pcp_discrete_hist 螺杆泵离散数据历史视图
 
@@ -2395,8 +2410,8 @@
 | 66       | pumpintakep                  | 泵入口压力         | NUMBER(8,2)    | MPa         | 
 | 67       | pumpintaket                  | 泵入口温度         | NUMBER(8,2)    | ℃          | 
 | 68       | pumpintakegol                | 泵入口就地气液比   | NUMBER(8,2)    | m^3/m^3     | 
-| 69       | pumpinletvisl                | 泵入口粘度         | NUMBER(8,2)    | mPa·s       | 
-| 70       | pumpinletbo                  | 泵入口原油体积系数 | NUMBER(8,2)    | 小数        | 
+| 69       | pumpintakevisl               | 泵入口粘度         | NUMBER(8,2)    | mPa·s       | 
+| 70       | pumpintakebo                 | 泵入口原油体积系数 | NUMBER(8,2)    | 小数        | 
 | 71       | pumpoutletp                  | 泵出口压力         | NUMBER(8,2)    | MPa         | 
 | 72       | pumpoutlett                  | 泵出口温度         | NUMBER(8,2)    | ℃          | 
 | 73       | pumpoutletgol                | 泵出口就地气液比   | NUMBER(8,2)    | m^3/m^3     | 
@@ -2455,21 +2470,26 @@
 | 126      | varc                         | C相无功功率        | NUMBER(8,2)    | kVar        | 
 | 127      | varsum                       | 三相总无功功率     | NUMBER(8,2)    | kVar        | 
 | 128      | varstr                       | 无功功率字符串     | VARCHAR2       |             | 
-| 129      | reversepower                 | 反向功率           | NUMBER(8,2)    |             | 
-| 130      | pfa                          | A相功率因数        | NUMBER(8,2)    |             | 
-| 131      | pfb                          | B相功率因数        | NUMBER(8,2)    |             | 
-| 132      | pfc                          | C相功率因数        | NUMBER(8,2)    |             | 
-| 133      | pfsum                        | 三相综合功率因数   | NUMBER(8,2)    |             | 
-| 134      | pfstr                        | 功率因数字符串     | VARCHAR2       |             | 
-| 135      | frequencysetvalue            | 设置频率           | NUMBER(8,2)    | HZ          | 
-| 136      | frequencyrunvalue            | 运行频率           | NUMBER(8,2)    | HZ          | 
-| 137      | signal                       | 信号强度           | NUMBER(8,2)    |             | 
-| 138      | interval                     | 传输间隔           | NUMBER(10)     |             | 
-| 139      | devicever                    | 设备版本           | VARCHAR2(50)   |             | 
-| 140      | videourl                     | 视频路径           | VARCHAR2(400)  |             | 
-| 141      | org_id                       | 组织编号           | NUMBER(10)     |             | 
-| 142      | org_code                     | 组织代码           | VARCHAR2(20)   |             | 
-| 143      | sortnum                      | 排序编号           | NUMBER(10)     |             | 
+| 129      | reversepower                 | 反向功率           | NUMBER(8,2)    |             |
+| 130      | vaa                          | A相视在功率        | NUMBER(8,2)    | kVA         |
+| 131      | vab                          | B相视在功率        | NUMBER(8,2)    | kVA         |
+| 132      | vac                          | C相视在功率        | NUMBER(8,2)    | kVA         |
+| 133      | vasum                        | 三相总视在功率     | NUMBER(8,2)    | kVA         |
+| 134      | vastr                        | 视在功率字符串     | VARCHAR2       |             | 
+| 135      | pfa                          | A相功率因数        | NUMBER(8,2)    |             | 
+| 136      | pfb                          | B相功率因数        | NUMBER(8,2)    |             | 
+| 137      | pfc                          | C相功率因数        | NUMBER(8,2)    |             | 
+| 138      | pfsum                        | 三相综合功率因数   | NUMBER(8,2)    |             | 
+| 139      | pfstr                        | 功率因数字符串     | VARCHAR2       |             | 
+| 140      | frequencysetvalue            | 设置频率           | NUMBER(8,2)    | HZ          | 
+| 141      | frequencyrunvalue            | 运行频率           | NUMBER(8,2)    | HZ          | 
+| 142      | signal                       | 信号强度           | NUMBER(8,2)    |             | 
+| 143      | interval                     | 传输间隔           | NUMBER(10)     |             | 
+| 144      | devicever                    | 设备版本           | VARCHAR2(50)   |             | 
+| 145      | videourl                     | 视频路径           | VARCHAR2(400)  |             | 
+| 146      | org_id                       | 组织编号           | NUMBER(10)     |             | 
+| 147      | org_code                     | 组织代码           | VARCHAR2(20)   |             | 
+| 148      | sortnum                      | 排序编号           | NUMBER(10)     |             | 
 
 ### 2.1.23 viw_pcp_comprehensive_hist 螺杆泵综合数据历史视图
 
