@@ -289,7 +289,6 @@
 | 15       | sortnum                    | 排序编号             | NUMBER(10)    |          | Y            |        |
 | 16       | acqcyclesetstatus_diagram  | 曲线采集间隔设置状态 | NUMBER(2)     |          | Y            |        |
 | 17       | acqcyclesetstatus_discrete | 离散采集间隔设置状态 | NUMBER(2)     |          | Y            |        |
-| 18       | groupid                    | 采控组编号           | NUMBER(10)    |          | Y            | 外键   |
 
 ### 1.3.13 tbl_trajectory 井身轨迹表
 
@@ -1508,10 +1507,10 @@
 | 49       | upperloadline                 | 理论上载荷         | NUMBER(8,2)   | kN          |
 | 50       | upperloadlineofexact          | 真实理论上载荷     | NUMBER(8,2)   | kN          |
 | 51       | lowerloadline                 | 理论下载荷         | NUMBER(8,2)   | kN          |
-| 52       | expectedfdifference           | 理论液柱载荷       | NUMBER(8,2)   | kN          |
+| 52       | upperloadline                 | 理论液柱载荷       | NUMBER(8,2)   | kN          |
 | 53       | fmax                          | 最大载荷           | NUMBER(8,2)   | kN          |
 | 54       | fmin                          | 最小载荷           | NUMBER(8,2)   | kN          |
-| 55       | fdifference                   | 载荷差             | NUMBER(8,2)   | kN          |
+| 55       | deltaf                        | 载荷差             | NUMBER(8,2)   | kN          |
 | 56       | fullnesscoefficient           | 充满系数           | NUMBER(8,2)   | 小数        |
 | 57       | noliquidfullnesscoefficient   | 抽空充满系数       | NUMBER(10,4)  | 小数        |
 | 58       | plungerstroke                 | 柱塞冲程           | NUMBER(8,2)   | m           |
@@ -1760,10 +1759,10 @@
 | 64       | upperloadline                 | 理论上载荷                   | NUMBER(8,2)    | kN          |
 | 65       | upperloadlineofexact          | 真实理论上载荷               | NUMBER(8,2)    | kN          |
 | 66       | lowerloadline                 | 理论下载荷                   | NUMBER(8,2)    | kN          |
-| 67       | expectedfdifference           | 理论液柱载荷                 | NUMBER(8,2)    | kN          |
+| 67       | deltaloadline                 | 理论液柱载荷                 | NUMBER(8,2)    | kN          |
 | 68       | fmax                          | 最大载荷                     | NUMBER(8,2)    | kN          |
 | 69       | fmin                          | 最小载荷                     | NUMBER(8,2)    | kN          |
-| 70       | fdifference                   | 载荷差                       | NUMBER(8,2)    | kN          |
+| 70       | deltaf                        | 载荷差                       | NUMBER(8,2)    | kN          |
 | 71       | fullnesscoefficient           | 充满系数                     | NUMBER(8,2)    | 小数        |
 | 72       | noliquidfullnesscoefficient   | 抽空充满系数                 | NUMBER(10,4)   | 小数        |
 | 73       | plungerstroke                 | 柱塞冲程                     | NUMBER(8,2)    | m           |
