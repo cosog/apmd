@@ -1,4 +1,4 @@
-:link:[**功图软件用户手册**](.././README.md):link:[**电参反演软件用户手册**](.././Inversion/README.md):link:  
+:link:[**用户手册**](.././README.md):link:  
 
 # 《敏捷生产V7.3》数据库手册  
 
@@ -111,7 +111,7 @@
 
 ## 1.2 逻辑结构
 
-![逻辑结构](.././Image/PNG/050.png?raw=true)
+![逻辑结构](.././images/PNG/051.png?raw=true)
 
 ## 1.3 详述  
 
